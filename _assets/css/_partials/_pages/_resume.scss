@@ -1,0 +1,98 @@
+// Resume
+// --------------------------------------------------
+
+#resume {
+    background: $background-gray;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.15),0 15px 12px rgba(0,0,0,0.08);
+    margin: 2rem auto;
+    padding: 4rem 2rem;
+    [class^="icon-"], [class*=" icon-"] {
+        &:before {
+            border: 1px solid $textColor;
+            border-radius: 50%;
+            display: block;
+            font-size: 2.25rem;
+            height: 80px;
+            margin-left: calc(50% - 40px);
+            padding: 22px 0.25rem 0.25rem 0.25rem;
+            text-align: center;
+            width: 80px;
+        }
+    }
+    &.section {
+        @supports (display: grid) {
+            &.two-col {
+                .col-1,
+                .col-2 { padding: 0; }
+                @media only screen and (min-width: $smScreen) {
+                    .col-1,
+                    .col-2 { padding: 0 1rem; }
+                }
+                @media only screen and (min-width: $mdScreen) {
+                    grid-template-columns: 40% 1fr;
+                    .col-1 {
+                        border-right: $border;
+                    }
+                    .col-1,
+                    .col-2 {
+                        padding: 0 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    &.section .col-1 {
+        > div {
+            margin-top: 3.5rem;
+            &:first-of-type {margin-top: 0;}
+        }
+    }
+    &.section .col-2 {
+        > div {
+            margin-top: 3.5rem;
+            @media only screen and (min-width: $mdScreen) {
+                &:first-of-type {margin-top: 0;}
+            }
+        }
+    }
+    .title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            width: 45%;
+            @media only screen and (min-width: $mdScreen) { width: 60%; }
+            @media only screen and (min-width: $lgScreen) { width: 45%; }
+        }
+    }
+    .contact {
+        a {
+            display: block;
+            margin-bottom: 1rem;
+            &:before {
+                border: none;
+                border-radius: 0;
+                color: $textColor;
+                display: inline-block;
+                font-size: 1.25rem;
+                height: unset;
+                margin-left: 0;
+                margin-right: 1rem;
+                padding: 0;
+                text-align: left;
+                width: unset;
+            }
+        }
+    }
+    .education,
+    .experience,
+    .activities {
+        strong {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// Buttons Styles
+// --------------------------------------------------
+.button {
+	&:before {
+		margin-right: 0.5rem;
+	}
+	background: $primaryColorDarken;
+	border: 2px solid transparent;
+	color: white;
+	font-family: $sans-font-family !important;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	@include transition;
+	&:hover {
+		background: white;
+		border: 2px solid $primaryColorDarken;
+		color: $primaryColorDarken;
+	}
+	&:active {
+		background: white;
+		border: 2px solid $primaryColor;
+		color: $primaryColor;
+	}
+	&[class^="icon-"],
+	&[class*=" icon-"] {
+		font-family: $sans-font-family !important;
+		&:before {
+			font-family: 'portfolio';
+		}
+	}
+}

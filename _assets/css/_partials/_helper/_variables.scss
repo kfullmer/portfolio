@@ -1,0 +1,96 @@
+// Variables
+// --------------------------------------------------
+
+// Naming Conventisons
+// -------------------------
+
+// Class names:           .class-name
+// Variables:             $camelCase
+
+// Colors
+// -------------------------
+
+// Red
+$red:						#b32524;
+
+// Grayscale
+$white:                     #FFFFFF;
+$light-gray:                #E2E2E2;
+$background-gray:			#f7f7f7;
+$gray:                      #666;
+$dark-gray:                 #333333;
+$mid-gray:					mix($gray, $dark-gray, 50%);
+$black:                     #000000;
+
+// Accent Colors
+
+
+// Primary Color
+$primaryColor:              #71918f;
+$primaryColorLighten:       lighten($primaryColor, 8%);
+$primaryColorDarken:        darken($primaryColor, 8%);
+$primaryColorTransparent:   rgba($primaryColor, .75);
+
+// Secondary Color
+$secondaryColor:            #979937;
+$secondaryColorLighten:     lighten($secondaryColor, 5%);
+$secondaryColorDarken:      darken($secondaryColor, 5%);
+$secondaryColorTransparent: rgba($secondaryColor, .75);
+
+// Tertiary Color
+$tertiaryColor:             #e8b890;
+$tertiaryColorLighten:      lighten($tertiaryColor, 3%);
+$tertiaryColorDarken:       darken($tertiaryColor, 5%);
+$tertiaryColorTransparent:  rgba($tertiaryColor, .75);
+
+// Accent Color
+$accentColor:               #b3dad9;
+$accentColorLighten:        lighten($accentColor, 5%);
+$accentColorDarken:			darken( $accentColor, 3% );
+$accentColorTransparent:    rgba($accentColor, .75);
+
+// Base Font Color
+$textColor:        $dark-gray;
+
+// Links
+// -------------------------
+$link-color:                 darken($primaryColor, 10%);
+$link-color-hover:           darken($primaryColor, 15%);
+$link-color-active:          darken($primaryColor, 10%);
+
+
+// Typography
+// -------------------------
+$sans-font-family:          Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+$serif-font-family:         'Playfair Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
+$base-font-family:          $sans-font-family;
+
+
+
+$base-font-size:            16px;
+$base-line-height:          1.5;
+$relationship: 				1.5; // http://www.modularscale.com/?18&px&1.5&sass&text
+
+// Scaffolding
+// -------------------------
+$radius:                    8px;
+$default-transition: 		200ms linear all;
+$border: 					1px solid $light-gray;
+
+$column-gutter: 10%;
+
+//Gridset Variables
+// -------------------------
+$smScreen: 600px; 	// the min-width of the medium grid
+$navBreakpoint: 768px;
+$mdScreen: 990px; 	// the min-width of the large grid
+$lgScreen: 1200px; 	// the max-width of the website
+$lgGutter: 1.5%;
+$mdGutter: 1.5%;
+$smGutter: 1.5%;
+
+// Transition
+// -------------------------
+@mixin transition ($Property: all, $Duration: 0.3s, $TimingFunction: ease) {
+  transition: $Property $Duration $TimingFunction;
+}

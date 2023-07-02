@@ -1,0 +1,87 @@
+// Header
+// --------------------------------------------------
+
+header {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+    @media only screen and (min-width: $navBreakpoint) {
+        padding: 2rem 0;
+        flex-flow: row nowrap;
+    }
+}
+
+
+// Logo
+// -------------------------
+.logo {
+    display: block;
+    text-transform: uppercase;
+    font-family: $sans-font-family;
+    color: $mid-gray;
+    font-size: 1.75rem;
+    font-weight: 300;
+    text-align: center;
+    .title {
+    	text-transform: none;
+    	display: block;
+    	color: $secondaryColor;
+		font-family: $serif-font-family;
+    	span {color: $secondaryColorDarken;}
+    }
+    @media only screen and (min-width: $navBreakpoint) {
+        text-align: left;
+    }
+    @media only screen and (min-width: $mdScreen) {
+        display: inline-block;
+        .title {
+        	display: inline-block;
+    		margin-left: 1rem;
+        }
+    }
+}
+
+// Navigation
+// -------------------------
+nav[role=navigation] {
+	clear: both;
+    @include transition;
+    ul {
+        list-style: none;
+    	margin: 0;
+    	padding: 1.5rem 0 0 0;
+        border: 0;
+        li {
+            padding-top: 0;
+            a {
+            	display: block;
+                color: $gray;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1rem;
+                line-height: 1;
+                font-family: $sans-font-family;
+            }
+            &:hover {
+                a { color: $dark-gray; }
+                cursor: pointer;
+            }
+            &:last-of-type {margin-right: 0;}
+        }
+    }
+    @media only screen and (min-width: $navBreakpoint) {
+	    ul {
+            padding: 0;
+	        li {
+		    	display: inline-block;
+		    	margin: 0;
+	            padding: 0 0.5rem;
+	            text-align: center;
+	            &:last-of-type {padding-right: 0;}
+		    }
+	    }
+	}
+}

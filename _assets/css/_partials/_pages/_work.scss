@@ -1,0 +1,95 @@
+// Work
+// --------------------------------------------------
+
+#work {
+	margin-top: 2rem;
+	@media only screen and (min-width: $navBreakpoint) { margin-top: 0; }
+	&.section {
+        @supports (display: grid) {
+        	grid-gap: 1.5rem;
+        	&.two-col {
+        		@media only screen and (min-width: $navBreakpoint) {
+	                grid-template-columns: 1fr 1fr;
+	                grid-template-rows: 1fr;
+	            }
+        	}
+        }
+    }
+
+    .project {
+    	display: block;
+    	display: flex;
+    	justify-content: center;
+    	align-items:center;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		position: relative;
+    	img {
+            box-shadow: rgba(0,0,0,0.09) 0px 2px 10px;
+  			width: 100%;
+  			object-fit: cover;
+  			height: 250px;
+  			@media only screen and (min-width: $navBreakpoint) { height: 350px; }
+  			opacity: 1;
+  			transition: opacity 1000ms cubic-bezier(.33,0,.2,1);
+    	}
+    	.project-info {
+    		opacity: 0;
+    		text-align: center;
+    		transition: opacity 300ms cubic-bezier(.33,0,.2,1);
+    		width: 100%;
+			height: 100%;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			h2 {
+				span {
+					display: block;
+					font-family: $serif-font-family;
+					font-size: 1.25rem;
+					margin-top: 0.5rem;
+					text-transform: lowercase;
+				}
+			}
+    	}
+    	&:hover {
+    		img {
+    			opacity: 0;
+    		}
+    		.project-info {
+    			opacity: 1;
+    		}
+    	}
+    }
+}
+
+.contributions {
+    h2 { margin: 1.5rem 0; }
+    div {
+        display: block;
+        background: $light-gray;
+        padding: 5px 8px;
+        margin-bottom: 8px;
+        &:last-of-type { margin-bottom: 0; }
+        @media only screen and (min-width: $smScreen) {
+            display: inline-block;
+            margin-right: 8px;
+            &:last-of-type { margin-right: 0; }
+        }
+    }
+}
+
+// P3 Publish
+// ------------------------
+.publish-themes {
+    margin: 4rem 0 0 0;
+    .image-column-container { margin-bottom: 0; }
+}
+
+// Teleflex Vascular
+// ------------------------
+.vascular-catalog {
+    .flex-container { margin: 2rem 0; }
+}
