@@ -8,15 +8,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 14, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 html {
   box-sizing: border-box; }
 
-/* line 17, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 *, *:before, *:after {
   box-sizing: border-box; }
 
-/* line 21, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 html {
   color: #222;
   font-size: 1em;
@@ -29,15 +26,10 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 37, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 42, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -45,7 +37,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 51, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 hr {
   display: block;
   height: 1px;
@@ -59,7 +50,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-/* line 66, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 audio,
 canvas,
 iframe,
@@ -71,7 +61,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 79, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -80,14 +69,12 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 89, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-/* line 97, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -103,7 +90,6 @@ textarea {
 /*
  * Hide visually and from screen readers
  */
-/* line 132, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .hidden {
   display: none !important; }
 
@@ -111,7 +97,6 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 141, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -127,7 +112,6 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 158, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -140,7 +124,6 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 172, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .invisible {
   visibility: hidden; }
 
@@ -155,7 +138,6 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 188, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -163,7 +145,6 @@ textarea {
   display: table;
   /* 2 */ }
 
-/* line 194, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
 .clearfix:after {
   clear: both; }
 
@@ -184,7 +165,6 @@ textarea {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 222, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   *,
   *:before,
   *:after,
@@ -196,25 +176,20 @@ textarea {
                                    http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 234, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   a,
   a:visited {
     text-decoration: underline; }
-  /* line 239, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 243, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  /* line 252, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-  /* line 257, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -223,23 +198,18 @@ textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-  /* line 268, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   thead {
     display: table-header-group; }
-  /* line 272, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   tr,
   img {
     page-break-inside: avoid; }
-  /* line 277, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   img {
     max-width: 100% !important; }
-  /* line 281, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-  /* line 288, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_helper/_boilerplate.scss */
   h2,
   h3 {
     page-break-after: avoid; } }
@@ -251,7 +221,6 @@ textarea {
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-/* line 11, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -263,14 +232,12 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 body {
   margin: 0; }
 
 /**
  * Render the `main` element consistently in IE.
  */
-/* line 31, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 main {
   display: block; }
 
@@ -278,7 +245,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 40, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -289,7 +255,6 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 53, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -302,7 +267,6 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 64, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -314,7 +278,6 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-/* line 76, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 a {
   background-color: transparent; }
 
@@ -322,7 +285,6 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 85, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -335,7 +297,6 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 95, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 b,
 strong {
   font-weight: bolder; }
@@ -344,7 +305,6 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 105, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 code,
 kbd,
 samp {
@@ -356,7 +316,6 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 116, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 small {
   font-size: 80%; }
 
@@ -364,7 +323,6 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 125, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -372,11 +330,9 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 133, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 137, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 sup {
   top: -0.5em; }
 
@@ -385,7 +341,6 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 148, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 img {
   border-style: none; }
 
@@ -395,7 +350,6 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 160, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button,
 input,
 optgroup,
@@ -414,7 +368,6 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 176, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -424,7 +377,6 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 186, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -433,7 +385,6 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 195, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -443,7 +394,6 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 206, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -454,7 +404,6 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 218, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -464,7 +413,6 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 229, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em; }
 
@@ -474,7 +422,6 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 240, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -492,14 +439,12 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 253, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 progress {
   vertical-align: baseline; }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 261, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -507,7 +452,6 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 270, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -518,7 +462,6 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 280, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -527,7 +470,6 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 290, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -537,7 +479,6 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 299, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
@@ -545,7 +486,6 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 308, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -557,14 +497,12 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 320, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 details {
   display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
-/* line 328, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 summary {
   display: list-item; }
 
@@ -573,18 +511,15 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 339, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 template {
   display: none; }
 
 /**
  * Add the correct display in IE 10.
  */
-/* line 347, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_reset/_normalize.scss */
 [hidden] {
   display: none; }
 
-/* line 3, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
 .button {
   background: #5f7a79;
   border: 2px solid transparent;
@@ -593,25 +528,19 @@ template {
   padding: 1rem 2rem;
   text-transform: uppercase;
   text-align: center;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  /* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
   .button:before {
     margin-right: 0.5rem; }
-  /* line 15, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
   .button:hover {
     background: white;
     border: 2px solid #5f7a79;
     color: #5f7a79; }
-  /* line 20, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
   .button:active {
     background: white;
     border: 2px solid #71918f;
     color: #71918f; }
-  /* line 25, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
   .button[class^="icon-"], .button[class*=" icon-"] {
     font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif !important; }
-    /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_buttons.scss */
     .button[class^="icon-"]:before, .button[class*=" icon-"]:before {
       font-family: 'portfolio'; }
 
@@ -623,7 +552,6 @@ template {
   font-style: normal;
   font-display: block; }
 
-/* line 13, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'portfolio' !important;
@@ -637,59 +565,46 @@ template {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-envelope:before {
   content: "\e696"; }
 
-/* line 31, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-education:before {
   content: "\e6da"; }
 
-/* line 34, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-profile:before {
   content: "\e71b"; }
 
-/* line 37, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-users:before {
   content: "\e723"; }
 
-/* line 40, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-telephone:before {
   content: "\e76a"; }
 
-/* line 43, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-work:before {
   content: "\e83a"; }
 
-/* line 46, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-web:before {
   content: "\e886"; }
 
-/* line 49, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-linkedin:before {
   content: "\ef29"; }
 
-/* line 52, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_component/_icons.scss */
 .icon-file-pdf:before {
   content: "\ef3e"; }
 
-/* line 6, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   color: #333333; }
 
-/* line 16, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 h1, h2, h3, h4, h5, h6, p, a {
   line-height: 1.5;
   padding: 0;
   font-weight: 400; }
-  /* line 20, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, a.center {
     text-align: center; }
 
-/* line 24, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 h1,
 h2.level-up {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
@@ -700,42 +615,30 @@ h2.level-up {
   text-transform: uppercase;
   color: #4d4d4d; }
   @media only screen and (min-width: 990px) {
-    /* line 34, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
-    .publish h1,
-    .vascular-catalog h1, .publish
-    h2.level-up,
-    .vascular-catalog
-    h2.level-up {
+    .publish h1, .vascular-catalog h1, .publish h2.level-up, .vascular-catalog h2.level-up {
       font-size: 3.5rem; } }
-
-/* line 41, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 h2 {
   line-height: 1.2;
   font-size: 2rem;
   color: #979937;
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
   margin: 0 0 .5rem 0; }
-  /* line 47, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   h2 span {
     color: #848630; }
 
-/* line 50, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 h3 {
   text-transform: uppercase;
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
   font-size: 1.75rem;
   line-height: 1;
   position: relative; }
-  /* line 56, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   h3.border {
     z-index: 5; }
-    /* line 58, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
     h3.border span {
       background: white;
       padding: 5px 30px;
       z-index: 2;
       width: auto; }
-    /* line 64, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
     h3.border .line {
       border-top: 1px solid #E2E2E2;
       position: absolute;
@@ -743,81 +646,67 @@ h3 {
       display: block;
       width: 100%;
       margin-top: -12px; }
-  /* line 75, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   #resume h3.border span {
     background: #f7f7f7; }
-  /* line 78, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   h3.level-up {
     font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
     color: #4d4d4d; }
 
-/* line 86, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 p {
   font-size: 1.2rem;
   margin: 1rem 0;
   line-height: 1.75;
   font-weight: 400; }
 
-/* line 93, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 .primary-color {
   color: #71918f; }
-  /* line 95, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   .primary-color span {
     color: #5f7a79; }
 
-/* line 102, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 em, i {
   font-style: italic; }
 
-/* line 103, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 strong, b {
   font-weight: bold; }
 
-/* line 107, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 .center-text {
   text-align: center; }
 
-/* line 110, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 a {
   color: #5a7573;
   text-decoration: none; }
-  /* line 114, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   a:hover {
     color: #4f6665;
     cursor: pointer; }
-  /* line 118, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   a:active, a:focus {
     color: #5a7573; }
 
-/* line 124, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 address {
   font-style: normal; }
 
-/* line 134, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-  /* line 138, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
   ul li {
     display: inline-block;
     margin: 0 1rem;
     text-transform: uppercase; }
-    /* line 142, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
     ul li:first-of-type {
       margin-left: 0; }
 
-/* line 145, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 ul {
   margin: 1.5rem auto;
   font-size: 1.25rem; }
 
-/* line 156, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_base/_typography.scss */
 img {
   width: 100%;
   height: auto; }
-
-/* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
+  @media screen and (min-width: 1200px) {
+    img.full-width {
+      width: 70%;
+      height: auto;
+      margin: 0 auto; } }
 body {
   background: white;
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
@@ -830,113 +719,80 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 17, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .wrapper {
   width: 90%;
   margin: 0 auto;
   max-width: 1400px; }
 
-/* line 23, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .section {
   background: white;
   display: block; }
   @supports (display: grid) {
-    /* line 23, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .section {
       display: grid; }
-      /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .section.two-col {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto; }
         @media only screen and (min-width: 990px) {
-          /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
           .section.two-col {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr; } } }
-  /* line 37, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
   .section.actions {
     margin-bottom: 4rem;
     margin-top: 4rem;
     text-align: center; }
-    /* line 41, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .section.actions .button {
       justify-self: center; }
 
-/* line 45, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .flex-container {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center; }
-  /* line 50, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center; }
   .flex-container .column-left,
   .flex-container .column-right {
     width: 100%; }
   @media only screen and (min-width: 990px) {
-    /* line 45, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .flex-container {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-              flex-flow: row nowrap; }
-      /* line 56, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
+      flex-flow: row nowrap; }
       .flex-container .column-left,
       .flex-container .column-right {
         width: 48%; } }
-
-/* line 63, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .intro-content {
-  margin: 0 0 4rem 0; }
-  /* line 65, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
+  margin: 0 0 2rem 0; }
   .intro-content p {
     margin: 1rem 0; }
   @media only screen and (min-width: 990px) {
-    /* line 67, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .intro-content p {
       text-align: center;
       margin: 1rem 10%; } }
-
-/* line 74, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .info {
   align-self: flex-start;
   width: 100%; }
   @media only screen and (min-width: 600px) {
-    /* line 74, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .info {
       align-self: center; } }
   @media only screen and (min-width: 990px) {
-    /* line 74, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .info {
       width: 60%; } }
-
-/* line 82, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .gutter-left {
   grid-column: gutter-left; }
 
-/* line 83, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .gutter-right {
   grid-column: gutter-right; }
 
-/* line 84, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .column-left {
   grid-column: col2; }
 
-/* line 85, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .column-right {
   grid-column: col3; }
 
-/* line 87, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .side-by-side-content-photo {
   display: block;
   margin-bottom: 40px;
   grid-template-rows: 1fr auto;
   padding: 2rem 0; }
   @media only screen and (min-width: 990px) {
-    /* line 87, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .side-by-side-content-photo {
       display: block;
       display: grid;
@@ -944,77 +800,58 @@ body {
       grid-template-rows: auto;
       padding: 0;
       overflow: hidden; }
-      /* line 103, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .side-by-side-content-photo > div {
         float: left;
         width: 50%; }
       @supports (display: grid) {
-        /* line 87, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
         .side-by-side-content-photo {
           overflow: unset; }
-          /* line 109, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
           .side-by-side-content-photo > div {
             width: unset; } } }
-  /* line 112, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
   .side-by-side-content-photo .image {
     background: white;
     margin: 0 0 -4rem 0; }
     @media only screen and (min-width: 990px) {
-      /* line 112, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .side-by-side-content-photo .image {
         margin: 0; } }
-    /* line 116, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .side-by-side-content-photo .image img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-  /* line 122, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
   .side-by-side-content-photo .column-left {
     display: block;
     align-content: center;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-bottom: 4rem; }
     @media only screen and (min-width: 990px) {
-      /* line 122, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .side-by-side-content-photo .column-left {
         display: block;
         display: grid;
         padding: 3rem 10% 3rem 10%;
         text-align: left;
-        -webkit-box-pack: start;
-                justify-content: start;
+        justify-content: start;
         margin-bottom: 0; }
         @supports (display: grid) {
-          /* line 122, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
           .side-by-side-content-photo .column-left {
             padding-left: unset; } } }
-  /* line 137, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
   .side-by-side-content-photo .column-right {
     grid-column: col3 / gutter-right-end; }
 
-/* line 142, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
 .image-column-container {
   margin: 2rem 0; }
   @supports (display: grid) {
     @media only screen and (min-width: 768px) {
-      /* line 142, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .image-column-container {
         display: grid;
         grid-column-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } } }
-  /* line 151, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
   .image-column-container .image-column {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
+    align-items: center;
     display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
-      /* line 151, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
       .image-column-container .image-column {
         display: inline-block;
         width: 32%;
@@ -1022,39 +859,25 @@ body {
         margin-right: 1%; } }
     @supports (display: grid) {
       @media only screen and (min-width: 768px) {
-        /* line 151, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
         .image-column-container .image-column {
-          display: -webkit-box;
           display: flex;
           width: 100%;
           vertical-align: unset;
           margin-right: unset; } } }
-    /* line 172, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_scaffold.scss */
     .image-column-container .image-column img {
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 10px; }
 
-/* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
 header {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-flow: column wrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 0; }
   @media only screen and (min-width: 768px) {
-    /* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     header {
       padding: 2rem 0;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-              flex-flow: row nowrap; } }
-
-/* line 19, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
+      flex-flow: row nowrap; } }
 .logo {
   display: block;
   text-transform: uppercase;
@@ -1063,43 +886,32 @@ header {
   font-size: 1.75rem;
   font-weight: 300;
   text-align: center; }
-  /* line 27, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
   .logo .title {
     text-transform: none;
     display: block;
     color: #979937;
     font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif; }
-    /* line 32, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     .logo .title span {
       color: #848630; }
   @media only screen and (min-width: 768px) {
-    /* line 19, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     .logo {
       text-align: left; } }
   @media only screen and (min-width: 990px) {
-    /* line 19, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     .logo {
       display: inline-block; }
-      /* line 39, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
       .logo .title {
         display: inline-block;
         margin-left: 1rem; } }
-
-/* line 48, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
 nav[role=navigation] {
   clear: both;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  /* line 51, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
   nav[role=navigation] ul {
     list-style: none;
     margin: 0;
     padding: 1.5rem 0 0 0;
     border: 0; }
-    /* line 56, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     nav[role=navigation] ul li {
       padding-top: 0; }
-      /* line 58, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
       nav[role=navigation] ul li a {
         display: block;
         color: #666;
@@ -1109,72 +921,51 @@ nav[role=navigation] {
         font-size: 1rem;
         line-height: 1;
         font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; }
-      /* line 68, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
       nav[role=navigation] ul li:hover {
         cursor: pointer; }
-        /* line 69, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
         nav[role=navigation] ul li:hover a {
           color: #333333; }
-      /* line 72, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
       nav[role=navigation] ul li:last-of-type {
         margin-right: 0; }
   @media only screen and (min-width: 768px) {
-    /* line 76, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
     nav[role=navigation] ul {
       padding: 0; }
-      /* line 78, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
       nav[role=navigation] ul li {
         display: inline-block;
         margin: 0;
         padding: 0 0.5rem;
         text-align: center; }
-        /* line 83, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_header.scss */
         nav[role=navigation] ul li:last-of-type {
           padding-right: 0; } }
-
-/* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
 footer {
   border-top: 1px solid #E2E2E2;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem 0;
   margin-top: 2rem !important; }
   @media only screen and (min-width: 768px) {
-    /* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
     footer {
       padding: 2rem 0; } }
-  /* line 14, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
   footer .social {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center; }
-    /* line 17, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
+    align-items: center; }
     footer .social a {
       color: #666;
       font-size: 1.5rem;
       margin-right: 1.5rem; }
-      /* line 21, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
       footer .social a:last-of-type {
         margin-right: 0;
         margin-top: 5px;
         font-weight: bold; }
-      /* line 26, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_layout/_footer.scss */
       footer .social a:hover {
         color: #4d4d4d; }
 
-/* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
 #resume {
   background: #f7f7f7;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.08);
   margin: 2rem auto;
   padding: 4rem 2rem; }
-  /* line 10, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume [class^="icon-"]:before, #resume [class*=" icon-"]:before {
     border: 1px solid #333333;
     border-radius: 50%;
@@ -1186,68 +977,48 @@ footer {
     text-align: center;
     width: 80px; }
   @supports (display: grid) {
-    /* line 25, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
     #resume.section.two-col .col-1,
     #resume.section.two-col .col-2 {
       padding: 0; }
     @media only screen and (min-width: 600px) {
-      /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
       #resume.section.two-col .col-1,
       #resume.section.two-col .col-2 {
         padding: 0 1rem; } }
     @media only screen and (min-width: 990px) {
-      /* line 24, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
       #resume.section.two-col {
         grid-template-columns: 40% 1fr; }
-        /* line 33, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
         #resume.section.two-col .col-1 {
           border-right: 1px solid #E2E2E2; }
-        /* line 36, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
         #resume.section.two-col .col-1,
         #resume.section.two-col .col-2 {
           padding: 0 2.5rem; } } }
-  /* line 45, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume.section .col-1 > div {
     margin-top: 3.5rem; }
-    /* line 47, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
     #resume.section .col-1 > div:first-of-type {
       margin-top: 0; }
-  /* line 51, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume.section .col-2 > div {
     margin-top: 3.5rem; }
     @media only screen and (min-width: 990px) {
-      /* line 54, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
       #resume.section .col-2 > div:first-of-type {
         margin-top: 0; } }
-  /* line 58, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume .title {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
+    align-items: center;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center; }
-    /* line 63, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
+    flex-direction: column;
+    justify-content: center; }
     #resume .title img {
       border-radius: 50%;
       margin-bottom: 2rem;
       width: 45%; }
       @media only screen and (min-width: 990px) {
-        /* line 63, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
         #resume .title img {
           width: 60%; } }
       @media only screen and (min-width: 1200px) {
-        /* line 63, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
         #resume .title img {
           width: 45%; } }
-  /* line 72, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume .contact a {
     display: block;
     margin-bottom: 1rem; }
-    /* line 75, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
     #resume .contact a:before {
       border: none;
       border-radius: 0;
@@ -1260,43 +1031,33 @@ footer {
       padding: 0;
       text-align: left;
       width: unset; }
-  /* line 93, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_resume.scss */
   #resume .education strong,
   #resume .experience strong,
   #resume .activities strong {
     font-weight: bold;
     text-transform: uppercase; }
 
-/* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
 #work {
   margin-top: 2rem; }
   @media only screen and (min-width: 768px) {
-    /* line 4, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work {
       margin-top: 0; } }
   @supports (display: grid) {
-    /* line 7, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work.section {
       grid-gap: 1.5rem; }
       @media only screen and (min-width: 768px) {
-        /* line 10, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
         #work.section.two-col {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr; } } }
-  /* line 19, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
   #work .project {
     display: block;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
     position: relative; }
-    /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work .project img {
       box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 10px;
       width: 100%;
@@ -1304,70 +1065,93 @@ footer {
          object-fit: cover;
       height: 250px;
       opacity: 1;
-      -webkit-transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
       transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1); }
       @media only screen and (min-width: 768px) {
-        /* line 28, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
         #work .project img {
           height: 350px; } }
-    /* line 37, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work .project .project-info {
       opacity: 0;
       text-align: center;
-      -webkit-transition: opacity 300ms cubic-bezier(0.33, 0, 0.2, 1);
       transition: opacity 300ms cubic-bezier(0.33, 0, 0.2, 1);
       width: 100%;
       height: 100%;
       position: absolute;
-      display: -webkit-box;
       display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-              align-items: center; }
-      /* line 48, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
+      justify-content: center;
+      align-items: center; }
       #work .project .project-info h2 span {
         display: block;
         font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
         font-size: 1.25rem;
         margin-top: 0.5rem;
         text-transform: lowercase; }
-    /* line 58, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work .project:hover img {
       opacity: 0; }
-    /* line 61, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
     #work .project:hover .project-info {
       opacity: 1; }
 
-/* line 69, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
-.contributions h2 {
-  margin: 1.5rem 0; }
-
-/* line 70, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
-.contributions div {
-  display: block;
-  background: #E2E2E2;
-  padding: 5px 8px;
-  margin-bottom: 8px; }
-  /* line 75, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
-  .contributions div:last-of-type {
-    margin-bottom: 0; }
-  @media only screen and (min-width: 600px) {
-    /* line 70, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
-    .contributions div {
-      display: inline-block;
-      margin-right: 8px; }
-      /* line 79, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
-      .contributions div:last-of-type {
-        margin-right: 0; } }
-
-/* line 86, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
+.contributions {
+  margin-bottom: 4rem; }
+  .contributions h2 {
+    margin: 1.5rem 0; }
+  .contributions div {
+    display: block;
+    background: #E2E2E2;
+    padding: 5px 8px;
+    margin-bottom: 8px; }
+    .contributions div:last-of-type {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 600px) {
+      .contributions div {
+        display: inline-block;
+        margin-right: 8px; }
+        .contributions div:last-of-type {
+          margin-right: 0; } }
+  @media screen and (min-width: 990px) {
+    .contributions {
+      margin-bottom: 0; } }
 .publish-themes {
   margin: 4rem 0 0 0; }
-  /* line 88, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
   .publish-themes .image-column-container {
     margin-bottom: 0; }
 
-/* line 94, Users/katiegbug/Dropbox/Small Victories/portfolio/_assets/css/_partials/_pages/_work.scss */
 .vascular-catalog .flex-container {
   margin: 2rem 0; }
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr .5fr .5fr;
+    position: relative;
+    width: 100%; }
+    .gallery figure.gallery-item {
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0; }
+      .gallery figure.gallery-item img {
+        height: 100%;
+        left: 0;
+        -o-object-fit: cover;
+           object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%; }
+      .gallery figure.gallery-item:first-child {
+        grid-row: span 2; }
+      .gallery figure.gallery-item a {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%; }
+    @media screen and (min-width: 990px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto; } }
+    @media screen and (min-width: 1200px) {
+      .gallery {
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-template-rows: auto; } } }

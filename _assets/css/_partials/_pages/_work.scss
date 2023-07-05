@@ -66,6 +66,7 @@
 }
 
 .contributions {
+	margin-bottom: 4rem;
     h2 { margin: 1.5rem 0; }
     div {
         display: block;
@@ -79,6 +80,7 @@
             &:last-of-type { margin-right: 0; }
         }
     }
+    @media screen and (min-width: $mdScreen) { margin-bottom: 0; }
 }
 
 // P3 Publish
@@ -92,4 +94,47 @@
 // ------------------------
 .vascular-catalog {
     .flex-container { margin: 2rem 0; }
+}
+
+// Gallery
+// ------------------------
+@supports (display: grid) {
+	.gallery {
+	    display: grid;
+		grid-gap: 1vw;
+	    grid-template-columns: 1fr .5fr .5fr;
+	    position: relative;
+	    width: 100%;
+	    figure.gallery-item {
+	    	position:relative;
+	    	display: block;
+	    	margin: 0;
+	    	padding:0;
+	    	img {
+			    height: 100%;
+			    left: 0;
+			    object-fit: cover;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+			}
+			&:first-child { grid-row:span 2 }
+			a {
+			    display: block;
+			    height: 100%;
+			    overflow: hidden;
+			    padding-bottom: 100%;
+			    position: relative;
+			    width:100%;
+			}
+		}
+		@media screen and (min-width: $mdScreen) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+		}
+		@media screen and (min-width: $lgScreen) {
+			grid-template-columns: 1fr .5fr .5fr;
+			grid-template-rows: auto;
+		}
+	}
 }
