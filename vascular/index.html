@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="../_assets/css/main.css">
+        <link rel="stylesheet" href="../_assets/css/photoswipe.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -38,7 +39,48 @@
                     </div>
                 </div>
                 <div class="column-right image">
-                    <img src="../_assets/images/work/vascular/teleflex-vascular-browser.jpg" alt="Teleflex Vascular Catalog">
+                    <div class="gallery" id="teleflex-gallery">
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/teleflex/teleflex-1.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1440"
+                                target="_blank">
+                                <img src="../_assets/images/work/teleflex/teleflex-1.jpg" alt="Teleflex Vascular Catalog" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/teleflex/teleflex-2.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1440"
+                                target="_blank">
+                                <img src="../_assets/images/work/teleflex/teleflex-2.jpg" alt="Teleflex Vascular Catalog" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/teleflex/teleflex-3.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1440"
+                                target="_blank">
+                                <img src="../_assets/images/work/teleflex/teleflex-3.jpg" alt="Teleflex Vascular Catalog" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/teleflex/teleflex-4.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1440"
+                                target="_blank">
+                                <img src="../_assets/images/work/teleflex/teleflex-4.jpg" alt="Teleflex Vascular Catalog" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/teleflex/teleflex-5.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1440"
+                                target="_blank">
+                                <img src="../_assets/images/work/teleflex/teleflex-5.jpg" alt="Teleflex Vascular Catalog" />
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </div>
             <div class="section clearfix">
@@ -49,7 +91,7 @@
                     </h3>
                     <p>The Vascular web catalog was built using the latest best practices and techniques in responsive web design, including Flexbox and CSS Grid. The use of these tools provided a more modern, lean, and performant codebase that renders faster, uses fewer resources, increases conversion rate, and keep users engaged for longer without frustrating delays in load and render&nbsp;time.</p>
                 </div>
-                <img src="../_assets/images/work/vascular/teleflex-vascular-tiles.jpg" alt="Teleflex Vascular Tiles">
+                <img src="../_assets/images/work/teleflex/teleflex-vascular-tiles.jpg" alt="Teleflex Vascular Tiles">
             </div>
         </div>
         <div class="wrapper section actions">
@@ -63,4 +105,13 @@
         </footer>
     </body>
     <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#teleflex-gallery',
+          children: 'a',
+          pswpModule: () => import('https://unpkg.com/photoswipe@5.3.8/dist/photoswipe.esm.min.js')
+        });
+        lightbox.init();
+    </script>
 </html>
