@@ -29,4 +29,17 @@
 			font-family: 'portfolio';
 		}
 	}
+
+	&.secondary {
+		background: $secondaryColorDarken;
+		&:hover {
+			background: white;
+			border: 2px solid $secondaryColorDarken;
+			color: $secondaryColorDarken;
+		}
+		&:active {
+			border: 2px solid $secondaryColor;
+			color: $secondaryColor;
+		}
+	}
 }
