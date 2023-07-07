@@ -1087,13 +1087,17 @@ footer {
       position: absolute;
       display: flex;
       justify-content: center;
-      align-items: center; }
-      #work .project .project-info h2 span {
-        display: block;
-        font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
-        font-size: 1.25rem;
-        margin-top: 0.5rem;
-        text-transform: lowercase; }
+      align-items: center;
+      background-color: rgba(113, 145, 143, 0.5); }
+      #work .project .project-info h2 {
+        color: white; }
+        #work .project .project-info h2 span {
+          display: block;
+          font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
+          font-size: 1.25rem;
+          margin-top: 0.5rem;
+          text-transform: lowercase;
+          color: #5f7a79; }
     #work .project:hover img {
       opacity: 0; }
     #work .project:hover .project-info {

@@ -44,13 +44,16 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			background-color: $primaryColorTransparent;
 			h2 {
+				color: white;
 				span {
 					display: block;
 					font-family: $serif-font-family;
 					font-size: 1.25rem;
 					margin-top: 0.5rem;
 					text-transform: lowercase;
+					color: $primaryColorDarken;
 				}
 			}
     	}

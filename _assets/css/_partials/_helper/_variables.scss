@@ -29,7 +29,7 @@ $black:                     #000000;
 $primaryColor:              #71918f;
 $primaryColorLighten:       lighten($primaryColor, 8%);
 $primaryColorDarken:        darken($primaryColor, 8%);
-$primaryColorTransparent:   rgba($primaryColor, .75);
+$primaryColorTransparent:   rgba($primaryColor, .5);
 
 // Secondary Color
 $secondaryColor:            #979937;
