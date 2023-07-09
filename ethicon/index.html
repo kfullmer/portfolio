@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" xml:lang="en">
+    <head>
+        <title>Katie Fullmer | Designer & Developer</title>
+        <meta name="description" content="Katie Fullmer specializes in designing and developing custom web sites and applications, as well as online and print advertising.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="../_assets/css/main.css">
+        <link rel="stylesheet" href="../_assets/css/photoswipe.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header wrapper">
+            <a class="logo" href="/" title="Katie Fullmer">
+                Katie Fullmer <div class="title">designer <span>&amp;</span> developer</div>
+            </a>
+            <nav id="menu" role="navigation">
+                <ul>
+                    <li><a href="/work/" class="">Work</a></li>
+                    <li><a href="/resume/" class="">Resume</a></li>
+                    <li><a href="mailto:katiegfullmer@gmail.com" class="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="work" class="wrapper vascular-catalog">
+            <div class="flex-container">
+                <div class="column-left">
+                    <h1>Ethicon</h1>
+                    <p>In order to create an online presence for Teleflex’s Vascular products, a Vascular Online Catalog was created to fit seamlessly into the teleflex.com site experience, while also being able to serve as a stand-alone application. Many of the features desired for the Web Catalog parallel those for e-commerce solutions: lists of products, grouped in various ways, with the ability to be searched, and curated through a secure back-end. Additionally, the long-term vision of the Web Catalog includes becoming an e-commerce platform, with visitors being able to browse the collection of products online and order them&nbsp;directly.</p>
+                    <div class="contributions">
+                        <h2>Contributions</h2>
+                        <div>Business Requirements Gathering</div>
+                        <div>Estimation and Planning</div>
+                        <div>UI/UX</div>
+                        <div>Design &amp; Front End Development</div>
+                        <div>Quality Assurance Testing</div>
+                        <div>Accesiblity Testing (WCAG 2.0 Standards)</div>
+                    </div>
+                </div>
+                <div class="column-right image">
+                    <div class="gallery" id="ethicon-gallery">
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/ethicon/ethicon-1.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1112"
+                                target="_blank">
+                                <img src="../_assets/images/work/ethicon/ethicon-1.jpg" alt="Ethicon Physician Portal Proof of Concept" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/ethicon/ethicon-2.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1112"
+                                target="_blank">
+                                <img src="../_assets/images/work/ethicon/ethicon-2.jpg" alt="Ethicon Physician Portal Proof of Concept" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/ethicon/ethicon-3.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1112"
+                                target="_blank">
+                                <img src="../_assets/images/work/ethicon/ethicon-3.jpg" alt="Ethicon Physician Portal Proof of Concept" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/ethicon/ethicon-4.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="750"
+                                target="_blank">
+                                <img src="../_assets/images/work/ethicon/ethicon-4.jpg" alt="Ethicon Physician Portal Proof of Concept" />
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="../_assets/images/work/ethicon/ethicon-5.jpg"
+                                data-pswp-width="1440"
+                                data-pswp-height="1112"
+                                target="_blank">
+                                <img src="../_assets/images/work/ethicon/ethicon-5.jpg" alt="Ethicon Physician Portal Proof of Concept" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="section clearfix">
+                <div class="intro-content">
+                    <h3 class="border center-text level-up">
+                        <span>Catalog Features</span>
+                        <div class="line"></div>
+                    </h3>
+                    <p>The Vascular web catalog was built using the latest best practices and techniques in responsive web design, including Flexbox and CSS Grid. The use of these tools provided a more modern, lean, and performant codebase that renders faster, uses fewer resources, increases conversion rate, and keep users engaged for longer without frustrating delays in load and render&nbsp;time.</p>
+                </div>
+                <img src="../_assets/images/work/teleflex/teleflex-vascular-tiles.jpg" alt="Teleflex Vascular Tiles">
+            </div>
+        </div>
+        <div class="wrapper section actions">
+            <a href="https://dev-gateway-ux-poc.aurisinternal.net/index.html" target="_blank" class="button">View the Dashboard</a>
+        </div>
+        <footer class="footer wrapper">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/katie-fullmer-06215240/" target="_blank" class="icon-linkedin"><span class="visuallyhidden">LinkedIn</span></a>
+                <a href="mailto:katiegfullmer@gmail.com" class="icon-envelope"><span class="visuallyhidden">Email</span></a>
+            </div>
+        </footer>
+    </body>
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#ethicon-gallery',
+          children: 'a',
+          pswpModule: () => import('https://unpkg.com/photoswipe@5.3.8/dist/photoswipe.esm.min.js')
+        });
+        lightbox.init();
+    </script>
+</html>
