@@ -17,29 +17,26 @@ header {
 // Logo
 // -------------------------
 .logo {
-    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     text-transform: uppercase;
     font-family: $sans-font-family;
     color: $mid-gray;
     font-size: 1.75rem;
     font-weight: 300;
-    text-align: center;
     .title {
     	text-transform: none;
-    	display: block;
     	color: $secondaryColor;
 		font-family: $serif-font-family;
     	span {color: $secondaryColorDarken;}
     }
     @media only screen and (min-width: $navBreakpoint) {
-        text-align: left;
+        align-items: flex-start;
     }
     @media only screen and (min-width: $mdScreen) {
-        display: inline-block;
-        .title {
-        	display: inline-block;
-    		margin-left: 1rem;
-        }
+        flex-flow: row nowrap;
+        gap: 1rem;
     }
 }
 
@@ -66,7 +63,7 @@ nav[role=navigation] {
                 font-family: $sans-font-family;
             }
             &:hover {
-                a { color: $dark-gray; }
+                a { color: $primaryColor; }
                 cursor: pointer;
             }
             &:last-of-type {margin-right: 0;}

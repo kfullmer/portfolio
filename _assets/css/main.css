@@ -894,29 +894,27 @@ header {
       padding: 2rem 0;
       flex-flow: row nowrap; } }
 .logo {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   text-transform: uppercase;
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   color: #4d4d4d;
   font-size: 1.75rem;
-  font-weight: 300;
-  text-align: center; }
+  font-weight: 300; }
   .logo .title {
     text-transform: none;
-    display: block;
     color: #979937;
     font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif; }
     .logo .title span {
       color: #848630; }
   @media only screen and (min-width: 768px) {
     .logo {
-      text-align: left; } }
+      align-items: flex-start; } }
   @media only screen and (min-width: 990px) {
     .logo {
-      display: inline-block; }
-      .logo .title {
-        display: inline-block;
-        margin-left: 1rem; } }
+      flex-flow: row nowrap;
+      gap: 1rem; } }
 nav[role=navigation] {
   clear: both;
   transition: all 0.3s ease; }
@@ -939,7 +937,7 @@ nav[role=navigation] {
       nav[role=navigation] ul li:hover {
         cursor: pointer; }
         nav[role=navigation] ul li:hover a {
-          color: #333333; }
+          color: #71918f; }
       nav[role=navigation] ul li:last-of-type {
         margin-right: 0; }
   @media only screen and (min-width: 768px) {
