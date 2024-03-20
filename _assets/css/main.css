@@ -781,15 +781,6 @@ body {
     .intro-content p {
       text-align: center;
       margin: 1rem 10%; } }
-.info {
-  align-self: flex-start;
-  width: 100%; }
-  @media only screen and (min-width: 600px) {
-    .info {
-      align-self: center; } }
-  @media only screen and (min-width: 990px) {
-    .info {
-      width: 60%; } }
 .gutter-left {
   grid-column: gutter-left; }
 
@@ -956,7 +947,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  margin-top: 2rem !important; }
+  margin-top: 4rem !important; }
   @media only screen and (min-width: 768px) {
     footer {
       padding: 2rem 0; } }
@@ -974,6 +965,45 @@ footer {
       footer .social a:hover {
         color: #4d4d4d; }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; }
+  .home header .logo {
+    display: none; }
+  .home main {
+    display: flex;
+    height: calc(100vh - 150px); }
+    .home main .info {
+      align-self: flex-start;
+      padding-bottom: 4rem; }
+      .home main .info h1 {
+        font-size: 1.75rem;
+        margin: 0 0 .25rem 0;
+        color: #666; }
+      .home main .info h2 {
+        font-size: 4rem;
+        margin: 0 0 4rem 0; }
+        .home main .info h2 span {
+          color: #b5b742; }
+  @media only screen and (min-width: 600px) {
+    .home main {
+      height: calc(100vh - 86px); }
+      .home main .info {
+        padding-bottom: 0; } }
+  @media only screen and (min-width: 768px) {
+    .home {
+      gap: 0; }
+      .home header .logo {
+        visibility: hidden;
+        display: flex; }
+      .home main {
+        height: calc(100vh - 94px); }
+        .home main .info {
+          align-self: center; } }
+  @media only screen and (min-width: 1200px) {
+    .home main .info {
+      width: 60%; } }
 #resume {
   background: #f7f7f7;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.08);
@@ -1084,14 +1114,14 @@ footer {
          object-fit: cover;
       height: 250px;
       opacity: 1;
-      transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1); }
+      transition: opacity 500ms cubic-bezier(0.33, 0, 0.2, 1); }
       @media only screen and (min-width: 768px) {
         #work .project img {
           height: 350px; } }
     #work .project .project-info {
       opacity: 0;
       text-align: center;
-      transition: opacity 300ms cubic-bezier(0.33, 0, 0.2, 1);
+      transition: opacity 100ms cubic-bezier(0.33, 0, 0.2, 1);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1104,7 +1134,7 @@ footer {
         #work .project .project-info h2 span {
           display: block;
           font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           margin-top: 0.5rem;
           text-transform: lowercase;
           color: #5f7a79; }

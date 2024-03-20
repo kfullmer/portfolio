@@ -144,6 +144,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/_partials\/_pages\/_home.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_partials\/css\/_home.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/_partials\/_pages\/_resume.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -188,18 +203,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
-    },
-    "\/landing.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/landing-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/main.css" : {
       "aP" : 1,

@@ -71,12 +71,7 @@ body {
     }
 }
 
-.info {
-  align-self: flex-start;
-  width: 100%;
-  @media only screen and (min-width: $smScreen) { align-self: center; }
-  @media only screen and (min-width: $mdScreen) { width: 60%; }
-}
+
 
 // CSS Grid Styles
 .gutter-left    { grid-column: gutter-left;}

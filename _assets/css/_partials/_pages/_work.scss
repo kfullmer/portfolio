@@ -32,12 +32,12 @@
   			height: 250px;
   			@media only screen and (min-width: $navBreakpoint) { height: 350px; }
   			opacity: 1;
-  			transition: opacity 1000ms cubic-bezier(.33,0,.2,1);
+  			transition: opacity 500ms cubic-bezier(.33,0,.2,1);
     	}
     	.project-info {
     		opacity: 0;
     		text-align: center;
-    		transition: opacity 300ms cubic-bezier(.33,0,.2,1);
+    		transition: opacity 100ms cubic-bezier(.33,0,.2,1);
     		width: 100%;
 			height: 100%;
 			position: absolute;
@@ -50,7 +50,7 @@
 				span {
 					display: block;
 					font-family: $serif-font-family;
-					font-size: 1.25rem;
+					font-size: 1.5rem;
 					margin-top: 0.5rem;
 					text-transform: lowercase;
 					color: $primaryColorDarken;

@@ -16,10 +16,10 @@ $red:						#b32524;
 // Grayscale
 $white:                     #FFFFFF;
 $light-gray:                #E2E2E2;
-$background-gray:			#f7f7f7;
+$background-gray:			      #f7f7f7;
 $gray:                      #666;
 $dark-gray:                 #333333;
-$mid-gray:					mix($gray, $dark-gray, 50%);
+$mid-gray:					        mix($gray, $dark-gray, 50%);
 $black:                     #000000;
 
 // Accent Colors
@@ -46,11 +46,11 @@ $tertiaryColorTransparent:  rgba($tertiaryColor, .75);
 // Accent Color
 $accentColor:               #b3dad9;
 $accentColorLighten:        lighten($accentColor, 5%);
-$accentColorDarken:			darken( $accentColor, 3% );
+$accentColorDarken:			    darken( $accentColor, 3% );
 $accentColorTransparent:    rgba($accentColor, .75);
 
 // Base Font Color
-$textColor:        $dark-gray;
+$textColor:                 $dark-gray;
 
 // Links
 // -------------------------
