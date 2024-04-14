@@ -969,6 +969,9 @@ footer {
     border-top: none;
     margin-top: 0 !important; }
 
+.gcb + .footer {
+  margin-top: 0 !important; }
+
 .home {
   display: flex;
   flex-direction: column;
