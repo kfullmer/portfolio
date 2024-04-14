@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="../_assets/css/main.css">
         <link rel="stylesheet" href="../_assets/css/photoswipe.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./preview/assets/js/apexcharts.min.js"></script>
     </head>
-    <body>
+    <body class="light-mode">
         <header class="header wrapper">
             <a class="logo" href="/" title="Katie Fullmer">
                 Katie Fullmer <div class="title">designer <span>&amp;</span> developer</div>
@@ -103,15 +104,17 @@
         </div>
 
         <div class="wrapper section design-process">
-            <div class="flex-container">
-                <div class="column-left">
-                    <h2>Design Process</h2>
-                    <p>The client required a user-friendly and strategic interface for their platform. Our team focused first on parsing the data to make it meaningful for each user type, then on optimizing the interface to deliver the most appropriate user experience.</p>
-                    <p>To achieve this, our team designed various functional UI elements, such as progress-tracking graphics and sophisticated dashboards with case sharing capabilities. Our team also put a ton of effort into testing and iterating on the design to guarantee the final result met the expectations of our client and their end-users.</p>
-                    <p>The redesigned physician dashboard incorporates animated and interactive charts to present the massive amount of data that is collected during patient procedures. Key metrics and crucial data is featured on the dashboard while these charts facilitate quick comprehension for both physicians and clinical administrators who may be evaluating procedural outcomes or tracking adverse events. User-friendly data interpretation was ensured through the use of straightforward charts and diagrams.</p>
-                </div>
-                <div class="column-right">
-
+            <div class="process">
+                <h2>Design Process</h2>
+                <p>The client required a user-friendly and strategic interface for their platform. Our team focused first on parsing the data to make it meaningful for each user type, then on optimizing the interface to deliver the most appropriate user experience.</p>
+                <p>To achieve this, our team designed various functional UI elements, such as progress-tracking graphics and a sophisticated dashboard with case sharing capabilities. Our team also put a ton of effort into testing and iterating on the design to guarantee the final result met the expectations of our client and their end-users.</p>
+                <p>The redesigned physician dashboard incorporates animated and interactive charts to present the massive amount of data that is collected during patient procedures. Key metrics and crucial data is featured on the dashboard while these charts facilitate quick comprehension for both physicians and clinical administrators who may be evaluating procedural outcomes or tracking adverse events. User-friendly data interpretation was ensured through the use of straightforward charts and diagrams.</p>
+            </div>
+            <div class="media">
+                <div id="case-times"></div>
+                <div class="two-col">
+                    <div id="secondary-chart"></div>
+                    <div id="milestone-chart"></div>
                 </div>
             </div>
         </div>
@@ -135,6 +138,7 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript" src="../_assets/js/charts.js"></script>
     <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
     <script type="module">
         import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.min.js';

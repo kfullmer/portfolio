@@ -98,6 +98,35 @@
 
 .design-process {
 	padding: 4rem 0;
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+   .process { flex: 100%; }
+   .media {
+	   	flex: 100%;
+	   	.two-col {
+	   		margin-top: 2rem;
+	   		display: flex;
+	   		justify-content:space-around;
+	   		flex-flow: column wrap;
+	   	}
+    }
+    @media only screen and (min-width: $smScreen) {
+    	.media {
+		   	.two-col {
+		   		flex-flow: row nowrap;
+		   	}
+	    }
+    }
+    @media only screen and (min-width: $lgScreen) {
+        gap: 4rem;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .process { flex: 40%; }
+   		.media { flex: 60%; }
+    }
 }
 
 .contributions {

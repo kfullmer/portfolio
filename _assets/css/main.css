@@ -1177,8 +1177,33 @@ footer {
         flex-flow: row nowrap;
         align-items: center; } }
 .design-process {
-  padding: 4rem 0; }
-
+  padding: 4rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem; }
+  .design-process .process {
+    flex: 100%; }
+  .design-process .media {
+    flex: 100%; }
+    .design-process .media .two-col {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-flow: column wrap; }
+  @media only screen and (min-width: 600px) {
+    .design-process .media .two-col {
+      flex-flow: row nowrap; } }
+  @media only screen and (min-width: 1200px) {
+    .design-process {
+      gap: 4rem;
+      flex-flow: row nowrap;
+      align-items: flex-start; }
+      .design-process .process {
+        flex: 40%; }
+      .design-process .media {
+        flex: 60%; } }
 .contributions h2 {
   margin: 1.5rem 0; }
 
