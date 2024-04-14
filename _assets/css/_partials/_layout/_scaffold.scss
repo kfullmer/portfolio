@@ -47,16 +47,18 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     .column-left,
     .column-right {
         width: 100%;
     }
     @media only screen and (min-width: $mdScreen) {
+        gap: 4rem;
         flex-flow: row nowrap;
-        .column-left,
-        .column-right {
-            width: 48%;
-        }
+    }
+    .poc & {
+        .column-left { flex: 2; }
+        .column-right { flex: 1; }
     }
 }
 

@@ -68,23 +68,56 @@
     }
 }
 
+// Problem Solution Section
+.problem-solution {
+	background-color: $background-gray;
+	padding: 4rem 0 3rem 0;
+	.section {
+		background: none;
+		gap: 2rem;
+		@media only screen and (min-width: $mdScreen) { gap: 4rem; }
+	}
+}
+
+.conclusion {
+	background-color: $background-gray;
+	padding: 4rem 0 3rem 0;
+	.wrapper {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+		flex-flow: column wrap;
+		.outcome { flex: 2; }
+		@media only screen and (min-width: $mdScreen) {
+			gap: 4rem;
+			flex-flow: row nowrap;
+			align-items: center;
+		}
+	}
+}
+
+.design-process {
+	padding: 4rem 0;
+}
+
 .contributions {
-	margin-bottom: 4rem;
-    h2 { margin: 1.5rem 0; }
-    div {
-        display: block;
-        background: $light-gray;
-        padding: 5px 8px;
-        margin-bottom: 8px;
-        &:last-of-type { margin-bottom: 0; }
-        @media only screen and (min-width: $smScreen) {
-            display: inline-block;
-            margin-right: 8px;
-            &:last-of-type { margin-right: 0; }
+    h2 {
+    	margin: 1.5rem 0;
+    }
+    .contributions-listing {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+        div {
+        	background: rgba($secondaryColor, .15);
+        	padding: 0.5rem 1rem;
+        	border-radius: 20px;
+        	color: darken($secondaryColor, 5%);
         }
     }
-    @media screen and (min-width: $mdScreen) { margin-bottom: 0; }
 }
+
 
 // P3 Publish
 // ------------------------
@@ -97,6 +130,12 @@
 // ------------------------
 .vascular-catalog {
     .flex-container { margin: 2rem 0; }
+}
+
+// POC
+// ------------------------
+.poc {
+    .flex-container { margin: 2rem 0 4rem 0; }
 }
 
 // Gallery
@@ -136,9 +175,9 @@
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: auto;
 		}
-		@media screen and (min-width: $lgScreen) {
-			grid-template-columns: 1fr .5fr .5fr;
-			grid-template-rows: auto;
-		}
+		// @media screen and (min-width: $lgScreen) {
+		// 	grid-template-columns: 1fr .5fr .5fr;
+		// 	grid-template-rows: auto;
+		// }
 	}
 }

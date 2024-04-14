@@ -1,0 +1,28 @@
+// Imports
+// -------------------------------------------------
+
+// Variables & Mixins
+@import "_partials/_base/_fonts";                       // Load third-party fonts
+@import "_partials/_helper/_variables";                 // Color & Font Management
+@import "_partials/_helper/_boilerplate";               // HTML5BP Starter Stylesheet
+
+// 3rd Party Resets
+@import "_partials/_reset/_normalize";                  // Normalize Reset
+
+// Site Components
+@import "_partials/_components/_buttons";               // Buttons Styles
+@import "_partials/_components/_forms";      			// Form Styles
+@import "_partials/_components/_tables";				// Table Styles
+@import "_partials/_components/_pagination";            // Pagination
+@import "_partials/_components/_charts";  				// Apex Charts
+
+// Global Styles
+@import "_partials/_base/_typography";  				// Typography
+
+// Layout
+@import "_partials/_layout/_scaffold";  				// Primary element scaffolding
+@import "_partials/_layout/_navigation";  				// Navigation
+
+//Pages
+@import "_partials/_pages/_dashboard";  				// Physician Portal Dashboard
+@import "_partials/_pages/_case-details";  				// Case Details

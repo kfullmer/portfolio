@@ -1,0 +1,29 @@
+// Layout: Scaffolding
+// -------------------------------------------------
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 1800px;
+  background: $dark-mode-black;
+  &.light-mode {
+    background: white;
+    transition: background .3s ease-in;
+  }
+}
+
+.wrapper-primary {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+nav {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+main {
+  margin: 0 1.25rem 1.25rem 1.25rem;
+  @media screen and (min-width: $bpNav) {
+    margin: 0 3rem 3rem 3rem;
+  }
+}

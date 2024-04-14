@@ -1,0 +1,122 @@
+// Components: Buttons
+// --------------------------------------------------
+.button {
+  font-size: $base-font-size;
+  line-height: 1;
+  display: block;
+  position: relative;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  border: 3px solid transparent;
+  color: white;
+  font-family: $base-font-family;
+  font-weight: 400;
+  transition: $default-transition;
+  border-radius: $radius;
+  cursor: pointer;
+  background-color: $primary-color;
+
+  @media only screen and (min-width: $sm-screen) {
+    width: auto;
+    display: inline-block;
+  }
+
+  &:hover,
+  &.active,
+  &.current {
+    color: white;
+    background-color: $primary-color-darken;
+  }
+  &.close-button-case-table,
+  &.close-button-video-notes,
+  &.close-button {
+    background-color: $dark-mode-gray;
+    &:hover,
+    &.active,
+    &.current {
+      background-color: $dark-mode-black;
+    }
+  }
+}
+
+// Recent & Pinned Cases Toggle
+.toggle-container {
+  z-index: 10;
+}
+.toggle-button {
+    color: white;
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: 3px solid $dark-mode-dark-gray;
+    display: inline-block;
+    padding: .5rem 1rem;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+    &:first-of-type {
+      border-radius: $radius 0 0 $radius;
+      border-right: none;
+    }
+    &:last-of-type {
+      border-radius: 0 $radius $radius 0;
+      border-left: none;
+    }
+
+  // Light Mode Styles
+  .light-mode & {
+    color: $default-text-color;
+    border: 3px solid $light-gray;
+    &:first-of-type {
+      border-right: none;
+    }
+    &:last-of-type {
+      border-left: none;
+    }
+  }
+}
+
+input[type="radio"].toggle {
+    display: none;
+    & + label {
+        cursor: pointer;
+        min-width: 120px;
+        &:hover{
+            background: none;
+            color: white;
+            .light-mode & { color: $default-text-color; }
+        }
+        &:after {
+            background: $primary-color;
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    &.toggle-left + label {
+        border-right: 0;
+        &:after{
+            left: 100%
+        }
+    }
+    &.toggle-right + label {
+        margin-left: -5px;
+        &:after{
+            left: -100%;
+        }
+    }
+    &:checked + label {
+        cursor: default;
+        color: white !important;
+        transition: color 200ms;
+        &:after {
+            left: 0;
+        }
+    }
+}

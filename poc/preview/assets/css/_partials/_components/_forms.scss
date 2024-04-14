@@ -1,0 +1,143 @@
+// Components: Forms
+// --------------------------------------------------
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.toggle-mode > * {
+  pointer-events: none;
+}
+
+.case-details--details {
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+      opacity: 0;
+  }
+}
+
+// Label Styles
+// -------------------------
+label,
+legend {
+  font-weight: 300;
+  display: block;
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.adjacent-label {
+  display: inline;
+  margin: 0 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.field-item {
+  margin-bottom: 0.75rem;
+  &.no-margin {
+    margin-bottom: 0;
+    input { margin-bottom: 0; }
+  }
+}
+
+.required { color: $red; }
+
+.error {
+  color: $red;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+// Placeholder Styles
+// -------------------------
+::-webkit-input-placeholder {
+  color: darken($gray, 10%);
+  font-weight: 400;
+
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: darken($gray, 10%);
+  font-weight: 400;
+}
+:-ms-input-placeholder {
+  color: darken($gray, 10%);
+  font-weight: 400;
+}
+::input-placeholder {
+  color: darken($gray, 10%);
+  font-weight: 400;
+}
+
+// Input / Text Area Styles
+// -------------------------
+input, textarea {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.25rem 0.2rem 0.25rem;
+  color: $default-text-color;
+  font-weight: 300;
+  font-size: $base-font-size;
+  border: 1px solid $dark-mode-gray;
+  border-radius: $radius;
+  min-height: 35px;
+
+  &:focus {
+    outline: none;
+    outline-color: transparent;
+    outline-style: none;
+    border: 1px solid $secondary-color;
+    box-shadow: 0 0 1px 2px rgba($secondary-color, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+  }
+
+  &.no-bg {
+  	font-size: 0.9rem;
+  	color: white;
+  	padding: 0;
+  	background: transparent;
+  	border: none;
+  	border-radius: 0;
+  	border-bottom: 1px solid white;
+  	min-height: unset;
+  	&:hover { cursor: pointer; }
+  	&:focus { box-shadow: none; }
+
+    // Light Mode Styles
+    .light-mode & {
+      color: $default-text-color;
+      border-bottom: 1px solid $default-text-color;
+    }
+  }
+}
+
+input + small {
+  display: block;
+  font-size: 0.8rem;
+  color: $dark-gray;
+  margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  min-height: unset;
+}
+
+label + input[type="radio"] { margin-left: 2rem; }
+
+textarea {
+  height: 6em;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}

@@ -74,8 +74,9 @@ $relationship: 				1.5; // http://www.modularscale.com/?18&px&1.5&sass&text
 // Scaffolding
 // -------------------------
 $radius:                    8px;
-$default-transition: 		200ms linear all;
-$border: 					2px solid $primaryColor;
+$default-transition: 		    200ms linear all;
+$border: 					          2px solid $primaryColor;
+$secondary-border:          2px solid darken($background-gray, 5%);
 
 $column-gutter: 10%;
 

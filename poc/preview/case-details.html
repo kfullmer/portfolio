@@ -1,0 +1,634 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Physician Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/js/apexcharts.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navigation-mobile">
+      <div class="navigation-mobile-trigger">
+        <div>
+          <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+          <label for="checkbox3">
+              <div class="hamburger hamburger3">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+                  <span class="bar bar4"></span>
+              </div>
+          </label>
+        </div>
+      </div>
+      <img src="assets/images/logos/health-connective-logo-white.svg" width="168">
+      <img src="assets/images/logos/health-connective-logo.svg" width="168">
+    </div>
+    <div class="wrapper-primary">
+      <nav>
+        <div class="navigation-container" id="js_navigation-container">
+          <div class="navigation-collapse-trigger">
+            <span class="navigation-collapse-trigger__orb" id="js_navigation-collapse-trigger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </span>
+          </div>
+          <div class="navigation">
+            <!-- LOGO -->
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 215 215">
+              <path fill="#7215D8" d="M145.1 7.9c4.3 0 7.9 3.5 7.9 7.8l.1 128.7c0 4.3-3.5 7.8-7.8 7.8l-129.5.1c-4.3 0-7.9-3.5-7.9-7.8L7.7 15.8c0-4.3 3.5-7.8 7.8-7.8l129.6-.1m0-7.3L15.6.7C7.2.7.4 7.5.4 15.8l.1 128.7c0 8.3 6.8 15.1 15.2 15l129.5-.1c8.3 0 15.2-6.8 15.1-15.1l-.1-128.7c0-8.2-6.8-15-15.1-15z"/>
+              <path fill="#9544ED" d="M172.1 36.5c4.3 0 7.9 3.5 7.9 7.8l.1 128.7c0 4.3-3.5 7.8-7.8 7.8l-129.5.1c-4.3 0-7.9-3.5-7.9-7.8l-.1-128.6c0-4.3 3.5-7.8 7.8-7.8l129.5-.2m0-7.2-129.5.1c-8.3 0-15.2 6.8-15.1 15.1l.1 128.7c0 8.3 6.8 15.1 15.2 15l129.5-.1c8.3 0 15.2-6.8 15.1-15.1l-.1-128.7c0-8.3-6.8-15-15.2-15z"/>
+              <path fill="#DBC0F9" d="M199.3 62.7c4.3 0 7.9 3.5 7.9 7.8l.1 128.7c0 4.3-3.5 7.8-7.8 7.8l-129.5.1c-4.3 0-7.9-3.5-7.9-7.8l-.2-128.6c0-4.3 3.5-7.8 7.8-7.8l129.6-.2m0-7.2-129.5.1c-8.3 0-15.2 6.8-15.1 15.1l.1 128.7c0 8.3 6.8 15.1 15.2 15l129.5-.1c8.3 0 15.2-6.8 15.1-15.1l-.1-128.7c0-8.3-6.9-15-15.2-15z"/>
+            </svg>
+            <a class="navigation-logo" href="#">
+              <span class="navigation-logo__name js_navigation-item-name"></span>
+            </a>
+            <!-- NAVIGATION -->
+            <ul>
+            <li>
+              <a class="navigation-link current" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M19.5,20.2V3.8h3v16.5"/>
+                <path class="st0" d="M13.5,20.2v-9h3v9"/>
+                <path class="st0" d="M7.5,20.2v-12h3v12"/>
+                <path class="st0" d="M1.5,20.2v-4.5h3v4.5"/>
+                <path class="st0" d="M23.2,20.2H0.8"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Physician
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M3,2.2v16.5 M12,14.3v7.5 M12,2.2v7.5 M21,5.2v16.5"/>
+                <circle class="st0" cx="3" cy="21" r="2.2"/>
+                <circle class="st0" cx="21" cy="3" r="2.2"/>
+                <circle class="st0" cx="12" cy="12" r="2.2"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Admin
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M9,19.5c1.7,0,3,1.3,3,3V6c0-1.7-1.3-3-3-3H0.8v16.5H9z M12,6c0-1.7,1.3-3,3-3h8.2v16.5H15c-1.7,0-3,1.3-3,3"/>
+                <path class="st0" d="M3.8,6.7H9 M3.8,9.7H9 M3.8,12.7H9 M3.8,15.7H9 M15,6.7h5.2 M15,9.7h5.2 M15,12.7h5.2 M15,15.7h5.2"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Education
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M4.5,5.2V0.8h18v22.5h-6.8"/>
+                <path class="st0" d="M1.5,5.2h14.2v18H1.5V5.2z M5.2,9H12 M5.2,12.8H12 M5.2,15.8H9"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Documentation
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M9.6,22.9l-2.1-6.4l-6.3-2.1L14.4,1.1l7.9,0.5l0.5,8L9.6,22.9z"/>
+                <circle class="st0" cx="18" cy="6" r="1.5"/>
+                <path class="st0" d="M8.5,13.3L13.9,8 M10.7,15.4l3.2-3.2"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Inventory
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M9.8,11.5v4.9L15,14L9.8,11.5z"/>
+                <path class="st0" d="M0.8,6.2v14h22.5v-14 M23.2,6.8v-3H0.8v3 M9.2,3.8l-2,4 M16.8,3.8l-2,4"/>
+                <path class="st0" d="M0.8,7.8h22.5"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Marketing
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <circle class="st0" cx="12" cy="12" r="5.2"/>
+                <path class="st0" d="M22.1,10.1c-0.5,0-1-0.3-1.1-0.8c-0.2-0.6-0.4-1.2-0.7-1.7c-0.3-0.5-0.2-1,0.2-1.4c0.5-0.5,0.5-1.2,0-1.6l-1-1
+                  c-0.5-0.5-1.2-0.5-1.6,0c-0.4,0.4-0.9,0.4-1.4,0.2c-0.5-0.3-1.1-0.5-1.7-0.7c-0.5-0.1-0.8-0.6-0.8-1.1c0-0.6-0.5-1.2-1.2-1.2h-1.4
+                  c-0.6,0-1.2,0.5-1.2,1.2c0,0.5-0.3,1-0.8,1.1C8.7,3.2,8.1,3.4,7.6,3.7C7.1,4,6.6,3.9,6.2,3.5C5.7,3.1,5,3.1,4.6,3.5l-1,1
+                  C3.1,5,3.1,5.7,3.5,6.2C3.9,6.6,4,7.1,3.7,7.6C3.4,8.1,3.2,8.7,3,9.3c-0.1,0.5-0.6,0.8-1.1,0.8c-0.6,0-1.2,0.5-1.2,1.2v1.4
+                  c0,0.6,0.5,1.2,1.2,1.2c0.5,0,1,0.3,1.1,0.8c0.2,0.6,0.4,1.2,0.7,1.7c0.3,0.5,0.2,1-0.2,1.4c-0.5,0.5-0.5,1.2,0,1.6l1,1
+                  c0.5,0.5,1.2,0.5,1.6,0c0.4-0.4,0.9-0.4,1.4-0.2c0.5,0.3,1.1,0.5,1.7,0.7c0.5,0.1,0.8,0.6,0.8,1.1c0,0.6,0.5,1.2,1.2,1.2h1.4
+                  c0.6,0,1.2-0.5,1.2-1.2c0-0.5,0.3-1,0.8-1.1c0.6-0.2,1.2-0.4,1.7-0.7c0.5-0.3,1-0.2,1.4,0.2c0.5,0.5,1.2,0.5,1.6,0l1-1
+                  c0.5-0.5,0.5-1.2,0-1.6c-0.4-0.4-0.4-0.9-0.2-1.4c0.3-0.5,0.5-1.1,0.7-1.7c0.1-0.5,0.6-0.8,1.1-0.8c0.6,0,1.2-0.5,1.2-1.2v-1.4
+                  C23.2,10.6,22.7,10.1,22.1,10.1z"/>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Engineering
+              </span>
+              </a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+                <path class="st0" d="M15.5,11.6L17,9.9c0.3-0.3,0.8-0.5,1.3-0.4c2.4,0.3,4.6-1.4,4.9-3.8c0-0.2,0-0.4,0-0.6c0-0.1,0-0.3,0-0.4
+                  l-2.6,1.7c-0.2,0.1-0.4,0.1-0.6,0L19,5.5c-0.1-0.1-0.1-0.1-0.2-0.2l-0.3-1.2c-0.1-0.2,0-0.4,0.2-0.6l3-1.7c-1.9-1.6-4.6-1.3-6.2,0.5
+                  c-0.8,0.9-1.1,2.2-1,3.4c0.1,0.5-0.1,0.9-0.4,1.3l-2.7,2.7"/>
+                <path class="st0" d="M9.7,11.3L7,14.1c-0.3,0.3-0.8,0.5-1.3,0.4c-0.2,0-0.4,0-0.5,0c-2.4,0-4.4,1.9-4.4,4.3c0,0.2,0,0.5,0.1,0.7
+                  l3-1.9c0.2-0.1,0.4-0.1,0.6,0l1.1,0.9c0.1,0.1,0.1,0.1,0.2,0.2L5.9,20c0.1,0.2,0,0.4-0.2,0.6l-3.2,1.8c0.8,0.6,1.9,0.9,2.9,0.9
+                  c2.4-0.2,4.3-2.2,4.1-4.7c0-0.1,0-0.2,0-0.3c-0.1-0.5,0.1-0.9,0.4-1.3l1.8-1.8"/>
+                <g>
+                  <path class="st0" d="M12,10.6L6.2,4.7l-0.4-2L2,1L1.3,1.8l1.6,3.8l2,0.4l5.8,5.9"/>
+                  <path class="st0" d="M22.5,18.5l-5.1-5.1c-0.4-0.4-1-0.7-1.6-0.8l-1.7-2.5c-0.3-0.5-0.9-0.6-1.4-0.3c-0.1,0-0.1,0.1-0.2,0.2
+                    l-2.5,2.5c-0.4,0.4-0.4,1,0,1.4c0.1,0.1,0.1,0.1,0.2,0.2l2.4,1.7c0.1,0.6,0.4,1.2,0.8,1.6l5.1,5.1c1.1,1.1,2.9,1.1,4,0
+                    C23.6,21.4,23.6,19.6,22.5,18.5z"/>
+                </g>
+                </svg>
+                <span class="navigation-link__name js_navigation-item-name">
+                Service
+              </span>
+              </a>
+            </li>
+          </ul>
+          <a class="navigation-link report-event" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-grid">
+            <path d="M9.8,14.2v7.9l3.9-5.5"/>
+            <path d="M1.1,10.9l21-9l-3.4,18l-9-5.6L1.1,10.9z M22.1,1.9L9.8,14.2"/>
+            </svg>
+            <span class="navigation-link__name js_navigation-item-name">Report an Event</span>
+          </a>
+
+          <!-- Account -->
+          <ul class="account">
+            <li class="account-toggle">
+              <a href="#">
+                <div class="notification-badge"></div>
+                <img src="assets/images/avatar.png" width="40" height="40">
+                <span class="navigation-link__name js_navigation-item-name">
+                  Dr. Cristina Yang
+                </span>
+              </a>
+              <ul class="account-menu">
+                  <li><a href="#">Account Settings</a></li>
+                  <li><a href="#">Notifications <span>2</span></a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <nav class="navigation-secondary">
+          <ul>
+            <li>
+              <a href="index.html">At a Glance</a>
+            </li>
+            <li class="current">
+              <a href="case-details.html">My Cases</a>
+            </li>
+            <li>
+              <a href="#">My Systems</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="heading-dashboard">
+          <h1>Case Details</h1>
+          <div class="light-dark-toggle">
+            <input type="checkbox" id="mode" checked>
+            <label for="mode">
+              <span class="inner--content">
+                <span class="toggle-mode light-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </span>
+                <span class="toggle-mode dark-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="case-details-top">
+          <div class="case-metrics item">
+            <span class="icon-pinned"></span>
+            <div class="metric">
+              <h5 class="item-title">Date</h5>
+              <div class="item-details">
+                <div>
+                  <span class="primary-figure">February 24th, 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="metric">
+              <h5 class="item-title">Time</h5>
+              <div class="item-details">
+                <div>
+                  <span class="primary-figure">8:18:48 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="metric">
+              <h5 class="item-title">Duration</h5>
+              <div class="item-details">
+                <div>
+                  <span class="primary-figure">45 minutes</span>
+                </div>
+              </div>
+            </div>
+            <div class="metric">
+              <h5 class="item-title">ID</h5>
+              <div class="item-details">
+                <div>
+                  <span class="primary-figure">28d48</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button open-button-case-table">
+            View Case Listing
+          </div>
+          <dialog class="modal" id="modal-case-table">
+            <div class="result-listing" id="procedures-table">
+              <h3>Case Listing</h3>
+              <div class="item primary-charts">
+                <div class="chart-details">
+                  <table class="responsive-table sortable wrapper-filters">
+                    <thead>
+                      <tr>
+                        <th width="55%">
+                          <form action="/" method="get" class="dates">
+                            <strong class="filter-heading"><span class="icon-calendar"></span> Filter by Date</strong>
+                            <div>
+                              <div class="field-item">
+                                <label class="sr-only" for="start-date">Start Date</label>
+                                <input class="no-bg" id="start-date" max="12-31-2100" min="01-01-2010" name="start-date" type="date" value="2020-01-01">
+                              </div>
+                              <span class="date-range">to</span>
+                              <div class="field-item">
+                                <label class="sr-only" for="end-date">End Date</label>
+                                <input class="no-bg" id="end-date" max="12-31-2100" min="01-01-2010" name="end-date" type="date" value="2022-10-24">
+                              </div>
+                            </div>
+                          </form>
+                        </th>
+                        <th width="45%">
+                          <form action="/" method="get" class="dates duration">
+                            <strong class="filter-heading"><span class="icon-clock"></span> Filter by Duration</strong>
+                            <div>
+                              <div class="field-item">
+                                <label class="sr-only" for="min-duration">Minimum Duration</label>
+                                <input class="no-bg" id="min-duration" name="min-duration" type="text" placeholder="1 hour">
+                              </div>
+                              <span class="date-range">to</span>
+                              <div class="field-item">
+                                <label class="sr-only" for="max-duration">Maximum Duration</label>
+                                <input class="no-bg" id="max-duration" name="max-duration" type="text" placeholder="4 hours">
+                              </div>
+                            </div>
+                          </form>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+              <table class="responsive-table sortable wrapper-case-listings">
+                <thead>
+                  <tr>
+                    <th width="55%">Date</th>
+                    <th width="45%">Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="current">
+                    <td>02/24/2022 <br> 8:18 am</td>
+                    <td>2h 24m</td>
+                  </tr>
+                  <tr>
+                    <td>11/17/2021 <br> 9:23 am</td>
+                    <td>1h 56m</td>
+                  </tr>
+                  <tr>
+                    <td>10/23/2021 <br> 10:47 am</td>
+                    <td>3h 47m</td>
+                  </tr>
+                  <tr>
+                    <td>08/17/2021 <br> 3:16 pm</td>
+                    <td>1h 39m</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="item cta-button cta-button-close">
+                <button class="button close-button-case-table" title="Close">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 640 640">
+                    <path fill="#fff" d="M342.627 336l276.686-276.687c6.249-6.248 6.249-16.379 0-22.627s-16.379-6.249-22.627 0l-276.686 276.687-276.687-276.686c-6.248-6.249-16.379-6.249-22.627 0s-6.249 16.379 0 22.627l276.687 276.686-276.686 276.687c-6.249 6.248-6.249 16.379 0 22.627 3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687l276.687-276.686 276.687 276.687c3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687c6.249-6.248 6.249-16.379 0-22.627l-276.686-276.686z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </dialog>
+        </div>
+
+        <div class="case-details-wrapper">
+          <div class="case-details-media">
+            <div class="media-wrapper">
+              <div class="video">
+                <h3>Case Video</h3>
+                <video width="100%" src="assets/images/ch0_2022-24-02_08-18-51_PST_blurred.mp4"  poster="assets/images/video-poster.jpg" controls></video>
+                <div class="video-actions">
+                  <a href="#" class="button open-button-video-notes">Comments</a>
+                  <a href="#" class="button">Create Clip</a>
+                  <a href="#" class="button open-button-video-share">Share Video</a>
+                </div>
+                <dialog class="modal" id="modal-video-notes">
+                  <h3>Case Video</h3>
+                  <video width="100%" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"  poster="assets/images/video-poster.jpg" controls></video>
+                  <br>
+                  <form class="form" method="dialog">
+                    <label>Add Comment <div class="video-comment-timestamp"><span class="icon-clock"></span> 2m43s</div></label>
+                    <textarea rows="1"></textarea>
+                    <div class="item cta-button">
+                      <button class="button" type="submit">Add Comment at 2m43s</button>
+                    </div>
+                  </form>
+                  <div class="case-note-entries">
+                    <div class="case-note-entry">
+                      <h4>Comment from Dr. Miller <div class="video-comment-timestamp"><span class="icon-clock"></span> 2m43s</div></h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut facilisis lectus, sed rhoncus tellus. Donec posuere felis nec ipsum vulputate, eu efficitur nisl elementum. Morbi dictum lectus nec mattis fringilla. Nam at luctus ligula, sit amet pharetra ex. Ut eu tellus egestas, luctus orci non, mattis felis. Ut sed odio sed massa sagittis aliquet. Integer lobortis dui sed quam lobortis accumsan. Suspendisse dictum tellus eu massa pulvinar convallis.
+                      </p>
+                      <a href="#" class="video-reply-link">Reply</a>
+                      <p class="video-reply">
+                        <strong>Dr. Cristina Yang replied:</strong><br>
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut venenatis eu tellus porttitor vehicula. Nulla sed eros in dolor sagittis malesuada.
+                      </p>
+
+                    </div>
+                    <div class="case-note-entry">
+                      <h4>Comment from Dr. Jones <div class="video-comment-timestamp"><span class="icon-clock"></span> 17m03s</div></h4>
+                      <p>
+                        Suspendisse a felis finibus, tempor mauris fringilla, vehicula tortor. Maecenas eget libero augue. Donec malesuada ultricies arcu in luctus. Aenean ultricies diam nibh, ut consectetur sem blandit vel. Sed placerat rhoncus enim vel scelerisque. Donec lacus felis, aliquet non pharetra in, finibus in orci. Phasellus in mauris at purus rhoncus pharetra id nec magna. Pellentesque ut venenatis velit. Phasellus sed mauris ac justo iaculis ultrices.
+                      </p>
+                      <a href="#" class="video-reply-link">Reply</a>
+                    </div>
+                    <div class="case-note-entry">
+                      <h4>Comment from Dr. Williams <div class="video-comment-timestamp"><span class="icon-clock"></span> 8m34s</div></h4>
+                      <p>Mauris id nunc a augue aliquam lacinia. Sed gravida pellentesque erat. Nullam vehicula dictum tortor sed tempus. Sed hendrerit bibendum ipsum, eget posuere ex finibus sit amet. Donec at pretium felis. Maecenas rhoncus eget nulla vitae convallis. Duis eget quam dui. Suspendisse risus risus, dictum ut ultrices non, consequat at enim.</p>
+                      <a href="#" class="video-reply-link">Reply</a><br>
+                    </div>
+                   </div>
+                  <div class="item cta-button cta-button-close">
+                    <button class="button close-button-video-notes">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 640 640">
+                        <path fill="#fff" d="M342.627 336l276.686-276.687c6.249-6.248 6.249-16.379 0-22.627s-16.379-6.249-22.627 0l-276.686 276.687-276.687-276.686c-6.248-6.249-16.379-6.249-22.627 0s-6.249 16.379 0 22.627l276.687 276.686-276.686 276.687c-6.249 6.248-6.249 16.379 0 22.627 3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687l276.687-276.686 276.687 276.687c3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687c6.249-6.248 6.249-16.379 0-22.627l-276.686-276.686z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </dialog>
+              </div>
+              <div class="gallery">
+                <h3>Case Images</h3>
+                <img src="assets/images/case-image.jpg" width="100%">
+                <div class="wrapper-thumbnails">
+                  <img class="current" src="assets/images/case-image.jpg" width="100%">
+                  <img src="assets/images/case-image-2.jpg" width="100%">
+                  <img src="assets/images/case-image-3.jpg" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="media-comments">
+              <div class="comment">
+                <h4>Comment from Dr. Miller <div class="video-comment-timestamp"><span class="icon-clock"></span> 2m43s</div></h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut facilisis lectus, sed rhoncus tellus. Donec posuere felis nec ipsum vulputate, eu efficitur nisl elementum. Morbi dictum lectus nec mattis fringilla. Nam at luctus ligula, sit amet pharetra ex. Ut eu tellus egestas, luctus orci non, mattis felis. Ut sed odio sed massa sagittis aliquet. Integer lobortis dui sed quam lobortis accumsan. Suspendisse dictum tellus eu massa pulvinar convallis.
+                </p>
+                <a href="#" class="video-reply-link">Reply</a>
+                <p class="video-reply">
+                  <strong>Dr. Cristina Yang replied:</strong><br>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut venenatis eu tellus porttitor vehicula. Nulla sed eros in dolor sagittis malesuada.
+                </p>
+
+              </div>
+              <div class="comment">
+                <h4>Comment from Dr. Jones <div class="video-comment-timestamp"><span class="icon-clock"></span> 17m03s</div></h4>
+                <p>
+                  Suspendisse a felis finibus, tempor mauris fringilla, vehicula tortor. Maecenas eget libero augue. Donec malesuada ultricies arcu in luctus. Aenean ultricies diam nibh, ut consectetur sem blandit vel. Sed placerat rhoncus enim vel scelerisque. Donec lacus felis, aliquet non pharetra in, finibus in orci. Phasellus in mauris at purus rhoncus pharetra id nec magna. Pellentesque ut venenatis velit. Phasellus sed mauris ac justo iaculis ultrices.
+                </p>
+                <a href="#" class="video-reply-link">Reply</a>
+              </div>
+              <div class="comment">
+                <h4>Comment from Dr. Williams <div class="video-comment-timestamp"><span class="icon-clock"></span> 8m34s</div></h4>
+                <p>Mauris id nunc a augue aliquam lacinia. Sed gravida pellentesque erat. Nullam vehicula dictum tortor sed tempus. Sed hendrerit bibendum ipsum, eget posuere ex finibus sit amet. Donec at pretium felis. Maecenas rhoncus eget nulla vitae convallis. Duis eget quam dui. Suspendisse risus risus, dictum ut ultrices non, consequat at enim.</p>
+                <a href="#" class="video-reply-link">Reply</a><br>
+              </div>
+            </div>
+          </div>
+          <div class="case-details-images">
+
+          </div>
+        </div>
+
+        <div class="case-details-case-notes">
+          <h3>Pinned Notes</h3>
+          <div>
+            <div class="item case-details--case-notes-card-entry">
+              <h4><span class="icon-pinned-fill"></span> March 27, 2022</h4>
+              <div class="case-details--case-notes-card-entry-details">
+                <p class="truncate-pinned">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut facilisis lectus, sed rhoncus tellus. Donec posuere felis nec ipsum vulputate, eu efficitur nisl elementum. Morbi dictum lectus nec mattis fringilla. Nam at luctus ligula, sit amet pharetra ex. Ut eu tellus egestas, luctus orci non, mattis felis. Ut sed odio sed massa sagittis aliquet. Integer lobortis dui sed quam lobortis accumsan. Suspendisse dictum tellus eu massa pulvinar convallis. Praesent laoreet, lacus ut efficitur bibendum, ligula turpis vulputate magna, dictum aliquet enim nulla sed lorem. Nunc sit amet iaculis massa, nec placerat elit. Phasellus purus ante, blandit nec mauris vitae, hendrerit laoreet leo.</p>
+              </div>
+            </div>
+            <div class="item case-details--case-notes-card-entry">
+              <h4><span class="icon-pinned-fill"></span> March 9, 2022</h4>
+              <div class="case-details--case-notes-card-entry-details">
+                <p class="truncate-pinned">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut facilisis lectus, sed rhoncus tellus. Donec posuere felis nec ipsum vulputate, eu efficitur nisl elementum. Morbi dictum lectus nec mattis fringilla. Nam at luctus ligula, sit amet pharetra ex. Ut eu tellus egestas, luctus orci non, mattis felis. Ut sed odio sed massa sagittis aliquet. Integer lobortis dui sed quam lobortis accumsan. Suspendisse dictum tellus eu massa pulvinar convallis. Praesent laoreet, lacus ut efficitur bibendum, ligula turpis vulputate magna, dictum aliquet enim nulla sed lorem. Nunc sit amet iaculis massa, nec placerat elit. Phasellus purus ante, blandit nec mauris vitae, hendrerit laoreet leo.</p>
+              </div>
+            </div>
+            <div class="item case-details--case-notes-card-entry">
+              <h4><span class="icon-pinned-fill"></span> February 27, 2022</h4>
+              <div class="case-details--case-notes-card-entry-details">
+                <p class="truncate-pinned">Mauris id nunc a augue aliquam lacinia. Sed gravida pellentesque erat. Nullam vehicula dictum tortor sed tempus. Sed hendrerit bibendum ipsum, eget posuere ex finibus sit amet. Donec at pretium felis. Maecenas rhoncus eget nulla vitae convallis. Duis eget quam dui. Suspendisse risus risus, dictum ut ultrices non, consequat at enim.</p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="item cta-button">
+            <button class="button open-button">View All Case Notes</button>
+          </div>
+          <dialog class="modal" id="modal">
+            <h3>My Case Notes</h3><br>
+            <form class="form" method="dialog">
+              <label>Add New Case Note</label>
+              <textarea></textarea>
+              <div class="item cta-button">
+                <button class="button" type="submit">Save Note</button>
+              </div>
+            </form>
+            <div class="case-note-entries">
+            <h3>Previous Notes</h3>
+              <div class="case-note-entry">
+                <h4><span class="icon-pinned-fill"></span> October 27, 2022</h4>
+                <p class="truncate-notes">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut facilisis lectus, sed rhoncus tellus. Donec posuere felis nec ipsum vulputate, eu efficitur nisl elementum. Morbi dictum lectus nec mattis fringilla. Nam at luctus ligula, sit amet pharetra ex. Ut eu tellus egestas, luctus orci non, mattis felis. Ut sed odio sed massa sagittis aliquet. Integer lobortis dui sed quam lobortis accumsan. Suspendisse dictum tellus eu massa pulvinar convallis. Praesent laoreet, lacus ut efficitur bibendum, ligula turpis vulputate magna, dictum aliquet enim nulla sed lorem. Nunc sit amet iaculis massa, nec placerat elit. Phasellus purus ante, blandit nec mauris vitae, hendrerit laoreet leo.
+                </p>
+              </div>
+              <div class="case-note-entry">
+                <h4><span class="icon-pinned"></span> August 14, 2022</h4>
+                <p class="truncate-notes">
+                  Suspendisse a felis finibus, tempor mauris fringilla, vehicula tortor. Maecenas eget libero augue. Donec malesuada ultricies arcu in luctus. Aenean ultricies diam nibh, ut consectetur sem blandit vel. Sed placerat rhoncus enim vel scelerisque. Donec lacus felis, aliquet non pharetra in, finibus in orci. Phasellus in mauris at purus rhoncus pharetra id nec magna. Pellentesque ut venenatis velit. Phasellus sed mauris ac justo iaculis ultrices.
+                </p>
+              </div>
+              <div class="case-note-entry">
+                <h4><span class="icon-pinned-fill"></span> July 9, 2022</h4>
+                <p class="truncate-notes">Mauris id nunc a augue aliquam lacinia. Sed gravida pellentesque erat. Nullam vehicula dictum tortor sed tempus. Sed hendrerit bibendum ipsum, eget posuere ex finibus sit amet. Donec at pretium felis. Maecenas rhoncus eget nulla vitae convallis. Duis eget quam dui. Suspendisse risus risus, dictum ut ultrices non, consequat at enim.</p>
+              </div>
+              <div class="case-note-entry">
+                <h4><span class="icon-pinned-filled"></span> June 15, 2022</h4>
+                <p class="truncate-notes">Mauris id nunc a augue aliquam lacinia. Sed gravida pellentesque erat. Nullam vehicula dictum tortor sed tempus. Sed hendrerit bibendum ipsum, eget posuere ex finibus sit amet. Donec at pretium felis. Maecenas rhoncus eget nulla vitae convallis. Duis eget quam dui. Suspendisse risus risus, dictum ut ultrices non, consequat at enim.</p>
+              </div>
+             </div>
+            <div class="item cta-button cta-button-close">
+              <button class="button close-button">
+              	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 640 640">
+                  <path fill="#fff" d="M342.627 336l276.686-276.687c6.249-6.248 6.249-16.379 0-22.627s-16.379-6.249-22.627 0l-276.686 276.687-276.687-276.686c-6.248-6.249-16.379-6.249-22.627 0s-6.249 16.379 0 22.627l276.687 276.686-276.686 276.687c-6.249 6.248-6.249 16.379 0 22.627 3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687l276.687-276.686 276.687 276.687c3.124 3.124 7.218 4.686 11.313 4.686s8.189-1.562 11.313-4.687c6.249-6.248 6.249-16.379 0-22.627l-276.686-276.686z"></path>
+                </svg>
+              </button>
+            </div>
+          </dialog>
+        </div>
+    </main>
+  </div>
+
+    <script type="text/javascript" src="assets/js/nav-option1.js"></script>
+    <script type="text/javascript" src="./assets/js/case-details.js"></script>
+</body>
+
+<!-- Mobile Nav -->
+<script type="text/javascript">
+  // Select the button
+  const btn = document.querySelector('.hamburger');
+
+  // Listen for a click on the button
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('navigation-mobile-open');
+  })
+</script>
+
+<script type="text/javascript">
+  const modal = document.querySelector("#modal");
+  const openModal = document.querySelector(".open-button");
+  const closeModal = document.querySelector(".close-button");
+
+  openModal.addEventListener("click", () => {
+    modal.showModal();
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.close();
+  });
+</script>
+
+<script type="text/javascript">
+  const modalCaseTable = document.querySelector("#modal-case-table");
+  const openModalCaseTable = document.querySelector(".open-button-case-table");
+  const closeModalCaseTable = document.querySelector(".close-button-case-table");
+
+  openModalCaseTable.addEventListener("click", () => {
+    modalCaseTable.showModal();
+  });
+
+  closeModalCaseTable.addEventListener("click", () => {
+    modalCaseTable.close();
+  });
+</script>
+
+<script type="text/javascript">
+  const modalVideoNotes = document.querySelector("#modal-video-notes");
+  const openModalVideoNotes = document.querySelector(".open-button-video-notes");
+  const closeModalVideoNotes = document.querySelector(".close-button-video-notes");
+
+  openModalVideoNotes.addEventListener("click", () => {
+    modalVideoNotes.showModal();
+  });
+
+  closeModalVideoNotes.addEventListener("click", () => {
+    modalVideoNotes.close();
+  });
+</script>
+
+<script type="text/javascript">
+//   const modalVideoShare = document.querySelector("#modal-video-share");
+//   const openModalVideoShare = document.querySelector(".open-button-video-share");
+//   const closeModalVideoShare = document.querySelector(".close-button-video-share");
+
+//   openModalVideoShare.addEventListener("click", () => {
+//     modalVideoShare.showModal();
+//   });
+
+//   closeModalVideoShare.addEventListener("click", () => {
+//     modalVideoShare.close();
+//   });
+</script>
+
+<script type="text/javascript">
+// requires jquery
+$(document).ready(function() {
+  (function() {
+    // var showChar = 280;
+    // var ellipsestext = "...";
+
+    // $(".truncate").each(function() {
+    //   var content = $(this).html();
+    //   if (content.length > showChar) {
+    //     var c = content.substr(0, showChar);
+    //     var h = content;
+    //     var html =
+    //       '<div class="truncate-text" style="display:block">' +
+    //       c +
+    //       '<span class="moreellipses">' +
+    //       ellipsestext +
+    //       '&nbsp;&nbsp;<a href="" class="moreless more">more</a></span></span></div><div class="truncate-text" style="display:none">' +
+    //       h +
+    //       '<a href="" class="moreless less">Less</a></span></div>';
+
+    //     $(this).html(html);
+    //   }
+    // });
+
+    // $(".moreless").click(function() {
+    //   var thisEl = $(this);
+    //   var cT = thisEl.closest(".truncate-text");
+    //   var tX = ".truncate-text";
+
+    //   if (thisEl.hasClass("less")) {
+    //     cT.prev(tX).toggle();
+    //     cT.slideToggle();
+    //   } else {
+    //     cT.toggle();
+    //     cT.next(tX).fadeToggle();
+    //   }
+    //   return false;
+    // });
+    /* end iffe */
+  })();
+
+  /* end ready */
+});
+</script>
+
+</html>

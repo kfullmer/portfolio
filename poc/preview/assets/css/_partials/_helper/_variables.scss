@@ -1,0 +1,78 @@
+// Helper: Variables
+// -------------------------------------------------
+
+// Colors
+// -------------------------
+
+// Red
+$red:                       	#c8102e;
+
+// Grayscale
+$white:                     	#FFFFFF;
+$background-gray:           	#f2f2f2;
+$light-gray:                	#e9e9ea;
+$gray:                      	#c9cacd;
+$dark-gray:                 	#73767c;
+$black:                     	#282c36;
+
+// Dark Mode
+$dark-mode-gray: 						#2a2a2a;
+$dark-mode-dark-gray: 			#171717;
+$dark-mode-black: 				  #0d0d0d;
+
+// Accent Colors
+$sapphire: 										#025994;
+$ocean: 											#187E95;
+$sage: 												#98BCC0;
+$citrus: 											#DFD779;
+$melon: 											#DD8547;
+$plum: 												#8E1657;
+$action: 											#03EEF2;
+$green:												#00b074;
+
+// Primary Color - J&J Red
+$primary-color:             	#7215D8;
+$primary-color-lighten:     	lighten($primary-color, 5%);
+$primary-color-darken:      	darken($primary-color, 5%);
+$primary-color-transparent: 	rgba($primary-color, .75);
+
+// Secondary Color - Ink
+$secondary-color:            	#9544ED;
+$secondary-color-lighten:    	lighten($secondary-color, 3%);
+$secondary-color-darken:     	darken($secondary-color, 3%);
+$secondary-color-transparent:	rgba($secondary-color, .75);
+
+// Tertiary Color - Ivory
+$tertiary-color:             	#DBC0F9;
+$tertiary-color-lighten:     	lighten($tertiary-color, 3%);
+$tertiary-color-darken:      	darken($tertiary-color, 5%);
+$tertiary-color-transparent: 	rgba($tertiary-color, .75);
+
+// Base Font Color
+$default-text-color:        	$black;
+
+// Links
+// -------------------------
+$link-color:                	$secondary-color;
+$link-color-hover:          	darken($link-color, 5%);
+$link-color-active:         	lighten($link-color, 5%);
+
+// Typography
+// -------------------------
+$base-font-family:          	"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+$base-font-size:            	0.9rem;
+$base-line-height:          	1.5;
+$relationship:              	1.5; // http://www.modularscale.com/?18&px&1.5&sass&text
+
+// Scaffolding
+// -------------------------
+$radius:                    	8px;
+$default-transition:        	200ms linear all;
+
+// Grid Variables
+// -------------------------
+$sm-screen: 									600px;   // the min-width of the medium grid
+$bpNav:     									700px;	 // nav breakpoint
+$md-screen: 									990px;   // the min-width of the large grid
+$lg-screen: 									1200px;  // the min-width of the xl grid
+$xl-screen: 									1800px;	 // the max-width of the website

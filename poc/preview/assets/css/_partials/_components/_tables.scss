@@ -1,0 +1,154 @@
+// Components: Tables
+// --------------------------------------------------
+
+// Components: Tables (http://codepen.io/geoffyuen/pen/FCBEg)
+// --------------------------------------------------
+table {
+  th, td {
+    text-align: left;
+    font-size: 1rem;
+  }
+  th {
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 0.5rem 2px;
+    color: white;
+    text-transform: uppercase;
+    &.center { text-align: center;}
+    .light-mode & {
+    	color: $black;
+    }
+  }
+
+  td {
+    font-weight: 300;
+    padding: 0.5rem;
+    color: white;
+    .light-mode & {
+    	color: $black;
+    }
+    &.no-data {
+      font-size: 1rem;
+      &:before { display: none; }
+    }
+  }
+}
+
+.responsive-table {
+  width: 100%;
+  margin: 0;
+  min-width: 230px;
+  border: 2px solid #0c2839;
+  .light-mode & {
+  	border: none;
+  }
+  border-radius: 0 0 8px 8px;
+
+  thead tr {
+    background: transparent;
+    display: none;
+    @media only screen and (min-width: 320px) { display: table-row; }
+  }
+
+  tr {
+    background: $primary-color;
+    &:nth-child(even) {background: $primary-color-lighten;}
+    &.current {
+    	background: $secondary-color;
+    }
+    .light-mode & {
+    	background: $background-gray;
+    	&:nth-child(even) {background: lighten($background-gray, 2%);}
+    	color: $black;
+    	&.current {
+    		background: $secondary-color;
+    		td {
+    			color: white;
+    		}
+    	}
+    }
+  }
+
+  tbody tr {
+    &:hover { cursor: pointer; }
+  }
+
+  td {
+    display: block;
+
+    &:before {
+      font-family: $base-font-family;
+      content: attr(data-th)": ";
+      font-weight: bold;
+      width: 9rem;
+      display: inline-block;
+      @media only screen and (min-width: 320px) { display: none; }
+    }
+    &.icon-link {
+      @media only screen and (min-width: 320px) { text-align: center; }
+    }
+  }
+
+  th,
+  td {
+    @media only screen and (min-width: 320px) { display: table-cell; }
+  }
+}
+
+// Sortable Table Styles
+// -------------------------
+.sortable {
+  th {
+    position: relative;
+    button {
+      position: absolute;
+      background: transparent;
+      border: none;
+      display: inline;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 1.25;
+      padding: 0.5rem 2px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      @media only screen and (min-width: $md-screen) { font-size: 0.8rem; }
+      @media only screen and (min-width: $lg-screen) { font-size: 0.75rem; }
+      @media only screen and (min-width: 1300px) { font-size: 0.8rem; }
+
+      span {
+        position: absolute;
+        margin-left: 10px;
+      }
+    }
+  }
+  th[aria-sort="descending"] span::after,
+  th[aria-sort="ascending"] span::after,
+  th:not([aria-sort]) button span::after {
+    font-family: 'neuwave';
+    color: $action;
+    font-size: 100%;
+  }
+
+  th[aria-sort="descending"] span::after {
+    content: "\f0dd";
+    margin-top: 5px;
+  }
+
+  th[aria-sort="ascending"] span::after {
+    content: "\f0de";
+    margin-top: 5px;
+  }
+
+  th:not([aria-sort]) button span::after {
+    content: "\f0dc";
+    top: 0;
+  }
+}

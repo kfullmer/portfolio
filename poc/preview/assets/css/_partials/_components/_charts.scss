@@ -1,0 +1,66 @@
+// Components: Charts (https://apexcharts.com/docs/installation/)
+// --------------------------------------------------
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon {
+	cursor: pointer !important;
+	width: 24px !important;
+	height: 24px !important;
+	line-height: 20px !important;
+	text-align: center !important;
+	margin-top: 0 !important;
+	svg {
+		fill: white !important;
+		&:hover {
+			fill: $secondary-color-darken !important;
+		}
+	}
+	.light-mode & {
+		svg {
+			fill: $default-text-color !important;
+		}
+	}
+}
+
+.apexcharts-reset-icon {
+	margin-left: 0 !important;
+	transform: scale(0.7) !important;
+	&:before {
+		content: " ";
+		background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0MCIgaGVpZ2h0PSI2NDAiIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj4KPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTYzNS4zMTMgMjc2LjY4NmMtNi4yNDgtNi4yNDgtMTYuMzc5LTYuMjQ4LTIyLjYyNyAwbC0zNi43NyAzNi43N2MtMS42NDQtNjUuOTI5LTI4LjA5Mi0xMjcuNjY5LTc0Ljg5Ny0xNzQuNDc1LTQ4LjM1MS00OC4zNTMtMTEyLjYzOS03NC45ODEtMTgxLjAxOS03NC45ODFzLTEzMi42NjcgMjYuNjI4LTE4MS4wMjAgNzQuOTgtNzQuOTggMTEyLjY0LTc0Ljk4IDE4MS4wMjAgMjYuNjI4IDEzMi42NjggNzQuOTggMTgxLjAyMCAxMTIuNjQgNzQuOTggMTgxLjAyMCA3NC45OGM5NS4xNzUgMCAxODEuOTUtNTIuMzEyIDIyNi40NjQtMTM2LjUyMiA0LjEzLTcuODEyIDEuMTQ0LTE3LjQ5My02LjY2OC0yMS42MjMtNy44MTQtNC4xMjctMTcuNDk0LTEuMTQ1LTIxLjYyMyA2LjY2OC0zOC45NTUgNzMuNjk2LTExNC44OTEgMTE5LjQ3Ny0xOTguMTczIDExOS40NzctMTIzLjUxNCAwLTIyNC0xMDAuNDg2LTIyNC0yMjRzMTAwLjQ4Ni0yMjQgMjI0LTIyNGMxMjEuMjU5IDAgMjIwLjMxMyA5Ni44NTQgMjIzLjg5IDIxNy4yNjJsLTM2LjU3Ni0zNi41NzZjLTYuMjQ4LTYuMjQ4LTE2LjM3OS02LjI0OC0yMi42MjcgMHMtNi4yNDkgMTYuMzc5IDAgMjIuNjI4bDY0IDY0YzMuMTI0IDMuMTI0IDcuMjE4IDQuNjg2IDExLjMxMyA0LjY4NnM4LjE4OS0xLjU2MiAxMS4zMTMtNC42ODdsNjQtNjRjNi4yNDktNi4yNDggNi4yNDktMTYuMzc4IDAtMjIuNjI3eiI+PC9wYXRoPgo8L3N2Zz4K);
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		display: block;
+		background-position: center;
+	}
+	.light-mode & {
+		&:before {
+			background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0MCIgaGVpZ2h0PSI2NDAiIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj4KPHBhdGggZmlsbD0iIzI4MmMzNiIgZD0iTTYzNS4zMTMgMjc2LjY4NmMtNi4yNDgtNi4yNDgtMTYuMzc5LTYuMjQ4LTIyLjYyNyAwbC0zNi43NyAzNi43N2MtMS42NDQtNjUuOTI5LTI4LjA5Mi0xMjcuNjY5LTc0Ljg5Ny0xNzQuNDc1LTQ4LjM1MS00OC4zNTMtMTEyLjYzOS03NC45ODEtMTgxLjAxOS03NC45ODFzLTEzMi42NjcgMjYuNjI4LTE4MS4wMjAgNzQuOTgtNzQuOTggMTEyLjY0LTc0Ljk4IDE4MS4wMjAgMjYuNjI4IDEzMi42NjggNzQuOTggMTgxLjAyMCAxMTIuNjQgNzQuOTggMTgxLjAyMCA3NC45OGM5NS4xNzUgMCAxODEuOTUtNTIuMzEyIDIyNi40NjQtMTM2LjUyMiA0LjEzLTcuODEyIDEuMTQ0LTE3LjQ5My02LjY2OC0yMS42MjMtNy44MTQtNC4xMjctMTcuNDk0LTEuMTQ1LTIxLjYyMyA2LjY2OC0zOC45NTUgNzMuNjk2LTExNC44OTEgMTE5LjQ3Ny0xOTguMTczIDExOS40NzctMTIzLjUxNCAwLTIyNC0xMDAuNDg2LTIyNC0yMjRzMTAwLjQ4Ni0yMjQgMjI0LTIyNGMxMjEuMjU5IDAgMjIwLjMxMyA5Ni44NTQgMjIzLjg5IDIxNy4yNjJsLTM2LjU3Ni0zNi41NzZjLTYuMjQ4LTYuMjQ4LTE2LjM3OS02LjI0OC0yMi42MjcgMHMtNi4yNDkgMTYuMzc5IDAgMjIuNjI4bDY0IDY0YzMuMTI0IDMuMTI0IDcuMjE4IDQuNjg2IDExLjMxMyA0LjY4NnM4LjE4OS0xLjU2MiAxMS4zMTMtNC42ODdsNjQtNjRjNi4yNDktNi4yNDggNi4yNDktMTYuMzc4IDAtMjIuNjI3eiI+PC9wYXRoPgo8L3N2Zz4K);
+			background-size: 24px 24px;
+		background-repeat: no-repeat;
+		}
+	}
+}
+
+// Tooltips
+// -------------------------
+.apexcharts-tooltip {
+  color: $default-text-color;
+  font-family: $base-font-family;
+  background: $background-gray;
+}
+
+.charts > * {
+	pointer-events: none;
+}
+
+// Case Diagnosis Donut Chart
+@media screen and (min-width: $lg-screen) {
+  #secondary-chart { margin-top: 1.5rem; }
+  #milestone-chart { margin-top: -1.5rem; }
+}

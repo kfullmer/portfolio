@@ -25,16 +25,13 @@ h1,
 h2.level-up {
     font-family: $sans-font-family;
     font-size: 2.5rem;
-    margin: .5rem 0;
+    margin: 0 0 2rem 0;
     font-weight: 300;
     line-height: 1;
     text-transform: uppercase;
     color: $mid-gray;
     @media only screen and (min-width: $mdScreen) {
-        .publish &,
-        .vascular-catalog & {
-            font-size: 3.5rem;
-        }
+        #work & { font-size: 3.5rem; }
     }
 }
 
@@ -83,9 +80,11 @@ h3 {
 
 h4 {
     font-family: $sans-font-family;
-    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     line-height: 1;
-    position: relative;
+    margin: 1rem 0;
+    color: $primaryColor;
 }
 
 p {

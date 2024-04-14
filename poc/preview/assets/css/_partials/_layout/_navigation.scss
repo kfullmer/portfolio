@@ -1,0 +1,595 @@
+// Layout: Navigation
+// -------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+
+$navigation-background-color: $dark-mode-dark-gray;
+$navigation-link-color: white;
+$navigation-link-hover-background-color: $primary-color;
+$navigation-item-height: 45px;
+$navigation-item-border-radius: $radius;
+$navigation-collapse-trigger-color: $dark-mode-gray;
+$navigation-collapse-trigger-color-lm: $primary-color;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.navigation-container ol, .navigation-container ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+// -------------- NAVIGATION CONTAINER
+
+.navigation-container {
+  position: relative;
+  width: 220px;
+  background-color: $navigation-background-color;
+
+  // Light Mode Styles
+  .light-mode & {
+    background-color: $background-gray;
+    transition: background .3s ease-in;
+  }
+}
+
+// -------------- NAVIGATION COLLAPSE TRIGGER
+
+.navigation-collapse-trigger {
+  bottom: 0;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
+  $this: &;
+  $navigation-collapse-trigger-orb-size: 25px;
+
+  // -------------- ORB
+
+  &__orb {
+    position: absolute;
+    width: $navigation-collapse-trigger-orb-size;
+    height: $navigation-collapse-trigger-orb-size;
+    border-radius: $navigation-collapse-trigger-orb-size;
+    background-color: $navigation-collapse-trigger-color;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(calc(-50% + 2px), 100px) scale(1);
+    transition: all 0.2s ease-out;
+    transition-delay: 0.1s;
+    left: 50%;
+
+    // Light Mode Styles
+    .light-mode & { background-color: $navigation-collapse-trigger-color-lm; }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    > svg {
+      stroke: white;
+      width: 80%;
+      height: auto;
+      transition: transform 0.2s ease-out;
+      margin-left: -2px;
+
+      [class$="--collapsed"] & {
+        transform: rotate(180deg);
+        margin-left: 2px;
+      }
+    }
+  }
+
+  // -------------- HOVER
+
+  &:hover {
+    ~ .navigation::before {
+      opacity: 1;
+    }
+  }
+}
+
+// -------------- NAVIGATION
+
+.navigation {
+  background-color: $navigation-background-color;
+  color: white;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  &:before {
+    background: linear-gradient(
+      180deg,
+      rgba($navigation-collapse-trigger-color, 0) 0%,
+      rgba($navigation-collapse-trigger-color, 1) 5%,
+      rgba($navigation-collapse-trigger-color, 1) 95%,
+      rgba($navigation-collapse-trigger-color, 0) 100%
+    );
+    bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width: 2px;
+    content: "";
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    transition-delay: 0.1s;
+  }
+
+  > ul:first-of-type {
+    border-bottom: 2px solid $dark-mode-gray;
+  }
+
+  // Report an Event
+  .report-event {
+    margin-top: 1.25rem;
+    background: $dark-mode-gray;
+    color: white;
+    &:hover { background: $primary-color; }
+  }
+
+  // Light Mode Styles
+  .light-mode & {
+    background-color: $background-gray;
+    color: $default-text-color;
+    transition: background .3s ease-in;
+
+    &:before {
+      background: linear-gradient(
+        180deg,
+        rgba($navigation-collapse-trigger-color-lm, 0) 0%,
+        rgba($navigation-collapse-trigger-color-lm, 1) 5%,
+        rgba($navigation-collapse-trigger-color-lm, 1) 95%,
+        rgba($navigation-collapse-trigger-color-lm, 0) 100%
+      );
+    }
+
+    > ul:first-of-type {
+      border-bottom: 2px solid $light-gray;
+    }
+    .report-event {
+      background: $light-gray;
+      color: $default-text-color;
+      svg {
+        stroke: $default-text-color !important;
+      }
+
+      &:hover {
+        background: $primary-color;
+        svg {
+          stroke: white !important;
+        }
+      }
+    }
+  }
+}
+
+// Account
+ul.account {
+  margin-top: 1.25rem;
+  li.account-toggle {
+    position:relative;
+    padding: 0 4px;
+    border-radius: $radius;
+    >a {
+      color: $navigation-link-color;
+      // Light Mode Styles
+      .light-mode & { color: $default-text-color; }
+    }
+
+    .notification-badge {
+      position: absolute;
+      left: 35px;
+      top: 0px;
+      width: 10px;
+      height: 10px;
+      background: $primary-color;
+      border-radius: 10px;
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      > ul.account-menu {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        z-index: 10000;
+        background: white;
+        border-radius: $radius;
+        padding: 1rem 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px 4px 14px 0px;
+        width: 200px;
+        transform: translateX(4px);
+
+        &:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-right: 7px solid white;
+          border-bottom: 5px solid transparent;
+          left: -7px;
+          position: absolute;
+          bottom: 10px;
+          transform: translateY(-50%);
+        }
+
+        span {
+          background: rgba($primary-color, .25);
+          padding: 3px 8px;
+          border-radius: $radius;
+          margin-left: 0.25rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+ul.account-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: transform 0.2s ease-out;
+  bottom: 0;
+  left: 80%;
+  display: block;
+  li {
+    padding-left: 0;
+    margin-bottom: 5px;
+    &:last-of-type { margin-bottom: 0; }
+    color: $default-text-color;
+    a {
+      color: $default-text-color;
+    }
+    &:hover {
+      a { text-decoration: underline; }
+    }
+  }
+  [class$="--collapsed"] & {
+    left: 56px;
+  }
+}
+
+// -------------- NAVIGATION LOGO
+
+svg.logo-mark {
+  width: 45px;
+  height: auto;
+  position: relative;
+  top: 2.5rem;
+}
+
+.navigation-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: calc(2.5rem - 45px) 0 2.5rem 0;
+
+  &__icon {
+    min-width: 32px;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+  .navigation-logo__name {
+    background: center no-repeat url(../images/logos/health-connective-logo-white.svg);
+    background-size: 168px 45px;
+    width: 168px;
+    height: 45px;
+
+    // Light Mode Styles
+    .light-mode & {
+      background: center no-repeat url(../images/logos/health-connective-logo.svg);
+    }
+  }
+}
+
+// -------------- NAVIGATION LINK
+
+.navigation-link {
+  display: block;
+  color: $navigation-link-color;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: $navigation-item-height;
+  margin-bottom: 1.25rem;
+  line-height: $navigation-item-height;
+  border-radius: $navigation-item-border-radius;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  white-space: nowrap;
+  $this: &;
+
+  &__icon {
+    min-width: 32px;
+  }
+
+  &__name {
+    margin-left: 12px;
+
+    // Collapsed state tooltip
+
+    [class$="--collapsed"] & {
+      padding: 0.5em;
+      line-height: 1;
+      border-radius: $radius;
+      color: $default-text-color;
+      transition: transform 0.2s ease-out;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      pointer-events: none;
+      position: absolute;
+      left: 48px;
+
+      &::before {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-right: 7px solid white;
+        border-bottom: 5px solid transparent;
+        left: -7px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $navigation-link-hover-background-color;
+    color: white !important;
+    svg {
+      stroke: white !important;
+    }
+
+
+    [class$="--collapsed"] & #{$this}__name {
+      position: absolute;
+      opacity: 1 !important;
+      font-size: 0.875rem;
+      transform: translateX(4px);
+      background: white;
+      left: 60px;
+      z-index: 100000;
+
+      &::before {
+        content: "";
+      }
+    }
+  }
+  &.current {
+  	background-color: $navigation-link-hover-background-color;
+    color: white !important;
+    svg {
+      stroke: white !important;
+    }
+  }
+
+  // Light Mode Styles
+  .light-mode & {
+    color: $default-text-color;
+  }
+}
+
+// Secondary Navigation
+
+.navigation-secondary {
+	ul {
+		list-style: none;
+		margin: 0;
+		margin-top: 3rem;
+		margin-bottom: 2vw;
+		padding: 0;
+		display: flex;
+		color: $tertiary-color;
+		li {
+      position: relative;
+			border-bottom: 2px solid $dark-mode-gray;
+			a {
+				color: white;
+				padding-right: 2rem;
+				padding-left: 0.5rem;
+				padding-bottom: 0.5rem;
+				display: inline-block;
+        @media screen and (min-width: $sm-screen) {
+          padding-right: 4rem;
+        }
+			}
+
+      &:after {
+        content: "";
+        background: $primary-color;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        transition: .16s all 0.025s;
+        left: 100%;
+        right: 0;
+      }
+
+			&:first-child {
+				a {
+					padding-left: 0;
+				}
+			}
+		}
+
+    li:hover ~ li::after {
+      left: 0;
+      right: 100%;
+    }
+
+    li:hover::after {
+      left: 0;
+      right: 0;
+    }
+	}
+
+  .current {
+		a {
+			font-weight: bold;
+		}
+    &:after {
+      background: $primary-color;
+      left: 0;
+      right: 0;
+    }
+	}
+
+  // Light Mode Styles
+  .light-mode & {
+    ul {
+      color: $default-text-color;
+      li {
+        border-bottom: 2px solid $light-gray;
+        a {
+          color: $default-text-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bpNav) {
+	.navigation-mobile {
+		display: flex;
+		flex-direction: row;
+    align-items: center;
+		justify-content: space-between;
+		padding: 1.25rem;
+		border-bottom: 2px solid $dark-mode-gray;
+
+    img:first-of-type { display: block; }
+    img:last-of-type { display: none; }
+
+    // Light Mode Styles
+    .light-mode & {
+      border-bottom: 2px solid $primary-color;
+      img:first-of-type { display: none; }
+      img:last-of-type { display: block; }
+    }
+	}
+	.navigation-container,
+	.navigation-collapse-trigger {
+		display: none;
+	}
+	.navigation-mobile-open {
+		.navigation-container {
+			display: grid;
+		}
+		.navigation > svg,
+		.navigation-logo {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $bpNav) {
+	.navigation-mobile {
+		display: none;
+	}
+}
+
+/* HAMBURGER 3 */
+
+.navigation-mobile-trigger {
+	.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+	}
+
+	.container {
+	    width: 70%;
+	    margin: 0 auto;
+	    display: flex;
+	    justify-content: space-between;
+	}
+
+	.hamburger {
+	    margin: 0 auto;
+	    width: 30px;
+	    height: 30px;
+	    position: relative;
+	}
+
+	.hamburger .bar {
+	    padding: 0;
+	    width: 30px;
+	    height: 4px;
+	    background-color: white;
+	    display: block;
+	    border-radius: 4px;
+	    transition: all 0.4s ease-in-out;
+	    position: absolute;
+      // Light Mode Styles
+      .light-mode & { background-color: $primary-color; }
+	}
+
+	.bar1 {
+	    top: 0;
+	}
+
+	.bar2,
+	.bar3 {
+	    top: 13.5px;
+	}
+
+	.bar3 {
+	    right: 0;
+	}
+
+	.bar4 {
+	    bottom: 0;
+	}
+}
+
+.hamburger3 .bar1 {
+    transform-origin: 5%;
+}
+
+.hamburger3 .bar4 {
+    transform-origin: 5%;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar1{
+    transform: rotate(45deg);
+    height: 3px;
+    width: 42px;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar3{
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar2{
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger3 > .bar4{
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 42px;
+}
