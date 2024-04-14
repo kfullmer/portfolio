@@ -16,9 +16,9 @@ const milestoneChartOptions = {
 	},
 	title: {
 		text: 'Total Cases Performed',
-		align: 'left',
+		align: 'center',
     margin: 10,
-    offsetY: 10,
+    offsetY: 30,
 		style: {
 			fontSize: '1.25rem',
 			fontWeight: '400',
@@ -97,7 +97,7 @@ const secondaryCharts = {
 	},
 	title: {
 		text: 'Case Complexity',
-		align: 'left',
+		align: 'center',
     margin: 20,
     offsetY: 10,
 		style: {

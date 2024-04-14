@@ -1188,7 +1188,7 @@ footer {
   .design-process .media {
     flex: 100%; }
     .design-process .media .two-col {
-      margin-top: 2rem;
+      margin-top: 3rem;
       display: flex;
       justify-content: space-around;
       flex-flow: column wrap; }
