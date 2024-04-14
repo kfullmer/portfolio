@@ -56,10 +56,6 @@ body {
         gap: 4rem;
         flex-flow: row nowrap;
     }
-    .poc & {
-        .column-left { flex: 2; }
-        .column-right { flex: 1; }
-    }
 }
 
 .intro-content {

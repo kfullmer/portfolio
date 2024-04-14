@@ -774,11 +774,6 @@ body {
     .flex-container {
       gap: 4rem;
       flex-flow: row nowrap; } }
-  .poc .flex-container .column-left {
-    flex: 2; }
-  .poc .flex-container .column-right {
-    flex: 1; }
-
 .intro-content {
   margin: 0 0 2rem 0; }
   .intro-content p {
@@ -1152,6 +1147,33 @@ footer {
     #work .project:hover .project-info {
       opacity: 1; }
 
+.overview {
+  padding: 0 0 4rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-flow: column wrap; }
+  @media only screen and (min-width: 990px) {
+    .overview {
+      padding: 2rem 0 4rem 0; } }
+  @media only screen and (min-width: 1200px) {
+    .overview {
+      gap: 4rem;
+      flex-flow: row nowrap;
+      align-items: center; } }
+  .overview .contributions h2 {
+    margin: 1.5rem 0; }
+  .overview .contributions .contributions-listing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem; }
+    .overview .contributions .contributions-listing div {
+      background: rgba(151, 153, 55, 0.15);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      color: #848630; }
+
 .problem-solution {
   background-color: #f7f7f7;
   padding: 4rem 0 3rem 0; }
@@ -1161,21 +1183,6 @@ footer {
     @media only screen and (min-width: 990px) {
       .problem-solution .section {
         gap: 4rem; } }
-.conclusion {
-  background-color: #f7f7f7;
-  padding: 4rem 0 3rem 0; }
-  .conclusion .wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    flex-flow: column wrap; }
-    .conclusion .wrapper .outcome {
-      flex: 2; }
-    @media only screen and (min-width: 990px) {
-      .conclusion .wrapper {
-        gap: 4rem;
-        flex-flow: row nowrap;
-        align-items: center; } }
 .design-process {
   padding: 4rem 0;
   display: flex;
@@ -1204,20 +1211,21 @@ footer {
         flex: 40%; }
       .design-process .media {
         flex: 60%; } }
-.contributions h2 {
-  margin: 1.5rem 0; }
-
-.contributions .contributions-listing {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  gap: 1rem; }
-  .contributions .contributions-listing div {
-    background: rgba(151, 153, 55, 0.15);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    color: #848630; }
-
+.conclusion {
+  background-color: #f7f7f7;
+  padding: 4rem 0 3rem 0; }
+  .conclusion .wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-flow: column wrap; }
+    .conclusion .wrapper .outcome {
+      flex: 2; }
+    @media only screen and (min-width: 990px) {
+      .conclusion .wrapper {
+        gap: 4rem;
+        flex-flow: row nowrap;
+        align-items: center; } }
 .publish-themes {
   margin: 4rem 0 0 0; }
   .publish-themes .image-column-container {
@@ -1225,9 +1233,6 @@ footer {
 
 .vascular-catalog .flex-container {
   margin: 2rem 0; }
-
-.poc .flex-container {
-  margin: 2rem 0 4rem 0; }
 
 .apexcharts-zoom-icon,
 .apexcharts-zoomin-icon,
@@ -1300,7 +1305,7 @@ footer {
         padding-bottom: 100%;
         position: relative;
         width: 100%; }
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 1200px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto; } } }

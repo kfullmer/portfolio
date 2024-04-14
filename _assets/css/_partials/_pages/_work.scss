@@ -68,7 +68,41 @@
     }
 }
 
-// Problem Solution Section
+// Overview
+.overview {
+	padding: 0 0 4rem 0;
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	flex-flow: column wrap;
+	@media only screen and (min-width: $mdScreen) {
+		padding: 2rem 0 4rem 0;
+	}
+	@media only screen and (min-width: $lgScreen) {
+		gap: 4rem;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+	.contributions {
+	    h2 {
+	    	margin: 1.5rem 0;
+	    }
+	    .contributions-listing {
+	        display: flex;
+	        flex-flow: row wrap;
+	        justify-content: flex-start;
+	        gap: 1rem;
+	        div {
+	        	background: rgba($secondaryColor, .15);
+	        	padding: 0.5rem 1rem;
+	        	border-radius: 20px;
+	        	color: darken($secondaryColor, 5%);
+	        }
+	    }
+	}
+}
+
+// Problem  & Solution
 .problem-solution {
 	background-color: $background-gray;
 	padding: 4rem 0 3rem 0;
@@ -79,23 +113,7 @@
 	}
 }
 
-.conclusion {
-	background-color: $background-gray;
-	padding: 4rem 0 3rem 0;
-	.wrapper {
-		display: flex;
-		align-items: flex-start;
-		gap: 2rem;
-		flex-flow: column wrap;
-		.outcome { flex: 2; }
-		@media only screen and (min-width: $mdScreen) {
-			gap: 4rem;
-			flex-flow: row nowrap;
-			align-items: center;
-		}
-	}
-}
-
+// Design Process
 .design-process {
 	padding: 4rem 0;
 	display: flex;
@@ -129,24 +147,23 @@
     }
 }
 
-.contributions {
-    h2 {
-    	margin: 1.5rem 0;
-    }
-    .contributions-listing {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        gap: 1rem;
-        div {
-        	background: rgba($secondaryColor, .15);
-        	padding: 0.5rem 1rem;
-        	border-radius: 20px;
-        	color: darken($secondaryColor, 5%);
-        }
-    }
+// Conclusion
+.conclusion {
+	background-color: $background-gray;
+	padding: 4rem 0 3rem 0;
+	.wrapper {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+		flex-flow: column wrap;
+		.outcome { flex: 2; }
+		@media only screen and (min-width: $mdScreen) {
+			gap: 4rem;
+			flex-flow: row nowrap;
+			align-items: center;
+		}
+	}
 }
-
 
 // P3 Publish
 // ------------------------
@@ -163,10 +180,6 @@
 
 // Physician Portal POC
 // ------------------------
-.poc {
-    .flex-container { margin: 2rem 0 4rem 0; }
-}
-
 .apexcharts-zoom-icon,
 .apexcharts-zoomin-icon,
 .apexcharts-zoomout-icon,
@@ -235,13 +248,9 @@
 			    width:100%;
 			}
 		}
-		@media screen and (min-width: $mdScreen) {
+		@media screen and (min-width: $lgScreen) {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: auto;
 		}
-		// @media screen and (min-width: $lgScreen) {
-		// 	grid-template-columns: 1fr .5fr .5fr;
-		// 	grid-template-rows: auto;
-		// }
 	}
 }
