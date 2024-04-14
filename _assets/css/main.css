@@ -969,7 +969,8 @@ footer {
     border-top: none;
     margin-top: 0 !important; }
 
-.gcb + .footer {
+.gcb + .footer,
+.olympus + .footer {
   margin-top: 0 !important; }
 
 .home {

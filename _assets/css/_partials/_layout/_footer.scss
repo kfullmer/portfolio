@@ -35,6 +35,7 @@ footer {
 }
 
 // Adjustments for GCB
-.gcb + .footer {
+.gcb + .footer,
+.olympus + .footer {
     margin-top: 0 !important;
 }
