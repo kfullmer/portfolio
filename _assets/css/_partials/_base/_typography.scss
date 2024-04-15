@@ -90,7 +90,7 @@ h4 {
 p {
     font-size: 1.2rem;
     margin: 1rem 0;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 400;
 }
 
@@ -131,29 +131,40 @@ address {
 
 // Lists
 // -------------------------
-// All Lists
-dl, ol, ul { }
+// // All Lists
+// dl, ol, ul { }
 
-// Unordered Lists
 ul {
-    list-style: none;
-    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
     padding: 0;
+    margin: 0 0 0 20px;
     li {
-        display: inline-block;
-        margin: 0 1rem;
-        text-transform: uppercase;
-        &:first-of-type {margin-left: 0;}
+        margin-top: 1rem;
     }
 }
-ul {
-  margin: 1.5rem auto;
-  font-size: 1.25rem;
-}
-// Ordered Lists
-ol {
-  li { }
-}
+
+// // Unordered Lists
+// ul {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     li {
+//         display: inline-block;
+//         margin: 0 1rem;
+//         text-transform: uppercase;
+//         &:first-of-type {margin-left: 0;}
+//     }
+// }
+// ul {
+//   margin: 1.5rem auto;
+//   font-size: 1.25rem;
+// }
+// // Ordered Lists
+// ol {
+//   li { }
+// }
 
 // Images
 // -------------------------
