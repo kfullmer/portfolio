@@ -544,11 +544,11 @@ template {
     .button[class^="icon-"]:before, .button[class*=" icon-"]:before {
       font-family: 'portfolio'; }
   .button.secondary {
-    background: #797b2c; }
+    background: #72732a; }
     .button.secondary:hover {
       background: white;
-      border: 2px solid #797b2c;
-      color: #797b2c; }
+      border: 2px solid #72732a;
+      color: #72732a; }
     .button.secondary:active {
       border: 2px solid #979937;
       color: #979937; }
@@ -639,7 +639,7 @@ h2 {
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
   margin: 0 0 .5rem 0; }
   h2 span {
-    color: #797b2c; }
+    color: #72732a; }
 
 h3 {
   text-transform: uppercase;
@@ -899,7 +899,7 @@ header {
     color: #979937;
     font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif; }
     .logo .title span {
-      color: #797b2c; }
+      color: #72732a; }
   @media only screen and (min-width: 768px) {
     .logo {
       align-items: flex-start; } }
@@ -1089,7 +1089,7 @@ footer {
   #resume .education em,
   #resume .experience em,
   #resume .activities em {
-    color: #797b2c;
+    color: #72732a;
     font-style: normal;
     display: block; }
   #resume .education strong,
@@ -1108,7 +1108,7 @@ footer {
       background: rgba(151, 153, 55, 0.15);
       padding: 0.5rem 1rem;
       border-radius: 20px;
-      color: #6b6c27; }
+      color: #5f6123; }
 
 #work-landing {
   margin-top: 2rem; }
@@ -1216,7 +1216,7 @@ footer {
       background: rgba(151, 153, 55, 0.15);
       padding: 0.5rem 1rem;
       border-radius: 20px;
-      color: #6b6c27; }
+      color: #5f6123; }
 
 .problem-solution {
   background-color: #f7f7f7;
