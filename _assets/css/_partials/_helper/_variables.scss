@@ -34,7 +34,7 @@ $primaryColorTransparent:   rgba($primaryColor, .5);
 // Secondary Color
 $secondaryColor:            #979937;
 $secondaryColorLighten:     lighten($secondaryColor, 5%);
-$secondaryColorDarken:      darken($secondaryColor, 5%);
+$secondaryColorDarken:      darken($secondaryColor, 8%);
 $secondaryColorTransparent: rgba($secondaryColor, .75);
 
 // Tertiary Color
