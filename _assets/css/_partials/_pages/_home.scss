@@ -6,10 +6,12 @@
 	gap: 4rem;
 	header {
 		.logo { display: none; }
+		justify-content: flex-end;
 	}
 	main {
 		display: flex;
 		height: calc(100vh - 150px);
+		min-height: 600px;
 		.info {
 			align-self: flex-start;
 			padding-bottom: 4rem;
@@ -34,9 +36,8 @@
 	@media only screen and (min-width: $navBreakpoint) {
 		gap: 0;
 		header {
-			.logo {
-				visibility: hidden;
-				display: flex;
+			nav[role=navigation] {
+				ul { padding-top: 0.4rem; }
 			}
 		}
 		main {

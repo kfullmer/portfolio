@@ -50,6 +50,11 @@ nav[role=navigation] {
         border: 0;
         li {
             padding-top: 0;
+            display: inline-block;
+            margin: 0;
+            padding: 0 0.5rem;
+            text-align: center;
+            &:last-of-type {padding-right: 0;}
             a {
             	display: block;
                 color: $gray;
@@ -70,13 +75,6 @@ nav[role=navigation] {
     @media only screen and (min-width: $navBreakpoint) {
 	    ul {
             padding: 0;
-	        li {
-		    	display: inline-block;
-		    	margin: 0;
-	            padding: 0 0.5rem;
-	            text-align: center;
-	            &:last-of-type {padding-right: 0;}
-		    }
 	    }
 	}
 }
