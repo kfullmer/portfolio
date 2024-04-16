@@ -1,10 +1,8 @@
 // Resume
 // --------------------------------------------------
 #resume {
-    background: $background-gray;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.15),0 15px 12px rgba(0,0,0,0.08);
-    margin: 2rem auto;
-    padding: 4rem 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
     [class^="icon-"], [class*=" icon-"] {
         &:before {
             border: 2px solid $textColor;
@@ -23,18 +21,14 @@
             &.two-col {
                 .col-1,
                 .col-2 { padding: 0; }
-                @media only screen and (min-width: $smScreen) {
-                    .col-1,
-                    .col-2 { padding: 0 1rem; }
-                }
                 @media only screen and (min-width: $mdScreen) {
                     grid-template-columns: 40% 1fr;
                     .col-1 {
                         border-right: $border;
+                        padding: 0 2.5rem 0 0;
                     }
-                    .col-1,
                     .col-2 {
-                        padding: 0 2.5rem;
+                        padding: 0 0 0 2.5rem;
                     }
                 }
             }
