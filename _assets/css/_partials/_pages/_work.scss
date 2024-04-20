@@ -150,15 +150,14 @@
    .process { flex: 100%; }
    .media {
 	   	flex: 100%;
-	   	overflow: hidden;
 	   	text-align: center;
-	   	video,
-	   	img {
+	   	img.animated {
 	   		width: 100%;
 	   		height: auto;
 	   		margin-bottom: -1px;
-	   		max-width: 500px;
+	   		clip-path: inset(1px 0px);
 	   	}
+	   	img.portrait { max-width: 500px; }
 	   	.two-col {
 	   		margin-top: 3rem;
 	   		display: flex;
@@ -181,20 +180,46 @@
    		.media { flex: 60%; }
     }
     .vascular-catalog & {
+    	padding: 2rem 0;
+    	&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+    	gap: 1rem;
+    	.media {
+    		background: $background-gray;
+    		border-radius: 1rem;
+    		padding: 2rem;
+    		order: 2;
+    		box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+    	}
+    	.media + .process.documents { order: 1; }
+
     	@media only screen and (min-width: $mdScreen) {
     		gap: 2rem;
 	        flex-flow: row nowrap;
-	        align-items: flex-start;
-	        .process { flex: 60%; }
+	        align-items: center;
+	        .process { flex: 80%; }
 	   		.media {
-	   			flex: 40%;
+	   			order: unset;
+	   			flex: 20%;
 	   			align-self: center;
+			   	img.portrait {
+			   		max-width: unset;
+			   	}
 	   		}
+	   		.process.product-details { flex: 40%; }
+	   		.process.product-details + .media  { flex: 60%; }
+
+	   		.media + .process.documents {
+	   			flex: 20%;
+	   			order: 2;
+	   		}
+
+	   		.process.filters { flex: 40%; }
+	   		.process.filters + .media  { flex: 60%; }
 	    }
     	@media only screen and (min-width: $lgScreen) {
     		gap: 4rem;
-	        .process { flex: 70%; }
-	   		.media { flex: 30%; }
+	        .process { flex: 60%; }
+	   		.media { flex: 40%; }
 	    }
     }
 }
@@ -266,7 +291,7 @@
 @supports (display: grid) {
 	.gallery {
 	    display: grid;
-		grid-gap: 1vw;
+		grid-gap: 1rem;
 	    grid-template-columns: 1fr .5fr .5fr;
 	    position: relative;
 	    width: 100%;
@@ -275,7 +300,9 @@
 	    	display: block;
 	    	margin: 0;
 	    	padding:0;
-	    	box-shadow: rgba(0,0,0,0.09) 0px 2px 10px;
+	    	border-radius: 1rem;
+	    	overflow: hidden;
+	    	box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
 	    	img {
 			    height: 100%;
 			    left: 0;
