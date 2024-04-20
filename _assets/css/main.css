@@ -1234,7 +1234,8 @@ footer {
     flex: 100%;
     overflow: hidden;
     text-align: center; }
-    .design-process .media video {
+    .design-process .media video,
+    .design-process .media img {
       width: 100%;
       height: auto;
       margin-bottom: -1px;
