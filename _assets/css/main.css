@@ -1354,7 +1354,8 @@ footer {
     .poc .design-process .media.toggle {
       display: flex;
       justify-content: center;
-      background: #0d0d0d; }
+      background: #0d0d0d;
+      transition: background .3s ease-in; }
       .light-mode .poc .design-process .media.toggle {
         background: #FBFBFB; }
   @media only screen and (min-width: 990px) {

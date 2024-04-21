@@ -279,6 +279,7 @@
 				display: flex;
 				justify-content: center;
 				background: #0d0d0d;
+				transition: background .3s ease-in;
 				.light-mode & { background: $background-gray; }
 			}
 		}
