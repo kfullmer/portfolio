@@ -134,7 +134,7 @@
 	padding: 4rem 0 3rem 0;
 	.section {
 		background: none;
-		gap: 2rem;
+		gap: 1rem;
 		@media only screen and (min-width: $mdScreen) { gap: 4rem; }
 	}
 }
@@ -180,8 +180,8 @@
    		.media { flex: 60%; }
     }
     .vascular-catalog & {
-    	padding: 2rem 0;
-    	&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+    	padding: 0 0 2rem 0;
+    	&:nth-of-type(3n) { padding: 0 0 4rem 0; }
     	gap: 1rem;
     	.media {
     		background: $background-gray;
@@ -193,9 +193,11 @@
     	.media + .process.documents { order: 1; }
 
     	@media only screen and (min-width: $mdScreen) {
+    		padding: 2rem 0;
     		gap: 2rem;
 	        flex-flow: row nowrap;
 	        align-items: center;
+	        &:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
 	        .process { flex: 80%; }
 	   		.media {
 	   			order: unset;
@@ -233,7 +235,7 @@
 	.wrapper {
 		display: flex;
 		align-items: flex-start;
-		gap: 2rem;
+		gap: 1rem;
 		flex-flow: column wrap;
 		.outcome { flex: 2; }
 		@media only screen and (min-width: $mdScreen) {

@@ -1224,7 +1224,7 @@ footer {
   padding: 4rem 0 3rem 0; }
   .problem-solution .section {
     background: none;
-    gap: 2rem; }
+    gap: 1rem; }
     @media only screen and (min-width: 990px) {
       .problem-solution .section {
         gap: 4rem; } }
@@ -1266,10 +1266,10 @@ footer {
       .design-process .media {
         flex: 60%; } }
   .vascular-catalog .design-process {
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     gap: 1rem; }
     .vascular-catalog .design-process:nth-of-type(3n) {
-      padding: 2rem 0 4rem 0; }
+      padding: 0 0 4rem 0; }
     .vascular-catalog .design-process .media {
       background: #FBFBFB;
       border-radius: 0.5rem;
@@ -1280,9 +1280,12 @@ footer {
       order: 1; }
     @media only screen and (min-width: 990px) {
       .vascular-catalog .design-process {
+        padding: 2rem 0;
         gap: 2rem;
         flex-flow: row nowrap;
         align-items: center; }
+        .vascular-catalog .design-process:nth-of-type(3n) {
+          padding: 2rem 0 4rem 0; }
         .vascular-catalog .design-process .process {
           flex: 80%; }
         .vascular-catalog .design-process .media {
@@ -1317,7 +1320,7 @@ footer {
   .conclusion .wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
     flex-flow: column wrap; }
     .conclusion .wrapper .outcome {
       flex: 2; }
