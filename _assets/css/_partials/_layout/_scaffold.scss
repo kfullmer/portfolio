@@ -21,6 +21,10 @@ body {
 
 .heading {
     padding: 4rem 0 2rem 0;
+    .center-text { text-align: left; }
+    @media only screen and (min-width: $mdScreen) {
+        .center-text { text-align: center; }
+    }
 }
 
 .section {

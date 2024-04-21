@@ -743,7 +743,11 @@ body {
 
 .heading {
   padding: 4rem 0 2rem 0; }
-
+  .heading .center-text {
+    text-align: left; }
+  @media only screen and (min-width: 990px) {
+    .heading .center-text {
+      text-align: center; } }
 .section {
   background: white;
   display: block; }
