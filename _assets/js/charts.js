@@ -750,20 +750,6 @@ const setForeColor = (lightMode) => {
 			document.body.classList.add('light-mode')
 			lightMode = true
 		}
-
-		setForeColor(lightMode)
-
-		currentChart.destroy()
-		secondaryChart.destroy()
-		milestoneChart.destroy()
-		var newChart = new ApexCharts(document.querySelector("#case-times"), chartOptions[currentChartName])
-		var newModeChart = new ApexCharts(document.querySelector("#secondary-chart"), secondaryCharts[secondaryChartName]);
-		var newMilestoneChart = new ApexCharts(document.querySelector("#milestone-chart"), milestoneChartOptions);
-		secondaryChart = newModeChart
-		milestoneChart = newMilestoneChart
-		newModeChart.render();
-		newChart.render();
-		newMilestoneChart.render();
 	}
 
 	const lightModeToggle = document.getElementById('mode')

@@ -626,14 +626,14 @@ h2.level-up {
   font-size: 2.5rem;
   margin: 0.5rem 0;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #4d4d4d; }
   @media only screen and (min-width: 990px) {
     #work h1, #work h2.level-up {
       font-size: 3.5rem; } }
 h2 {
-  line-height: 1.2;
+  line-height: 1.25;
   font-size: 2rem;
   color: #979937;
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
@@ -645,7 +645,7 @@ h3 {
   text-transform: uppercase;
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, serif;
   font-size: 1.75rem;
-  line-height: 1;
+  line-height: 1.25;
   position: relative; }
   h3.border {
     z-index: 5; }
@@ -671,7 +671,7 @@ h4 {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.25;
   margin: 1rem 0;
   color: #71918f; }
 
@@ -1131,9 +1131,15 @@ footer {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem; }
+    @media only screen and (min-width: 990px) {
+      #work-landing .project {
+        border-radius: 1rem; } }
     #work-landing .project img {
-      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 10px;
+      border-radius: 0.5rem;
+      box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover;
@@ -1265,55 +1271,6 @@ footer {
         flex: 40%; }
       .design-process .media {
         flex: 60%; } }
-  .vascular-catalog .design-process {
-    padding: 0 0 2rem 0;
-    gap: 1rem; }
-    .vascular-catalog .design-process:nth-of-type(3n) {
-      padding: 0 0 4rem 0; }
-    .vascular-catalog .design-process .media {
-      background: #FBFBFB;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      order: 2;
-      box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
-    .vascular-catalog .design-process .media + .process.documents {
-      order: 1; }
-    @media only screen and (min-width: 990px) {
-      .vascular-catalog .design-process {
-        padding: 2rem 0;
-        gap: 2rem;
-        flex-flow: row nowrap;
-        align-items: center; }
-        .vascular-catalog .design-process:nth-of-type(3n) {
-          padding: 2rem 0 4rem 0; }
-        .vascular-catalog .design-process .process {
-          flex: 80%; }
-        .vascular-catalog .design-process .media {
-          order: unset;
-          flex: 20%;
-          align-self: center;
-          border-radius: 1rem;
-          padding: 2rem; }
-          .vascular-catalog .design-process .media img.portrait {
-            max-width: unset; }
-        .vascular-catalog .design-process .process.product-details {
-          flex: 40%; }
-        .vascular-catalog .design-process .process.product-details + .media {
-          flex: 60%; }
-        .vascular-catalog .design-process .media + .process.documents {
-          flex: 20%;
-          order: 2; }
-        .vascular-catalog .design-process .process.filters {
-          flex: 40%; }
-        .vascular-catalog .design-process .process.filters + .media {
-          flex: 60%; } }
-    @media only screen and (min-width: 1200px) {
-      .vascular-catalog .design-process {
-        gap: 4rem; }
-        .vascular-catalog .design-process .process {
-          flex: 60%; }
-        .vascular-catalog .design-process .media {
-          flex: 40%; } }
 .conclusion {
   background-color: #FBFBFB;
   padding: 4rem 0; }
@@ -1333,6 +1290,169 @@ footer {
   margin: 4rem 0 0 0; }
   .publish-themes .image-column-container {
     margin-bottom: 0; }
+
+.vascular-catalog .design-process {
+  padding: 0 0 2rem 0;
+  gap: 1rem; }
+  .vascular-catalog .design-process:nth-of-type(3n) {
+    padding: 0 0 4rem 0; }
+  .vascular-catalog .design-process .media {
+    background: #FBFBFB;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    order: 2;
+    box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
+  .vascular-catalog .design-process .media + .process.documents {
+    order: 1; }
+  @media only screen and (min-width: 990px) {
+    .vascular-catalog .design-process {
+      padding: 2rem 0;
+      gap: 2rem;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .vascular-catalog .design-process:nth-of-type(3n) {
+        padding: 2rem 0 4rem 0; }
+      .vascular-catalog .design-process .process {
+        flex: 80%; }
+      .vascular-catalog .design-process .media {
+        order: unset;
+        flex: 20%;
+        align-self: center;
+        border-radius: 1rem;
+        padding: 2rem; }
+        .vascular-catalog .design-process .media img.portrait {
+          max-width: unset; }
+      .vascular-catalog .design-process .process.product-details {
+        flex: 40%; }
+      .vascular-catalog .design-process .process.product-details + .media {
+        flex: 60%; }
+      .vascular-catalog .design-process .media + .process.documents {
+        flex: 20%;
+        order: 2; }
+      .vascular-catalog .design-process .process.filters {
+        flex: 40%; }
+      .vascular-catalog .design-process .process.filters + .media {
+        flex: 60%; } }
+  @media only screen and (min-width: 1200px) {
+    .vascular-catalog .design-process {
+      gap: 4rem; }
+      .vascular-catalog .design-process .process {
+        flex: 60%; }
+      .vascular-catalog .design-process .media {
+        flex: 40%; } }
+.poc .design-process {
+  padding: 0 0 2rem 0;
+  gap: 1rem; }
+  .poc .design-process:nth-of-type(3n) {
+    padding: 0 0 4rem 0; }
+  .poc .design-process .media {
+    background: #FBFBFB;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    order: 2;
+    box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
+    .poc .design-process .media.toggle {
+      display: flex;
+      justify-content: center;
+      background: #0d0d0d; }
+      .light-mode .poc .design-process .media.toggle {
+        background: #FBFBFB; }
+  @media only screen and (min-width: 990px) {
+    .poc .design-process {
+      padding: 2rem 0;
+      gap: 2rem;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .poc .design-process:nth-of-type(3n) {
+        padding: 2rem 0 4rem 0; }
+      .poc .design-process .process {
+        flex: 60%; }
+      .poc .design-process .media {
+        order: unset;
+        flex: 40%;
+        align-self: center;
+        border-radius: 1rem;
+        padding: 2rem; }
+        .poc .design-process .media img.portrait {
+          max-width: unset; }
+      .poc .design-process .process.product-details {
+        flex: 40%; }
+      .poc .design-process .process.product-details + .media {
+        flex: 60%; }
+      .poc .design-process .process.data {
+        flex: 40%; }
+      .poc .design-process .process.data + .media {
+        flex: 60%; } }
+  @media only screen and (min-width: 1200px) {
+    .poc .design-process {
+      gap: 4rem; }
+      .poc .design-process .process {
+        flex: 70%; }
+      .poc .design-process .media {
+        flex: 30%; } }
+.light-dark-toggle input[type=checkbox] {
+  display: none; }
+  .light-dark-toggle input[type=checkbox] + label .light-icon {
+    color: white; }
+  .light-dark-toggle input[type=checkbox] + label .dark-icon {
+    opacity: .3; }
+  .light-dark-toggle input[type=checkbox]:checked + label {
+    box-shadow: inset 10px 0 8px #171717, inset -2px 0 8px #2a2a2a; }
+    .light-dark-toggle input[type=checkbox]:checked + label .light-icon {
+      opacity: .3; }
+    .light-dark-toggle input[type=checkbox]:checked + label .dark-icon {
+      color: white;
+      opacity: 1; }
+
+.light-dark-toggle label {
+  display: block;
+  width: 6rem;
+  height: 3rem;
+  color: white;
+  background-color: #171717;
+  background: linear-gradient(90deg, #2a2a2a, #171717);
+  box-shadow: inset 2px 0 8px #171717, inset -10px 0 8px #2a2a2a;
+  border-radius: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-bottom: 0; }
+  .light-dark-toggle label .inner--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .light-dark-toggle label .inner--content .light-icon,
+    .light-dark-toggle label .inner--content .dark-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      line-height: 1;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      transition: color .3s, opacity .3s ease-in; }
+      .light-dark-toggle label .inner--content .light-icon svg,
+      .light-dark-toggle label .inner--content .dark-icon svg {
+        width: 20px;
+        height: 20px; }
+
+.light-mode .light-dark-toggle input[type=checkbox] + label .light-icon {
+  color: #282c36; }
+
+.light-mode .light-dark-toggle input[type=checkbox] + label .dark-icon {
+  opacity: .3; }
+
+.light-mode .light-dark-toggle input[type=checkbox]:checked + label {
+  box-shadow: inset 10px 0 8px #c9cacd, inset -2px 0 8px #e9e9ea; }
+  .light-mode .light-dark-toggle input[type=checkbox]:checked + label .dark-icon {
+    color: #282c36;
+    opacity: 1; }
+
+.light-mode .light-dark-toggle label {
+  color: #282c36;
+  background-color: #c9cacd;
+  background: linear-gradient(90deg, #f2f2f2, #e9e9ea);
+  box-shadow: inset 2px 0 8px #c9cacd, inset -10px 0 8px #e9e9ea; }
 
 .apexcharts-zoom-icon,
 .apexcharts-zoomin-icon,
