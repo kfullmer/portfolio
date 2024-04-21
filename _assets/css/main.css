@@ -1268,8 +1268,8 @@ footer {
       padding: 2rem 0 4rem 0; }
     .vascular-catalog .design-process .media {
       background: #FBFBFB;
-      border-radius: 1rem;
-      padding: 2rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
       order: 2;
       box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
     .vascular-catalog .design-process .media + .process.documents {
@@ -1284,7 +1284,9 @@ footer {
         .vascular-catalog .design-process .media {
           order: unset;
           flex: 20%;
-          align-self: center; }
+          align-self: center;
+          border-radius: 1rem;
+          padding: 2rem; }
           .vascular-catalog .design-process .media img.portrait {
             max-width: unset; }
         .vascular-catalog .design-process .process.product-details {
@@ -1378,9 +1380,12 @@ footer {
       display: block;
       margin: 0;
       padding: 0;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
       overflow: hidden;
       box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
+      @media only screen and (min-width: 990px) {
+        .gallery figure.gallery-item {
+          border-radius: 1rem; } }
       .gallery figure.gallery-item img {
         height: 100%;
         left: 0;
