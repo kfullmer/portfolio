@@ -95,6 +95,7 @@
 }
 
 // Overview
+// ------------------------
 .overview {
 	padding: 0 0 4rem 0;
 	display: flex;
@@ -111,7 +112,7 @@
 		flex-flow: row nowrap;
 		align-items: center;
 		.about-the-project { flex: 2; }
-		.gallery { flex: 1; }
+		.gallery { flex:1; }
 	}
 	.contributions {
 	    h2 {
@@ -132,7 +133,49 @@
 	}
 }
 
+// Gallery
+// ------------------------
+.gallery {
+    display: grid;
+	grid-gap: 1rem;
+    grid-template-columns: 1fr .5fr .5fr;
+    position: relative;
+    width: 100%;
+    figure.gallery-item {
+    	position:relative;
+    	display: block;
+    	margin: 0;
+    	padding:0;
+    	border-radius: 0.5rem;
+    	overflow: hidden;
+    	box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+    	@media only screen and (min-width: $mdScreen) {border-radius: 1rem;}
+    	img {
+		    height: 100%;
+		    left: 0;
+		    object-fit: cover;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		}
+		&:first-child { grid-row:span 2 }
+		a {
+		    display: block;
+		    height: 100%;
+		    overflow: hidden;
+		    padding-bottom: 100%;
+		    position: relative;
+		    width:100%;
+		}
+	}
+	@media screen and (min-width: $lgScreen) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+}
+
 // Problem  & Solution
+// ------------------------
 .problem-solution {
 	background-color: $background-gray;
 	padding: 4rem 0 3rem 0;
@@ -144,15 +187,21 @@
 }
 
 // Design Process
+// ------------------------
 .design-process {
-	padding: 4rem 0;
 	display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: stretch;
-    gap: 2rem;
+    padding: 0 0 2rem 0;
+	&:nth-of-type(3n) { padding: 0 0 4rem 0; }
+	gap: 1rem;
    .process { flex: 100%; }
    .media {
+		background: $background-gray;
+		border-radius: 0.5rem;
+		padding: 1rem;
+		box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
 	   	flex: 100%;
 	   	text-align: center;
 	   	img.animated {
@@ -176,16 +225,33 @@
 		   	}
 	    }
     }
+    @media only screen and (min-width: $mdScreen) {
+		padding: 2rem 0;
+		gap: 2rem;
+	    flex-flow: row nowrap;
+	    align-items: center;
+	    &:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+		.media {
+			order: unset;
+			align-self: center;
+			border-radius: 1rem;
+			padding: 2rem;
+		   	img.portrait {
+		   		max-width: unset;
+		   	}
+		}
+	}
     @media only screen and (min-width: $lgScreen) {
         gap: 4rem;
         flex-flow: row nowrap;
-        align-items: flex-start;
+        align-items: center;
         .process { flex: 40%; }
    		.media { flex: 60%; }
     }
 }
 
 // Conclusion
+// ------------------------
 .conclusion {
 	background-color: $background-gray;
 	padding: 4rem 0;
@@ -210,52 +276,129 @@
     .image-column-container { margin-bottom: 0; }
 }
 
+// GCB
+// ------------------------
+.gcb {
+	.design-process {
+		.media.brand {
+			background: none;
+			border-radius: 0;
+			padding: 0;
+			box-shadow: none;
+			display: flex;
+			flex-flow: column wrap;
+			overflow: visible;
+			.welcome {
+				width: 80%;
+				background: #008f9e;
+				border-radius: 2rem;
+				padding: 2rem 2rem 5rem 2rem;
+				box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+				position: relative;
+				overflow: hidden;
+				&:after {
+					content: "";
+					background: url(../images/work/gcb/gcb-wave.svg);
+					background-size: 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+					position: absolute;
+					left: 0;
+					bottom: -5rem;
+					height: 250px;
+					width: 100%;
+				}
+			}
+			.action-item {
+				width: 60%;
+				align-self: flex-end;
+				margin-top: -5rem;
+				position: relative;
+				border-radius: 2rem;
+				box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+			}
+		}
+		.process.flexibility + .media {
+			background: none;
+			padding: 0;
+			box-shadow: none;
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column wrap;
+			img {
+				max-width: 250px;
+				height: auto;
+				border-radius: 1rem;
+				flex-shrink: 1;
+				box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+			}
+		}
+		@media only screen and (min-width: $smScreen) {
+			.process.flexibility + .media {
+				flex-flow: row nowrap;
+			}
+		}
+		@media only screen and (min-width: $mdScreen) {
+	        .process.flexibility { flex: 40%; }
+		   	.process.flexibility + .media  { flex: 60%; }
+	    }
+		@media only screen and (min-width: $lgScreen) {
+	        .process { flex: 50%; }
+	   		.media { flex: 50%; }
+	        .process.flexibility { flex: 50%; }
+		   	.process.flexibility + .media  { flex: 50%; }
+	    }
+	}
+	@media screen and (min-width: $lgScreen + 200px) {
+		.overview {
+			.about-the-project { flex: 45%; }
+			.gallery { flex: 55%; }
+		}
+		.gallery {
+			grid-template-columns: 1fr .5fr;
+		}
+	}
+
+	.user-flow {
+		margin: 2rem 0;
+		background-color: #008f9e;
+		padding: 4rem 0 3rem 0;
+		.wrapper {
+			display: flex;
+			flex-flow: column wrap;
+			gap: 0;
+			align-items: center;
+			.user-flow-description {
+				max-width: 1000px;
+				text-align: center;
+				h4, p { color: white; }
+			}
+		}
+	}
+}
+
 // Teleflex Vascular
 // ------------------------
 .vascular-catalog {
 	.design-process {
-		padding: 0 0 2rem 0;
-		&:nth-of-type(3n) { padding: 0 0 4rem 0; }
-		gap: 1rem;
-		.media {
-			background: $background-gray;
-			border-radius: 0.5rem;
-			padding: 1rem;
-			order: 2;
-			box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
-		}
+		.media { order: 2; }
 		.media + .process.documents { order: 1; }
 
 		@media only screen and (min-width: $mdScreen) {
-			padding: 2rem 0;
-			gap: 2rem;
-	        flex-flow: row nowrap;
-	        align-items: center;
-	        &:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
 	        .process { flex: 80%; }
-	   		.media {
-	   			order: unset;
-	   			flex: 20%;
-	   			align-self: center;
-	   			border-radius: 1rem;
-				padding: 2rem;
-			   	img.portrait {
-			   		max-width: unset;
-			   	}
-	   		}
+	   		.media { flex: 20%; }
 	   		.process.product-details { flex: 40%; }
 	   		.process.product-details + .media  { flex: 60%; }
-
 	   		.media + .process.documents {
 	   			flex: 20%;
 	   			order: 2;
 	   		}
-
 	   		.process.filters { flex: 40%; }
 	   		.process.filters + .media  { flex: 60%; }
 	    }
 		@media only screen and (min-width: $lgScreen) {
-			gap: 4rem;
 	        .process { flex: 60%; }
 	   		.media { flex: 40%; }
 	    }
@@ -266,15 +409,8 @@
 // ------------------------
 .poc {
 	.design-process {
-		padding: 0 0 2rem 0;
-		&:nth-of-type(3n) { padding: 0 0 4rem 0; }
-		gap: 1rem;
 		.media {
-			background: $background-gray;
-			border-radius: 0.5rem;
-			padding: 1rem;
 			order: 2;
-			box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
 			&.toggle {
 				display: flex;
 				justify-content: center;
@@ -285,30 +421,12 @@
 		}
 
 		@media only screen and (min-width: $mdScreen) {
-			padding: 2rem 0;
-			gap: 2rem;
-	        flex-flow: row nowrap;
-	        align-items: center;
-	        &:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
 	        .process { flex: 60%; }
-	   		.media {
-	   			order: unset;
-	   			flex: 40%;
-	   			align-self: center;
-	   			border-radius: 1rem;
-				padding: 2rem;
-			   	img.portrait {
-			   		max-width: unset;
-			   	}
-	   		}
-	   		.process.product-details { flex: 40%; }
-	   		.process.product-details + .media  { flex: 60%; }
-
+	   		.media { flex: 40%; }
 	   		.process.data { flex: 40%; }
 	   		.process.data + .media  { flex: 60%; }
 	    }
 		@media only screen and (min-width: $lgScreen) {
-			gap: 4rem;
 	        .process { flex: 70%; }
 	   		.media { flex: 30%; }
 	    }
@@ -439,48 +557,5 @@
 		height: 24px;
 		display: block;
 		background-position: center;
-	}
-}
-
-// Gallery
-// ------------------------
-@supports (display: grid) {
-	.gallery {
-	    display: grid;
-		grid-gap: 1rem;
-	    grid-template-columns: 1fr .5fr .5fr;
-	    position: relative;
-	    width: 100%;
-	    figure.gallery-item {
-	    	position:relative;
-	    	display: block;
-	    	margin: 0;
-	    	padding:0;
-	    	border-radius: 0.5rem;
-	    	overflow: hidden;
-	    	box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
-	    	@media only screen and (min-width: $mdScreen) {border-radius: 1rem;}
-	    	img {
-			    height: 100%;
-			    left: 0;
-			    object-fit: cover;
-			    position: absolute;
-			    top: 0;
-			    width: 100%;
-			}
-			&:first-child { grid-row:span 2 }
-			a {
-			    display: block;
-			    height: 100%;
-			    overflow: hidden;
-			    padding-bottom: 100%;
-			    position: relative;
-			    width:100%;
-			}
-		}
-		@media screen and (min-width: $lgScreen) {
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: auto;
-		}
 	}
 }
