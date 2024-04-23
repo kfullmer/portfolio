@@ -1350,6 +1350,9 @@ footer {
   .publish-themes .image-column-container {
     margin-bottom: 0; }
 
+.gcb .gallery {
+  grid-template-columns: 1fr .5fr; }
+
 .gcb .design-process .media.brand {
   background: none;
   border-radius: 0;
@@ -1420,6 +1423,10 @@ footer {
     flex: 50%; }
   .gcb .design-process .process.flexibility + .media {
     flex: 50%; } }
+
+@media only screen and (min-width: 1200px) {
+  .gcb .gallery {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 1400px) {
   .gcb .overview .about-the-project {

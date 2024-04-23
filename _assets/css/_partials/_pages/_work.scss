@@ -279,6 +279,9 @@
 // GCB
 // ------------------------
 .gcb {
+	.gallery {
+		grid-template-columns: 1fr .5fr;
+	}
 	.design-process {
 		.media.brand {
 			background: none;
@@ -345,11 +348,14 @@
 		   	.process.flexibility + .media  { flex: 60%; }
 	    }
 		@media only screen and (min-width: $lgScreen) {
-	        .process { flex: 50%; }
+	      .process { flex: 50%; }
 	   		.media { flex: 50%; }
-	        .process.flexibility { flex: 50%; }
+	      .process.flexibility { flex: 50%; }
 		   	.process.flexibility + .media  { flex: 50%; }
 	    }
+	}
+	@media only screen and (min-width: $lgScreen) {
+		.gallery { grid-template-columns: repeat(2, 1fr); }
 	}
 	@media screen and (min-width: $lgScreen + 200px) {
 		.overview {
