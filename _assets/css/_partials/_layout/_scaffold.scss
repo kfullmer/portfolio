@@ -211,6 +211,7 @@ body {
 }
 
 .visible {
+    transition: all 2s ease;
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
