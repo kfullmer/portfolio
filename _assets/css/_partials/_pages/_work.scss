@@ -7,6 +7,7 @@
 	margin-top: 2rem;
 	@media only screen and (min-width: $navBreakpoint) { margin-top: 0; }
 	&.section {
+		transition: all 1s ease;
 		grid-gap: 1.5rem;
 		&.two-col {
 			@media only screen and (min-width: $navBreakpoint) {

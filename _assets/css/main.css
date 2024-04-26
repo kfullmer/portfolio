@@ -734,7 +734,25 @@ body {
   position: relative;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .wrapper {
   width: 90%;
@@ -1117,6 +1135,7 @@ footer {
     #work-landing {
       margin-top: 0; } }
   #work-landing.section {
+    transition: all 1s ease;
     grid-gap: 1.5rem; }
     @media only screen and (min-width: 768px) {
       #work-landing.section.two-col {
@@ -1139,12 +1158,6 @@ footer {
             animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
-
-@-webkit-keyframes fadeInAnimation {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 @keyframes fadeInAnimation {
   0% {
