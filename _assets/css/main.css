@@ -3657,7 +3657,12 @@ footer {
     .home {
       -webkit-animation: none;
               animation: none;
-      background: #72732a; } }
+      background: #72732a; }
+      .home main h1.hello:after {
+        content: "Hello, my name is Katie";
+        -webkit-animation: none;
+                animation: none;
+        transition: none; } }
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -3684,10 +3689,20 @@ footer {
         color: white; }
         .home main .info h1.hello span {
           display: block; }
+        .home main .info h1.hello:after {
+          -webkit-animation: hello 20s infinite;
+                  animation: hello 20s infinite;
+          transition: fadeInUp .5s ease-in-out;
+          content: ""; }
       .home main .info h2.about {
         color: white;
         font-size: 4rem;
         line-height: 1.25; }
+        .home main .info h2.about span {
+          display: block;
+          min-height: 80px; }
+        .home main .info h2.about br {
+          display: none; }
   @media only screen and (min-width: 600px) {
     .home main {
       height: calc(100vh - 86px); }
@@ -3698,7 +3713,11 @@ footer {
           .home main .info h1.hello span {
             display: inline-block; }
         .home main .info h2.about {
-          font-size: 4.5rem; } }
+          font-size: 4.5rem; }
+          .home main .info h2.about span {
+            display: inline-block; }
+          .home main .info h2.about br {
+            display: inline-block; } }
   @media only screen and (min-width: 768px) {
     .home {
       gap: 0; }
@@ -3721,42 +3740,43 @@ footer {
 @-webkit-keyframes hello {
   0% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    opacity: 1; }
   10% {
     content: "Hello, my name is Katie";
     transition: all .2s ease-in-out; }
   20% {
     content: "Hello, my name is Katie";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn .2s ease-in-out;
+            animation: fadeIn .2s ease-in-out;
     opacity: 0;
-    transition: all .2s ease-in-out; }
+    transition: all 1s ease-in-out; }
   30% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   40% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 1; }
   50% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 1; }
   60% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   70% {
     content: "Hello, my name is Katie";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   80% {
@@ -3771,42 +3791,43 @@ footer {
 @keyframes hello {
   0% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    opacity: 1; }
   10% {
     content: "Hello, my name is Katie";
     transition: all .2s ease-in-out; }
   20% {
     content: "Hello, my name is Katie";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn .2s ease-in-out;
+            animation: fadeIn .2s ease-in-out;
     opacity: 0;
-    transition: all .2s ease-in-out; }
+    transition: all 1s ease-in-out; }
   30% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   40% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 1; }
   50% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 1; }
   60% {
     content: "designer & developer";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   70% {
     content: "Hello, my name is Katie";
-    -webkit-animation: fadeInUp 1s ease-in-out;
-            animation: fadeInUp 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   80% {
