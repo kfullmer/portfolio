@@ -3599,7 +3599,7 @@ nav[role=navigation] {
       nav[role=navigation] ul li:hover {
         cursor: pointer; }
         nav[role=navigation] ul li:hover a {
-          color: #71918f; }
+          color: #979937; }
       nav[role=navigation] ul li:last-of-type {
         margin-right: 0; }
   @media only screen and (min-width: 768px) {
@@ -3953,7 +3953,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(113, 145, 143, 0.5); }
+      background-color: #333333; }
       #work-landing .project .project-info h2 {
         color: white;
         margin-bottom: 0; }
@@ -3963,7 +3963,7 @@ footer {
           font-size: 1.5rem;
           margin-top: 0.5rem;
           text-transform: lowercase;
-          color: #5f7a79; }
+          color: white; }
     @media (hover: hover) {
       #work-landing .project:hover img {
         opacity: 0; }

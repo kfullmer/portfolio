@@ -66,7 +66,7 @@ nav[role=navigation] {
                 font-family: $sans-font-family;
             }
             &:hover {
-                a { color: $primaryColor; }
+                a { color: $secondaryColor; }
                 cursor: pointer;
             }
             &:last-of-type {margin-right: 0;}

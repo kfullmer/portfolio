@@ -61,7 +61,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: $primaryColorTransparent;
+			background-color: $dark-gray;
 			h2 {
 				color: white;
 				margin-bottom: 0;
@@ -71,7 +71,7 @@
 					font-size: 1.5rem;
 					margin-top: 0.5rem;
 					text-transform: lowercase;
-					color: $primaryColorDarken;
+					color: white;
 				}
 			}
 		}
