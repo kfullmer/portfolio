@@ -44,6 +44,9 @@ body {
             }
         }
     }
+    @media (prefers-reduced-motion) {
+        &:before { display: none; }
+    }
 }
 
 .wrapper {

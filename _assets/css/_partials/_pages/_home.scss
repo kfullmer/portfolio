@@ -11,6 +11,10 @@
 	&:before {
 		display: none;
 	}
+	@media (prefers-reduced-motion) {
+        animation: none;
+        background: $secondaryColorDarken;
+    }
 
 	@keyframes gradient {
 		0% {
