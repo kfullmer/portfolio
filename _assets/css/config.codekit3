@@ -24,6 +24,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/_partials\/_component\/_animate.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_partials\/css\/_animate.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/_partials\/_component\/_buttons.scss" : {
       "aP" : 0,
       "bl" : 0,

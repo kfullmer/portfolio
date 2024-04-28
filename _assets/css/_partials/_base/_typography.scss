@@ -29,7 +29,7 @@ h2.level-up {
     font-weight: 300;
     line-height: 1.2;
     text-transform: uppercase;
-    color: $mid-gray;
+    color: $textColor;
     @media only screen and (min-width: $mdScreen) {
         #work & { font-size: 3.5rem; }
     }
@@ -74,7 +74,7 @@ h3 {
     }
     &.level-up {
         font-family: $sans-font-family;
-        color: $mid-gray;
+        color: $textColor;
     }
 }
 
@@ -84,7 +84,7 @@ h4 {
     font-size: 1.5rem;
     line-height: 1.25;
     margin: 1rem 0;
-    color: $primaryColor;
+    color: $textColor;
 }
 
 p {
@@ -92,6 +92,7 @@ p {
     margin: 1rem 0;
     line-height: 1.5;
     font-weight: 400;
+    color: $textColor;
 }
 
 .primary-color {

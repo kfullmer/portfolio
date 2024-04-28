@@ -20,7 +20,7 @@ header {
     align-items: center;
     text-transform: uppercase;
     font-family: $sans-font-family;
-    color: $mid-gray;
+    color: $textColor;
     font-size: 1.75rem;
     font-weight: 300;
     .title {
@@ -57,7 +57,7 @@ nav[role=navigation] {
             &:last-of-type {padding-right: 0;}
             a {
             	display: block;
-                color: $gray;
+                color: $textColor;
                 font-weight: 400;
                 text-transform: uppercase;
                 text-decoration: none;
@@ -75,6 +75,10 @@ nav[role=navigation] {
     @media only screen and (min-width: $navBreakpoint) {
 	    ul {
             padding: 0;
+            li {
+                padding: 0 1rem;
+                a { font-size: 1.2rem; }
+            }
 	    }
 	}
 }
