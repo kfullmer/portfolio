@@ -23,6 +23,7 @@ header {
     color: $textColor;
     font-size: 1.75rem;
     font-weight: 300;
+    &:hover { color: $textColor; }
     .title {
     	text-transform: none;
     	color: $secondaryColor;
