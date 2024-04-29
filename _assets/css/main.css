@@ -3621,7 +3621,7 @@ nav[role=navigation] {
       nav[role=navigation] ul li {
         padding: 0 1rem; }
         nav[role=navigation] ul li a {
-          font-size: 1.2rem; } }
+          font-size: 1.125rem; } }
 footer {
   border-top: 2px solid #E2E2E2;
   display: flex;
