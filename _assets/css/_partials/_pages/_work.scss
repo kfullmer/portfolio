@@ -29,8 +29,8 @@
 		overflow: hidden;
 		border-radius: 0.5rem;
 		animation: fadeInAnimation ease 2s;
-  	animation-iteration-count: 1;
-  	animation-fill-mode: forwards;
+  		animation-iteration-count: 1;
+  		animation-fill-mode: forwards;
 
 		@keyframes fadeInAnimation {
 		    0% {
@@ -201,64 +201,64 @@
 // ------------------------
 .design-process {
 	display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
-		align-items: stretch;
-		padding: 0 0 2rem 0;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 0 0 2rem 0;
 	&:nth-of-type(3n) { padding: 0 0 4rem 0; }
 	gap: 1rem;
-	 .process { flex: 100%; }
-	 .media {
+	.process { flex: 100%; }
+	.media {
 		background: $background-gray;
 		border-radius: 0.5rem;
 		padding: 1rem;
 		box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
-			flex: 100%;
-			text-align: center;
-			img.animated {
-				width: 100%;
-				height: auto;
-				margin-bottom: -1px;
-				clip-path: inset(1px 0px);
-			}
-			img.portrait { max-width: 500px; }
+		flex: 100%;
+		text-align: center;
+		img.animated {
+			width: 100%;
+			height: auto;
+			margin-bottom: -1px;
+			clip-path: inset(1px 0px);
+		}
+		img.portrait { max-width: 500px; }
+		.two-col {
+			margin-top: 3rem;
+			display: flex;
+			justify-content:space-around;
+			flex-flow: column wrap;
+		}
+	}
+	@media only screen and (min-width: $smScreen) {
+		.media {
 			.two-col {
-				margin-top: 3rem;
-				display: flex;
-				justify-content:space-around;
-				flex-flow: column wrap;
+				flex-flow: row nowrap;
 			}
 		}
-		@media only screen and (min-width: $smScreen) {
-			.media {
-				.two-col {
-					flex-flow: row nowrap;
-				}
-			}
-		}
-		@media only screen and (min-width: $mdScreen) {
+	}
+	@media only screen and (min-width: $mdScreen) {
 		padding: 2rem 0;
 		gap: 2rem;
-			flex-flow: row nowrap;
-			align-items: center;
-			&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+		flex-flow: row nowrap;
+		align-items: center;
+		&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
 		.media {
 			order: unset;
 			align-self: center;
 			border-radius: 1rem;
 			padding: 2rem;
-				img.portrait {
-					max-width: unset;
-				}
+			img.portrait {
+				max-width: unset;
+			}
 		}
 	}
-		@media only screen and (min-width: $lgScreen) {
-				gap: 4rem;
-				flex-flow: row nowrap;
-				align-items: center;
-				.process { flex: 40%; }
-			.media { flex: 60%; }
-		}
+	@media only screen and (min-width: $lgScreen) {
+		gap: 4rem;
+		flex-flow: row nowrap;
+		align-items: center;
+		.process { flex: 40%; }
+		.media { flex: 60%; }
+	}
 }
 
 // Conclusion
@@ -283,8 +283,26 @@
 // P3 Publish
 // ------------------------
 .publish-themes {
-		margin: 4rem 0 0 0;
-		.image-column-container { margin-bottom: 0; }
+	margin: 4rem 0 0 0;
+	.image-column-container { margin-bottom: 0; }
+}
+
+// Olympus Medical
+// ------------------------
+.olympus {
+	.design-process {
+		.media { order: 2; }
+		.media + .process.audience,
+		.media + .process.translation { order: 1; }
+		@media only screen and (min-width: $mdScreen) {
+			.media { order: 1; }
+			.media + .process.audience,
+			.media + .process.translation { order: 2; }
+			padding: 4rem 0;
+			&:nth-of-type(1n) { padding: 2rem 0 4rem 0;}
+			&:nth-of-type(3n) { padding: 4rem 0 4rem 0; }
+		}
+	}
 }
 
 // GCB

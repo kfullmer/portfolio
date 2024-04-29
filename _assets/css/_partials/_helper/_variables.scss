@@ -54,9 +54,9 @@ $textColor:                 $dark-gray;
 
 // Links
 // -------------------------
-$link-color:                darken($primaryColor, 10%);
-$link-color-hover:          darken($primaryColor, 15%);
-$link-color-active:         darken($primaryColor, 10%);
+$link-color:                $secondaryColorDarken;
+$link-color-hover:          $secondaryColor;
+$link-color-active:         $secondaryColorDarken;
 
 // Typography
 // -------------------------

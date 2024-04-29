@@ -3284,13 +3284,13 @@ strong, b {
   text-align: center; }
 
 a {
-  color: #5a7573;
+  color: #72732a;
   text-decoration: none; }
   a:hover {
-    color: #4f6665;
+    color: #979937;
     cursor: pointer; }
   a:active, a:focus {
-    color: #5a7573; }
+    color: #72732a; }
 
 address {
   font-style: normal; }
@@ -4189,6 +4189,26 @@ footer {
   margin: 4rem 0 0 0; }
   .publish-themes .image-column-container {
     margin-bottom: 0; }
+
+.olympus .design-process .media {
+  order: 2; }
+
+.olympus .design-process .media + .process.audience,
+.olympus .design-process .media + .process.translation {
+  order: 1; }
+
+@media only screen and (min-width: 990px) {
+  .olympus .design-process {
+    padding: 4rem 0; }
+    .olympus .design-process .media {
+      order: 1; }
+    .olympus .design-process .media + .process.audience,
+    .olympus .design-process .media + .process.translation {
+      order: 2; }
+    .olympus .design-process:nth-of-type(1n) {
+      padding: 2rem 0 4rem 0; }
+    .olympus .design-process:nth-of-type(3n) {
+      padding: 4rem 0 4rem 0; } }
 
 .gcb .gallery {
   grid-template-columns: 1fr .5fr; }
