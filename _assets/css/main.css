@@ -3696,7 +3696,7 @@ footer {
       padding-bottom: 4rem; }
       .home main .info h1.hello {
         font-size: 2.5rem;
-        margin: 0;
+        margin: 0 0 0.5rem 0;
         color: white; }
         .home main .info h1.hello span {
           display: block; }
@@ -3707,7 +3707,7 @@ footer {
           content: ""; }
       .home main .info h2.about {
         color: white;
-        font-size: 4rem;
+        font-size: 3.25rem;
         line-height: 1.25; }
         .home main .info h2.about span {
           display: block;
@@ -3751,28 +3751,27 @@ footer {
 @-webkit-keyframes hello {
   0% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     opacity: 1; }
   10% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out; }
+    transition: all .5s ease-in-out;
+    opacity: 1; }
   20% {
+    content: "Hello, my name is Katie";
+    transition: all .5s ease-in-out; }
+  30% {
     content: "Hello, my name is Katie";
     -webkit-animation: fadeIn .2s ease-in-out;
             animation: fadeIn .2s ease-in-out;
     opacity: 0;
     transition: all 1s ease-in-out; }
-  30% {
+  40% {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
-  40% {
-    content: "designer & developer";
-    -webkit-animation: fadeIn 1s ease-in-out;
-            animation: fadeIn 1s ease-in-out;
-    opacity: 1; }
   50% {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
@@ -3782,16 +3781,18 @@ footer {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
-    opacity: 0;
-    transition: all .2s ease-in-out; }
+    opacity: 1; }
   70% {
-    content: "Hello, my name is Katie";
+    content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   80% {
     content: "Hello, my name is Katie";
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+    opacity: 0;
     transition: all .2s ease-in-out; }
   90% {
     content: "Hello, my name is Katie";
@@ -3802,28 +3803,27 @@ footer {
 @keyframes hello {
   0% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     opacity: 1; }
   10% {
     content: "Hello, my name is Katie";
-    transition: all .2s ease-in-out; }
+    transition: all .5s ease-in-out;
+    opacity: 1; }
   20% {
+    content: "Hello, my name is Katie";
+    transition: all .5s ease-in-out; }
+  30% {
     content: "Hello, my name is Katie";
     -webkit-animation: fadeIn .2s ease-in-out;
             animation: fadeIn .2s ease-in-out;
     opacity: 0;
     transition: all 1s ease-in-out; }
-  30% {
+  40% {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
-  40% {
-    content: "designer & developer";
-    -webkit-animation: fadeIn 1s ease-in-out;
-            animation: fadeIn 1s ease-in-out;
-    opacity: 1; }
   50% {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
@@ -3833,16 +3833,18 @@ footer {
     content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
-    opacity: 0;
-    transition: all .2s ease-in-out; }
+    opacity: 1; }
   70% {
-    content: "Hello, my name is Katie";
+    content: "designer & developer";
     -webkit-animation: fadeIn 1s ease-in-out;
             animation: fadeIn 1s ease-in-out;
     opacity: 0;
     transition: all .2s ease-in-out; }
   80% {
     content: "Hello, my name is Katie";
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+    opacity: 0;
     transition: all .2s ease-in-out; }
   90% {
     content: "Hello, my name is Katie";
@@ -4317,11 +4319,12 @@ footer {
     gap: 0;
     align-items: center; }
     .gcb .user-flow .wrapper .user-flow-description {
-      max-width: 1000px;
-      text-align: center; }
+      max-width: 1000px; }
       .gcb .user-flow .wrapper .user-flow-description h4, .gcb .user-flow .wrapper .user-flow-description p {
         color: white; }
-
+      @media only screen and (min-width: 990px) {
+        .gcb .user-flow .wrapper .user-flow-description {
+          text-align: center; } }
 .vascular-catalog .design-process .media {
   order: 2; }
 

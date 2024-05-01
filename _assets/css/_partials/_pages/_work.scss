@@ -411,8 +411,10 @@
 			align-items: center;
 			.user-flow-description {
 				max-width: 1000px;
-				text-align: center;
 				h4, p { color: white; }
+				@media only screen and (min-width: $mdScreen) {
+					text-align: center;
+				}
 			}
 		}
 	}
