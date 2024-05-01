@@ -85,6 +85,10 @@
 				}
 			}
 		}
+		&.poc .project-info { background-color: #7215D8; }
+		&.teleflex .project-info { background-color: #007f9b; }
+		&.gcb .project-info { background-color: #F2672A; }
+		&.olympus .project-info { background-color: #5C8D55; }
 	}
 }
 
@@ -449,7 +453,7 @@
 			&.toggle {
 				display: flex;
 				justify-content: center;
-				background: #0d0d0d;
+				background: #272933;
 				transition: background .3s ease-in;
 				.light-mode & { background: $background-gray; }
 			}
@@ -479,8 +483,8 @@
 
 		&:checked + label {
 			box-shadow:
-				inset 10px 0 8px #171717,
-				inset -2px 0 8px #2a2a2a;
+				inset 10px 0 8px #202129,
+				inset -2px 0 8px #2e313d;
 
 			.light-icon { opacity:.3; }
 
@@ -496,11 +500,11 @@
 		width: 6rem;
 		height: 3rem;
 		color: white;
-		background-color: #171717;
-		background: linear-gradient(90deg, #2a2a2a, #171717);
+		background-color: #202129;
+		background: linear-gradient(90deg, #2e313d, #202129);
 		box-shadow:
-			inset 2px 0 8px #171717,
-			inset -10px 0 8px #2a2a2a;
+			inset 2px 0 8px #202129,
+			inset -10px 0 8px #2e313d;
 		border-radius: 40px;
 		padding: 0 20px;
 		cursor: pointer;

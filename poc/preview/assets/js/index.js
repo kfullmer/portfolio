@@ -18,7 +18,7 @@ const milestoneChartOptions = {
 		bar: {
 			horizontal: true,
 			colors: {
-				backgroundBarColors: ['#0d0d0d'],
+				backgroundBarColors: ['#272933'],
 			},
 		},
 	},
@@ -107,7 +107,7 @@ const secondaryCharts = {
 				image: undefined,
 			},
 			track: {
-				background: '#0d0d0d',
+				background: '#272933',
 			},
 			dataLabels: {
 				name: {
@@ -663,8 +663,8 @@ const setForeColor = (lightMode) => {
 	secondaryCharts.diagnosis.chart.foreColor = lightMode ? '#282c36' : '#fff';
 	secondaryCharts.diagnosis.stroke.colors = lightMode ? '#fff' : '#0c2839';
 	secondaryCharts.complexity.chart.foreColor = lightMode ? '#282c36' : '#fff';
-	secondaryCharts.complexity.plotOptions.radialBar.track.background = lightMode ? '#c9cacd' : '#0d0d0d';
-	milestoneChartOptions.plotOptions.bar.colors.backgroundBarColors[0] = lightMode ? '#c9cacd' : '#0d0d0d';
+	secondaryCharts.complexity.plotOptions.radialBar.track.background = lightMode ? '#c9cacd' : '#272933';
+	milestoneChartOptions.plotOptions.bar.colors.backgroundBarColors[0] = lightMode ? '#c9cacd' : '#272933';
 	milestoneChartOptions.chart.foreColor = lightMode ? '#282c36' : '#fff';
 	milestoneChartOptions.xaxis.axisTicks.color = lightMode ? '#282c36' : '#fff';
 }

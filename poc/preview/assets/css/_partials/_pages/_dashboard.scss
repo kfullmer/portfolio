@@ -232,7 +232,7 @@
   &.primary-charts-toggle {
     & > * { pointer-events: none; }
 
-    border-top: 3px solid $secondary-color;
+    border-top: 3px solid $dark-mode-gray;
     &:hover {
       border-top: 3px solid $primary-color;
       cursor: pointer;

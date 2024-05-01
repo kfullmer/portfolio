@@ -4,9 +4,13 @@ body {
   margin: auto;
   width: 100%;
   max-width: 1800px;
-  background: $dark-mode-black;
+  background-color: $dark-mode-black;
+  // background-image: url(../images/background.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
   &.light-mode {
-    background: white;
+    // background-image: url(../images/background-white.png);
+    background-color: white;
     transition: background .3s ease-in;
   }
 }

@@ -133,11 +133,16 @@ h2 {
       flex-direction: column;
       gap: 3rem;
       video {
+        border-radius: $radius;
+        overflow: hidden;
         margin-bottom: 2rem;
       }
       .video-actions {
         display: flex;
         gap: 1rem;
+      }
+      .gallery {
+        img { border-radius: $radius; }
       }
       .wrapper-thumbnails {
         margin-top: 1rem;
@@ -246,11 +251,6 @@ h2 {
 }
 
 .case-details-case-notes {
-  .case-details--case-notes-card-entry {
-    .light-mode & {
-      border: 2px solid $light-gray;
-    }
-  }
   .case-details--case-notes-card-entry-details {
     display: block;
     p {
