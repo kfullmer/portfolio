@@ -4377,6 +4377,9 @@ footer {
   .vascular-catalog .design-process .media {
     flex: 40%; } }
 
+.vascular-catalog .full-width-image {
+  padding: 0; }
+
 .poc .design-process .media {
   order: 2; }
   .poc .design-process .media.toggle {
