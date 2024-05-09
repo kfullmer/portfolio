@@ -3218,7 +3218,7 @@ h2.level-up {
   color: #333333; }
   @media only screen and (min-width: 990px) {
     #work h1, #work h2.level-up {
-      font-size: 4rem; } }
+      font-size: 3.75rem; } }
 h2 {
   line-height: 1.25;
   font-size: 2.5rem;
