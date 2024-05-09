@@ -30,9 +30,11 @@ h2 {
     flex-flow: row wrap;
     gap: 1rem 3rem;
     overflow: visible;
+    .icon-pinned { display: none; }
     .primary-figure { font-size: 1.25rem; }
     @media screen and (min-width: $lg-screen) {
       flex-flow: row nowrap;
+      .icon-pinned { display: inline-block; }
     }
   }
 
@@ -152,12 +154,15 @@ h2 {
         img {
           width: 100%;
           border: 2px solid $dark-mode-gray;
+          transition: $default-transition;
           border-radius: $radius;
+          &:hover { border-color: $secondary-color; }
           &.current {
             border-color: $primary-color;
           }
           .light-mode & {
-            border: 3px solid $light-gray;
+            border: 2px solid $light-gray;
+            &:hover { border-color: $secondary-color; }
             &.current {
               border-color: $primary-color;
             }

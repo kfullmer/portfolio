@@ -31,13 +31,13 @@ h2.level-up {
     text-transform: uppercase;
     color: $textColor;
     @media only screen and (min-width: $mdScreen) {
-        #work & { font-size: 3.5rem; }
+        #work & { font-size: 4rem; }
     }
 }
 
 h2 {
     line-height: 1.25;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $secondaryColor;
     font-family: $serif-font-family;
     margin: 0 0 .5rem 0;

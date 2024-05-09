@@ -132,19 +132,19 @@
 	}
 	.contributions {
 			h2 {
-				margin: 1.5rem 0;
+				margin: 3rem 0 1.5rem 0;
 			}
 			.contributions-listing {
-					display: flex;
-					flex-flow: row wrap;
-					justify-content: flex-start;
-					gap: 1rem;
-					div {
-						background: rgba($secondaryColor, .15);
-						padding: 0.5rem 1rem;
-						border-radius: 20px;
-						color: darken($secondaryColor, 15%);
-					}
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: flex-start;
+				gap: 1rem;
+				div {
+					background: rgba($secondaryColor, .15);
+					padding: 0.5rem 1rem;
+					border-radius: 20px;
+					color: darken($secondaryColor, 15%);
+				}
 			}
 	}
 }
@@ -210,16 +210,17 @@
 	justify-content: space-between;
 	align-items: stretch;
 	padding: 0 0 2rem 0;
-	&:nth-of-type(3n) { padding: 0 0 4rem 0; }
+	&:nth-of-type(4n) { padding: 0 0 4rem 0; }
 	gap: 1rem;
 	.process { flex: 100%; }
 	.media {
 		background: $background-gray;
 		border-radius: 0.5rem;
 		padding: 1rem;
-		box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+		//box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
 		flex: 100%;
 		text-align: center;
+		border-bottom: 0.5rem solid darken($background-gray, 5%);
 		img.animated {
 			width: 100%;
 			height: auto;
@@ -246,11 +247,11 @@
 		gap: 2rem;
 		flex-flow: row nowrap;
 		align-items: center;
-		&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+		&:nth-of-type(4n) { padding: 2rem 0 4rem 0; }
 		.media {
 			order: unset;
 			align-self: center;
-			border-radius: 1rem;
+			border-radius: 1.25rem;
 			padding: 2rem;
 			img.portrait {
 				max-width: unset;
@@ -317,11 +318,13 @@
 		grid-template-columns: 1fr .5fr;
 	}
 	.design-process {
+		&:nth-of-type(3n) { padding: 0 0 4rem 0; }
 		.media.brand {
 			background: none;
 			border-radius: 0;
 			padding: 0;
 			box-shadow: none;
+			border-bottom: none;
 			display: flex;
 			flex-flow: column wrap;
 			overflow: visible;
@@ -359,6 +362,7 @@
 			background: none;
 			padding: 0;
 			box-shadow: none;
+			border-bottom: none;
 			display: flex;
 			gap: 2rem;
 			align-items: center;
@@ -378,15 +382,16 @@
 			}
 		}
 		@media only screen and (min-width: $mdScreen) {
-					.process.flexibility { flex: 40%; }
-				.process.flexibility + .media  { flex: 60%; }
-			}
+			&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+			.process.flexibility { flex: 40%; }
+			.process.flexibility + .media  { flex: 60%; }
+		}
 		@media only screen and (min-width: $lgScreen) {
-				.process { flex: 50%; }
-				.media { flex: 50%; }
-				.process.flexibility { flex: 50%; }
-				.process.flexibility + .media  { flex: 50%; }
-			}
+			.process { flex: 50%; }
+			.media { flex: 50%; }
+			.process.flexibility { flex: 50%; }
+			.process.flexibility + .media  { flex: 50%; }
+		}
 	}
 	@media only screen and (min-width: $lgScreen) {
 		.gallery { grid-template-columns: repeat(2, 1fr); }
@@ -425,25 +430,27 @@
 // ------------------------
 .vascular-catalog {
 	.design-process {
+		&:nth-of-type(3n) { padding: 0 0 4rem 0; }
 		.media { order: 2; }
 		.media + .process.documents { order: 1; }
 
 		@media only screen and (min-width: $mdScreen) {
-					.process { flex: 80%; }
-				.media { flex: 20%; }
-				.process.product-details { flex: 40%; }
-				.process.product-details + .media  { flex: 60%; }
-				.media + .process.documents {
-					flex: 20%;
-					order: 2;
-				}
-				.process.filters { flex: 40%; }
-				.process.filters + .media  { flex: 60%; }
+			&:nth-of-type(3n) { padding: 2rem 0 4rem 0; }
+			.process { flex: 80%; }
+			.media { flex: 20%; }
+			.process.product-details { flex: 40%; }
+			.process.product-details + .media  { flex: 60%; }
+			.media + .process.documents {
+				flex: 20%;
+				order: 2;
 			}
+			.process.filters { flex: 40%; }
+			.process.filters + .media  { flex: 60%; }
+		}
 		@media only screen and (min-width: $lgScreen) {
-					.process { flex: 60%; }
-				.media { flex: 40%; }
-			}
+			.process { flex: 60%; }
+			.media { flex: 40%; }
+		}
 	}
 }
 
@@ -454,24 +461,27 @@
 		.media {
 			order: 2;
 			&.toggle {
+				border: none;
 				display: flex;
 				justify-content: center;
 				background: #272933;
 				transition: background .3s ease-in;
+				padding: 3rem 2rem;
 				.light-mode & { background: $background-gray; }
 			}
 		}
 
 		@media only screen and (min-width: $mdScreen) {
-					.process { flex: 60%; }
-				.media { flex: 40%; }
-				.process.data { flex: 40%; }
-				.process.data + .media  { flex: 60%; }
-			}
+			.process { flex: 60%; }
+			.media { flex: 40%; }
+			.process.data { flex: 40%; }
+			.process.data + .media  { flex: 60%; }
+			.media.toggle { padding: 4rem 2rem; }
+		}
 		@media only screen and (min-width: $lgScreen) {
-					.process { flex: 70%; }
-				.media { flex: 30%; }
-			}
+			.process { flex: 70%; }
+			.media { flex: 30%; }
+		}
 	}
 }
 

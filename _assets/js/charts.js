@@ -29,7 +29,7 @@ const milestoneChartOptions = {
 		bar: {
 			horizontal: true,
 			colors: {
-				backgroundBarColors: ['#c9cacd'],
+				backgroundBarColors: ['#eeeeee'],
 			},
 		},
 	},
@@ -118,7 +118,7 @@ const secondaryCharts = {
 				image: undefined,
 			},
 			track: {
-				background: '#c9cacd',
+				background: '#eeeeee',
 			},
 			dataLabels: {
 				name: {

@@ -295,7 +295,8 @@
 
   // Multi Chart (Diagnosis & Complexity)
   &.multi-chart {
-    padding: 0 0 1.5rem 0;
+    padding: 1.5rem 0;
+    @media screen and (min-width: $lg-screen) { padding: 0 0 1.5rem 0;}
 
     .multi-chart-nav {
       margin-bottom: 1.5rem;
