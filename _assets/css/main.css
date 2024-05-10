@@ -4223,16 +4223,14 @@ footer {
 
 @media only screen and (min-width: 990px) {
   .olympus .design-process {
-    padding: 4rem 0; }
+    padding: 2rem 0; }
     .olympus .design-process .media {
       order: 1; }
     .olympus .design-process .media + .process.audience,
     .olympus .design-process .media + .process.translation {
       order: 2; }
-    .olympus .design-process:nth-of-type(1n) {
-      padding: 2rem 0 4rem 0; }
-    .olympus .design-process:nth-of-type(3n) {
-      padding: 4rem 0 4rem 0; } }
+  .olympus .conclusion {
+    margin-top: 2rem; } }
 
 .gcb .gallery {
   grid-template-columns: 1fr .5fr; }

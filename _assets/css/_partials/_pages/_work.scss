@@ -300,14 +300,15 @@
 		.media { order: 2; }
 		.media + .process.audience,
 		.media + .process.translation { order: 1; }
-		@media only screen and (min-width: $mdScreen) {
+	}
+	@media only screen and (min-width: $mdScreen) {
+		.design-process {
 			.media { order: 1; }
 			.media + .process.audience,
 			.media + .process.translation { order: 2; }
-			padding: 4rem 0;
-			&:nth-of-type(1n) { padding: 2rem 0 4rem 0;}
-			&:nth-of-type(3n) { padding: 4rem 0 4rem 0; }
+			padding: 2rem 0;
 		}
+		.conclusion { margin-top: 2rem; }
 	}
 }
 
