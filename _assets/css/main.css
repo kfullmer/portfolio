@@ -4209,6 +4209,76 @@ footer {
         gap: 4rem;
         flex-flow: row nowrap;
         align-items: center; } }
+.pfizer-journey .overview {
+  padding: 0 0 4rem 0;
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  flex-flow: column wrap; }
+  .pfizer-journey .overview .featured-media {
+    flex: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden; }
+  .pfizer-journey .overview .about-the-project {
+    flex: 100%; }
+  @media only screen and (min-width: 990px) {
+    .pfizer-journey .overview {
+      padding: 2rem 0 4rem 0; } }
+  @media only screen and (min-width: 1200px) {
+    .pfizer-journey .overview {
+      gap: 4rem;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .pfizer-journey .overview .about-the-project {
+        flex: 30%; }
+      .pfizer-journey .overview .featured-media {
+        flex: 70%; } }
+.pfizer-journey .media-background {
+  background-color: #00004e;
+  padding: 4rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 4rem; }
+
+.pfizer-journey .desc-media {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  flex-flow: column wrap; }
+  .pfizer-journey .desc-media .media {
+    flex: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: white; }
+  .pfizer-journey .desc-media .description {
+    flex: 100%; }
+    .pfizer-journey .desc-media .description h4 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: white; }
+      .pfizer-journey .desc-media .description h4:before {
+        content: "";
+        background-image: url(../images/work/pfizer/star.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        display: block; }
+  @media only screen and (min-width: 1200px) {
+    .pfizer-journey .desc-media {
+      gap: 4rem;
+      flex-flow: row nowrap;
+      align-items: flex-start; }
+      .pfizer-journey .desc-media .description {
+        flex: 30%;
+        justify-content: flex-end; }
+        .pfizer-journey .desc-media .description h4 {
+          text-align: right;
+          justify-content: flex-end; }
+      .pfizer-journey .desc-media .media {
+        flex: 70%; } }
 .publish-themes {
   margin: 4rem 0 0 0; }
   .publish-themes .image-column-container {
