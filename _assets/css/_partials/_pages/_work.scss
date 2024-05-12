@@ -90,6 +90,7 @@
 		&.teleflex .project-info { background-color: #007f9b; }
 		&.gcb .project-info { background-color: #F2672A; }
 		&.olympus .project-info { background-color: #5C8D55; }
+		&.pfizer-journey .project-info { background-color: #00004e; }
 	}
 }
 
@@ -130,24 +131,96 @@
 		.about-the-project { flex: 2; }
 		.gallery { flex:1; }
 	}
-	.contributions {
-			h2 {
-				margin: 3rem 0 1.5rem 0;
-			}
-			.contributions-listing {
-				display: flex;
-				flex-flow: row wrap;
-				justify-content: flex-start;
-				gap: 1rem;
-				div {
-					background: rgba($secondaryColor, .15);
-					padding: 0.5rem 1rem;
-					border-radius: 20px;
-					color: darken($secondaryColor, 15%);
-				}
-			}
+}
+
+.overview-digital {
+	padding: 0 0 4rem 0;
+	display: flex;
+	align-items: stretch;
+	gap: 2rem;
+	flex-flow: column wrap;
+	.about-the-project { flex: 100%; }
+	.featured-media {
+		flex: 100%;
+		border-radius: 1.5rem;
+		overflow: hidden;
+	}
+	@media only screen and (min-width: $mdScreen) {
+		padding: 2rem 0 4rem 0;
+	}
+	@media only screen and (min-width: $lgScreen) {
+		gap: 4rem;
+		flex-flow: row nowrap;
+		align-items: center;
+		.about-the-project { flex: 30%; }
+		.featured-media {flex: 70%; }
 	}
 }
+
+// Contributions
+// ------------------------
+.contributions {
+	h2 {
+		margin: 3rem 0 1.5rem 0;
+	}
+	.contributions-listing {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		gap: 1rem;
+		div {
+			background: rgba($secondaryColor, .15);
+			padding: 0.5rem 1rem;
+			border-radius: 20px;
+			color: darken($secondaryColor, 15%);
+		}
+	}
+}
+
+// Digital Media Background (Full Width)
+// ------------------------
+.digital-media-background {
+	background-color: $background-gray;
+	padding: 4rem 0;
+	display: flex;
+	flex-flow: column wrap;
+	gap: 4rem;
+}
+
+.desc-media {
+	display: flex;
+	align-items: stretch;
+	gap: 0.5rem;
+	flex-flow: column wrap;
+	.media {
+		flex: 100%;
+		border-radius: 1.5rem;
+		overflow: hidden;
+	}
+	.description {
+		flex: 100%;
+		h4 {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+	}
+	@media only screen and (min-width: $lgScreen) {
+		gap: 4rem;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		.description {
+			flex: 30%;
+			justify-content: flex-end;
+			h4 {
+				text-align: right;
+				justify-content: flex-end;
+			}
+		}
+		.media { flex: 70%; }
+	}
+}
+
 
 // Gallery
 // ------------------------
@@ -288,53 +361,15 @@
 // Pfizer Foundation Series
 // ------------------------
 .pfizer-journey {
-	.overview {
-		padding: 0 0 4rem 0;
-		display: flex;
-		align-items: stretch;
-		gap: 2rem;
-		flex-flow: column wrap;
-		.featured-media {
-			flex: 100%;
-			border-radius: 1.5rem;
-			overflow: hidden;
-		}
-		.about-the-project { flex: 100%; }
-		@media only screen and (min-width: $mdScreen) {
-			padding: 2rem 0 4rem 0;
-		}
-		@media only screen and (min-width: $lgScreen) {
-			gap: 4rem;
-			flex-flow: row nowrap;
-			align-items: center;
-			.about-the-project { flex: 30%; }
-			.featured-media {flex: 70%; }
-		}
-	}
-	.media-background {
+	.digital-media-background {
 		background-color: #00004e;
-		padding: 4rem 0;
-		display: flex;
-		flex-flow: column wrap;
-		gap: 4rem;
 	}
 	.desc-media {
-		display: flex;
-		align-items: stretch;
-		gap: 0.5rem;
-		flex-flow: column wrap;
 		.media {
-			flex: 100%;
-			border-radius: 1.5rem;
-			overflow: hidden;
 			background: white;
 		}
 		.description {
-			flex: 100%;
 			h4 {
-				display: flex;
-				align-items: center;
-				gap: 1rem;
 				color: white;
 				&:before {
 					content: "";
@@ -342,25 +377,11 @@
 					background-size: 100%;
 					background-repeat: no-repeat;
 					background-position: center;
-					width: 40px;
-					height: 40px;
+					width: 60px;
+					height: 60px;
 					display: block;
 				}
 			}
-		}
-		@media only screen and (min-width: $lgScreen) {
-			gap: 4rem;
-			flex-flow: row nowrap;
-			align-items: flex-start;
-			.description {
-				flex: 30%;
-				justify-content: flex-end;
-				h4 {
-					text-align: right;
-					justify-content: flex-end;
-				}
-			}
-			.media { flex: 70%; }
 		}
 	}
 }
