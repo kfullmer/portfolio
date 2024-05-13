@@ -366,10 +366,13 @@
 		.featured-media {
 			&.two-col {
 				display: grid;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr;
 				gap: 1rem;
 				img { border-radius: 1.5rem; }
-				@media only screen and (min-width: $mdScreen) {gap: 2rem;}
+				@media only screen and (min-width: $smScreen) {
+					grid-template-columns: 1fr 1fr;
+				}
+				@media only screen and (min-width: $mdScreen) { gap: 2rem; }
 			}
 		}
 		@media only screen and (min-width: $lgScreen) {
@@ -381,8 +384,9 @@
 		.media {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;
+			gap: 1rem;
 			overflow: visible;
+			@media only screen and (min-width: $mdScreen) { gap: 2rem; }
 			img {
 				border-radius: 1.5rem;
 				overflow: hidden;
@@ -390,8 +394,11 @@
 			&.collage {
 				display: grid;
 				grid-template-rows: auto;
-				grid-template-columns: repeat(2, 1fr);
+				grid-template-columns: 1fr;
 				gap: 1rem;
+				@media only screen and (min-width: $smScreen) {
+					grid-template-columns: repeat(2, 1fr);
+				}
 				@media only screen and (min-width: $mdScreen) {
 					grid-template-columns: repeat(3, 1fr);
 					gap: 2rem;

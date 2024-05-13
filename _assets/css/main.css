@@ -4276,10 +4276,13 @@ footer {
 
 .pfizer-rsv .overview-digital .featured-media.two-col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem; }
   .pfizer-rsv .overview-digital .featured-media.two-col img {
     border-radius: 1.5rem; }
+  @media only screen and (min-width: 600px) {
+    .pfizer-rsv .overview-digital .featured-media.two-col {
+      grid-template-columns: 1fr 1fr; } }
   @media only screen and (min-width: 990px) {
     .pfizer-rsv .overview-digital .featured-media.two-col {
       gap: 2rem; } }
@@ -4292,16 +4295,22 @@ footer {
 .pfizer-rsv .desc-media .media {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   overflow: visible; }
+  @media only screen and (min-width: 990px) {
+    .pfizer-rsv .desc-media .media {
+      gap: 2rem; } }
   .pfizer-rsv .desc-media .media img {
     border-radius: 1.5rem;
     overflow: hidden; }
   .pfizer-rsv .desc-media .media.collage {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem; }
+    @media only screen and (min-width: 600px) {
+      .pfizer-rsv .desc-media .media.collage {
+        grid-template-columns: repeat(2, 1fr); } }
     @media only screen and (min-width: 990px) {
       .pfizer-rsv .desc-media .media.collage {
         grid-template-columns: repeat(3, 1fr);
