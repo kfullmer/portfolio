@@ -4040,6 +4040,8 @@ footer {
     #work-landing .project.olympus .project-info {
       background-color: #5C8D55; }
     #work-landing .project.pfizer-journey .project-info {
+      background-color: #0095ff; }
+    #work-landing .project.pfizer-rsv .project-info {
       background-color: #00004e; }
 
 #work {
@@ -4083,7 +4085,8 @@ footer {
   display: flex;
   align-items: stretch;
   gap: 2rem;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  justify-content: center; }
   .overview-digital .about-the-project {
     flex: 100%; }
   .overview-digital .featured-media {
@@ -4127,11 +4130,12 @@ footer {
   display: flex;
   align-items: stretch;
   gap: 0.5rem;
-  flex-flow: column wrap; }
+  flex-direction: column; }
   .desc-media .media {
     flex: 100%;
     border-radius: 1.5rem;
-    overflow: hidden; }
+    overflow: hidden;
+    display: block; }
   .desc-media .description {
     flex: 100%; }
     .desc-media .description h4 {
@@ -4144,11 +4148,7 @@ footer {
       flex-flow: row nowrap;
       align-items: flex-start; }
       .desc-media .description {
-        flex: 30%;
-        justify-content: flex-end; }
-        .desc-media .description h4 {
-          text-align: right;
-          justify-content: flex-end; }
+        flex: 30%; }
       .desc-media .media {
         flex: 70%; } }
 .gallery {
@@ -4271,6 +4271,41 @@ footer {
         gap: 4rem;
         flex-flow: row nowrap;
         align-items: center; } }
+.pfizer-rsv .overview-digital .about-the-project {
+  flex: 100%; }
+
+.pfizer-rsv .overview-digital .featured-media.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem; }
+  .pfizer-rsv .overview-digital .featured-media.two-col img {
+    border-radius: 1.5rem; }
+  @media only screen and (min-width: 990px) {
+    .pfizer-rsv .overview-digital .featured-media.two-col {
+      gap: 2rem; } }
+@media only screen and (min-width: 1200px) {
+  .pfizer-rsv .overview-digital .about-the-project {
+    flex: 40%; }
+  .pfizer-rsv .overview-digital .featured-media {
+    flex: 60%; } }
+
+.pfizer-rsv .desc-media .media {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: visible; }
+  .pfizer-rsv .desc-media .media img {
+    border-radius: 1.5rem;
+    overflow: hidden; }
+  .pfizer-rsv .desc-media .media.collage {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; }
+    @media only screen and (min-width: 990px) {
+      .pfizer-rsv .desc-media .media.collage {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; } }
 .pfizer-journey .digital-media-background {
   background-color: #00004e; }
 
@@ -4281,13 +4316,20 @@ footer {
   color: white; }
   .pfizer-journey .desc-media .description h4:before {
     content: "";
-    background-image: url(../images/work/pfizer/star.svg);
+    background-image: url(../images/work/pfizer/journey/star.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: 60px;
     height: 60px;
     display: block; }
+
+@media only screen and (min-width: 1200px) {
+  .pfizer-journey .desc-media .description {
+    justify-content: flex-end; }
+    .pfizer-journey .desc-media .description h4 {
+      text-align: right;
+      justify-content: flex-end; } }
 
 .publish-themes {
   margin: 4rem 0 0 0; }

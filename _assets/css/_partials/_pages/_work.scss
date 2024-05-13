@@ -90,7 +90,9 @@
 		&.teleflex .project-info { background-color: #007f9b; }
 		&.gcb .project-info { background-color: #F2672A; }
 		&.olympus .project-info { background-color: #5C8D55; }
-		&.pfizer-journey .project-info { background-color: #00004e; }
+		&.pfizer-journey .project-info { background-color: #0095ff; }
+		&.pfizer-rsv .project-info { background-color: #00004e; }
+
 	}
 }
 
@@ -139,6 +141,7 @@
 	align-items: stretch;
 	gap: 2rem;
 	flex-flow: column wrap;
+	justify-content: center;
 	.about-the-project { flex: 100%; }
 	.featured-media {
 		flex: 100%;
@@ -191,11 +194,12 @@
 	display: flex;
 	align-items: stretch;
 	gap: 0.5rem;
-	flex-flow: column wrap;
+	flex-direction: column;
 	.media {
 		flex: 100%;
 		border-radius: 1.5rem;
 		overflow: hidden;
+		display: block;
 	}
 	.description {
 		flex: 100%;
@@ -211,11 +215,6 @@
 		align-items: flex-start;
 		.description {
 			flex: 30%;
-			justify-content: flex-end;
-			h4 {
-				text-align: right;
-				justify-content: flex-end;
-			}
 		}
 		.media { flex: 70%; }
 	}
@@ -225,20 +224,20 @@
 // Gallery
 // ------------------------
 .gallery {
-		display: grid;
+	display: grid;
 	grid-gap: 1rem;
-		grid-template-columns: 1fr .5fr .5fr;
-		position: relative;
-		width: 100%;
-		figure.gallery-item {
-			position:relative;
-			display: block;
-			margin: 0;
-			padding:0;
-			border-radius: 0.5rem;
-			overflow: hidden;
-			box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
-			@media only screen and (min-width: $mdScreen) {border-radius: 1rem;}
+	grid-template-columns: 1fr .5fr .5fr;
+	position: relative;
+	width: 100%;
+	figure.gallery-item {
+		position:relative;
+		display: block;
+		margin: 0;
+		padding:0;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+		@media only screen and (min-width: $mdScreen) {border-radius: 1rem;}
 			img {
 				height: 100%;
 				left: 0;
@@ -358,6 +357,50 @@
 		}
 	}
 }
+
+// Pfizer RSV Uncovered
+// ------------------------
+.pfizer-rsv {
+	.overview-digital {
+		.about-the-project { flex: 100%; }
+		.featured-media {
+			&.two-col {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
+				img { border-radius: 1.5rem; }
+				@media only screen and (min-width: $mdScreen) {gap: 2rem;}
+			}
+		}
+		@media only screen and (min-width: $lgScreen) {
+			.about-the-project { flex: 40%; }
+			.featured-media {flex: 60%; }
+		}
+	}
+	.desc-media {
+		.media {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			overflow: visible;
+			img {
+				border-radius: 1.5rem;
+				overflow: hidden;
+			}
+			&.collage {
+				display: grid;
+				grid-template-rows: auto;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem;
+				@media only screen and (min-width: $mdScreen) {
+					grid-template-columns: repeat(3, 1fr);
+					gap: 2rem;
+				}
+			}
+		}
+	}
+}
+
 // Pfizer Foundation Series
 // ------------------------
 .pfizer-journey {
@@ -373,13 +416,20 @@
 				color: white;
 				&:before {
 					content: "";
-					background-image: url(../images/work/pfizer/star.svg);
+					background-image: url(../images/work/pfizer/journey/star.svg);
 					background-size: 100%;
 					background-repeat: no-repeat;
 					background-position: center;
 					width: 60px;
 					height: 60px;
 					display: block;
+				}
+			}
+			@media only screen and (min-width: $lgScreen) {
+				justify-content: flex-end;
+				h4 {
+					text-align: right;
+					justify-content: flex-end;
 				}
 			}
 		}
