@@ -65,6 +65,7 @@ nav[role=navigation] {
                 font-size: 1rem;
                 line-height: 1;
                 font-family: $sans-font-family;
+                &.current { font-weight: 600; }
             }
             &:hover {
                 a { color: $secondaryColor; }
