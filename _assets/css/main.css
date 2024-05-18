@@ -3341,34 +3341,7 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  body:before {
-    display: block;
-    height: 0.5rem;
-    width: 100%;
-    content: "";
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #979937);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 10s ease infinite;
-            animation: gradient 10s ease infinite; }
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-  @media (prefers-reduced-motion) {
-    body:before {
-      display: none; } }
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -3684,6 +3657,13 @@ footer {
         -webkit-animation: none;
                 animation: none;
         transition: none; } }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
