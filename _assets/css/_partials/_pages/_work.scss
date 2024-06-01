@@ -92,6 +92,7 @@
 		&.olympus .project-info { background-color: #5C8D55; }
 		&.pfizer-journey .project-info { background-color: #0095ff; }
 		&.pfizer-rsv .project-info { background-color: #00004e; }
+		&.pfizer-military .project-info { background-color: #072b90; }
 
 	}
 }
@@ -439,6 +440,18 @@
 					justify-content: flex-end;
 				}
 			}
+		}
+	}
+}
+
+// Pfizer Nimenrix Military Infographic
+// ------------------------
+.pfizer-military {
+	.overview-digital {
+		align-items: flex-start;
+		padding-bottom: 0;
+		.featured-media {
+			box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
 		}
 	}
 }
