@@ -4025,6 +4025,8 @@ footer {
       background-color: #0095ff; }
     #work-landing .project.pfizer-rsv .project-info {
       background-color: #00004e; }
+    #work-landing .project.pfizer-military .project-info {
+      background-color: #072b90; }
 
 #work {
   margin-top: 2rem; }
@@ -4253,27 +4255,27 @@ footer {
         gap: 4rem;
         flex-flow: row nowrap;
         align-items: center; } }
-.pfizer-rsv .overview-digital .about-the-project {
-  flex: 100%; }
-
-.pfizer-rsv .overview-digital .featured-media.two-col {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem; }
-  .pfizer-rsv .overview-digital .featured-media.two-col img {
-    border-radius: 1.5rem; }
-  @media only screen and (min-width: 600px) {
-    .pfizer-rsv .overview-digital .featured-media.two-col {
-      grid-template-columns: 1fr 1fr; } }
-  @media only screen and (min-width: 990px) {
-    .pfizer-rsv .overview-digital .featured-media.two-col {
-      gap: 2rem; } }
-@media only screen and (min-width: 1200px) {
+.pfizer-rsv .overview-digital {
+  align-items: flex-start; }
   .pfizer-rsv .overview-digital .about-the-project {
-    flex: 40%; }
-  .pfizer-rsv .overview-digital .featured-media {
-    flex: 60%; } }
-
+    flex: 100%; }
+  .pfizer-rsv .overview-digital .featured-media.two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; }
+    .pfizer-rsv .overview-digital .featured-media.two-col img {
+      border-radius: 1.5rem; }
+    @media only screen and (min-width: 600px) {
+      .pfizer-rsv .overview-digital .featured-media.two-col {
+        grid-template-columns: 1fr 1fr; } }
+    @media only screen and (min-width: 990px) {
+      .pfizer-rsv .overview-digital .featured-media.two-col {
+        gap: 2rem; } }
+  @media only screen and (min-width: 1200px) {
+    .pfizer-rsv .overview-digital .about-the-project {
+      flex: 40%; }
+    .pfizer-rsv .overview-digital .featured-media {
+      flex: 60%; } }
 .pfizer-rsv .desc-media .media {
   display: flex;
   flex-direction: column;
@@ -4297,6 +4299,9 @@ footer {
       .pfizer-rsv .desc-media .media.collage {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem; } }
+.pfizer-journey .overview-digital .featured-media {
+  box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
+
 .pfizer-journey .digital-media-background {
   background-color: #00004e; }
 
@@ -4321,6 +4326,12 @@ footer {
     .pfizer-journey .desc-media .description h4 {
       text-align: right;
       justify-content: flex-end; } }
+
+.pfizer-military .overview-digital {
+  align-items: flex-start;
+  padding-bottom: 0; }
+  .pfizer-military .overview-digital .featured-media {
+    box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1); }
 
 .publish-themes {
   margin: 4rem 0 0 0; }

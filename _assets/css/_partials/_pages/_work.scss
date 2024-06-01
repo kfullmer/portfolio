@@ -363,6 +363,7 @@
 // ------------------------
 .pfizer-rsv {
 	.overview-digital {
+		align-items: flex-start;
 		.about-the-project { flex: 100%; }
 		.featured-media {
 			&.two-col {
@@ -412,6 +413,11 @@
 // Pfizer Foundation Series
 // ------------------------
 .pfizer-journey {
+	.overview-digital {
+		.featured-media {
+			box-shadow: 0px 1px 10px 0px rgba(29, 59, 72, 0.1);
+		}
+	}
 	.digital-media-background {
 		background-color: #00004e;
 	}
