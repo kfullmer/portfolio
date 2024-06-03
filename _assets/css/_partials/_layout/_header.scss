@@ -53,9 +53,8 @@ nav[role=navigation] {
             padding-top: 0;
             display: inline-block;
             margin: 0;
-            padding: 0 0.5rem;
+            padding: 0 1rem;
             text-align: center;
-            &:last-of-type {padding-right: 0;}
             a {
             	display: block;
                 color: $textColor;
@@ -78,8 +77,8 @@ nav[role=navigation] {
 	    ul {
             padding: 0;
             li {
-                padding: 0 1rem;
-                a { font-size: 1.125rem; }
+                &:last-of-type { padding-right: 0; }
+                padding: 0 1.25rem;
             }
 	    }
 	}

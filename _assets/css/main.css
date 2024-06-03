@@ -3579,10 +3579,8 @@ nav[role=navigation] {
       padding-top: 0;
       display: inline-block;
       margin: 0;
-      padding: 0 0.5rem;
+      padding: 0 1rem;
       text-align: center; }
-      nav[role=navigation] ul li:last-of-type {
-        padding-right: 0; }
       nav[role=navigation] ul li a {
         display: block;
         color: #333333;
@@ -3604,9 +3602,9 @@ nav[role=navigation] {
     nav[role=navigation] ul {
       padding: 0; }
       nav[role=navigation] ul li {
-        padding: 0 1rem; }
-        nav[role=navigation] ul li a {
-          font-size: 1.125rem; } }
+        padding: 0 1.25rem; }
+        nav[role=navigation] ul li:last-of-type {
+          padding-right: 0; } }
 footer {
   border-top: 2px solid #E2E2E2;
   display: flex;
