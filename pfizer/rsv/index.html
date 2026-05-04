@@ -1,6 +1,97 @@
 <!doctype html>
 <html lang="en" xml:lang="en">
     <head>
+  <script>
+  (function () {
+    const PASSWORD = "100812";
+    const KEY = "portfolio_unlocked";
+
+    if (sessionStorage.getItem(KEY) !== "true") {
+      const font = document.createElement("link");
+      font.rel = "stylesheet";
+      font.href = "https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700&display=swap";
+      document.head.appendChild(font);
+
+      const overlay = document.createElement("div");
+      overlay.style.cssText = `
+        position:fixed; inset:0; background:#ffffff; color:#1a1a1a;
+        display:flex; flex-direction:column; align-items:center;
+        justify-content:center; z-index:99999;
+        font-family:'Lato', sans-serif; font-weight:300;
+      `;
+      overlay.innerHTML = `
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem; margin-bottom:2.5rem;">
+          <h1 style="font-family:'Playfair Display', serif; font-weight:400;
+                     font-size:2rem; margin:0; letter-spacing:0.02em; color:#1a1a1a;">
+            Katie Fullmer
+          </h1>
+          <p style="font-family:'Lato', sans-serif; font-weight:300;
+                    font-size:0.8rem; letter-spacing:0.18em; text-transform:uppercase;
+                    margin:0; color:#888;">
+            designer &amp; developer
+          </p>
+        </div>
+
+        <div style="width:1px; height:40px; background:#ddd; margin-bottom:2.5rem;"></div>
+
+
+        <input id="pw-input" type="password" placeholder="Enter password"
+          style="
+            width:240px; padding:0.65rem 1rem;
+            font-family:'Lato', sans-serif; font-size:0.9rem; font-weight:300;
+            border:1px solid #ddd; border-radius:0;
+            outline:none; color:#1a1a1a; background:#fff;
+            text-align:center; letter-spacing:0.05em;
+            transition:border-color 0.2s;
+          "
+          onfocus="this.style.borderColor='#1a1a1a'"
+          onblur="this.style.borderColor='#ddd'"
+        />
+
+        <button id="pw-btn"
+          style="
+            margin-top:0.75rem; width:242px;
+            padding:0.65rem 1rem;
+            font-family:'Lato', sans-serif; font-size:0.75rem;
+            font-weight:400; letter-spacing:0.18em; text-transform:uppercase;
+            background:#72732a; color:#fff;
+            border:1px solid #72732a; border-radius:0;
+            cursor:pointer; transition:background 0.2s, color 0.2s;
+          "
+          onmouseover="this.style.background='#fff'; this.style.color='#72732a';"
+          onmouseout="this.style.background='#72732a'; this.style.color='#fff';"
+        >
+          Enter
+        </button>
+
+        <p id="pw-error"
+          style="font-size:0.78rem; letter-spacing:0.08em; color:#c0392b;
+                 margin-top:1rem; display:none;">
+          Incorrect password — please try again.
+        </p>
+      `;
+
+      document.documentElement.appendChild(overlay);
+      document.documentElement.style.overflow = "hidden";
+
+      function tryUnlock() {
+        const val = document.getElementById("pw-input").value;
+        if (val === PASSWORD) {
+          sessionStorage.setItem(KEY, "true");
+          overlay.remove();
+          document.documentElement.style.overflow = "";
+        } else {
+          document.getElementById("pw-error").style.display = "block";
+        }
+      }
+
+      document.getElementById("pw-btn").addEventListener("click", tryUnlock);
+      document.getElementById("pw-input").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") tryUnlock();
+      });
+    }
+  })();
+  </script>
         <title>Pfizer Vaccines RSV Uncovered Campaign</title>
         <meta name="description" content="Katie Fullmer specializes in designing and developing custom websites and applications, utilizing a wide range of technologies while delivering engaging interfaces that focus on user experience, accessibility, performance, and functionality.">
         <meta charset="utf-8">
